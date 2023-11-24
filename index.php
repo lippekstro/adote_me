@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Integrador</title>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
+?>
 
-    <script src="js/script.js" defer></script>
+<section></section>
 
-
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';
+?>
+   
