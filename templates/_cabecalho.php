@@ -31,7 +31,7 @@
                             <a class="nav-link" href="/adote_me/views/faqs.php">Faqs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/adote_me/views/admin/faqs_listar.php">Listar Faqs</a>
+                            <a class="nav-link" href="/adote_me/views/admin/faqs_listar.php">Listar Faqs(ADMIN)</a>
                         </li>
                     </ul>
                 </div>

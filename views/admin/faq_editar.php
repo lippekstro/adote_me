@@ -11,8 +11,8 @@ try {
 
 ?>
 
-<section>
-    <form action="/adote_me/controllers/faq_edit_controller.php" method="POST">
+<section class="m-3 d-flex justify-content-center">
+    <form action="/adote_me/controllers/faq_edit_controller.php" method="POST" class="col col-lg-6 col-sm-11 border rounded p-3">
 
         <input type="hidden" class="form-control" id="id" name="id" value="<?= $faq->id_faq ?>">
 
@@ -23,7 +23,7 @@ try {
 
         <div class="mb-3">
             <label for="resposta" class="form-label">Resposta</label>
-            <textarea name="resposta" id="resposta" cols="30" rows="10"><?= $faq->faq_resposta ?></textarea>
+            <textarea name="resposta" id="resposta" rows="10" class="w-100"><?= $faq->faq_resposta ?></textarea>
         </div>
 
         <div class="mb-3">

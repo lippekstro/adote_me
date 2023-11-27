@@ -9,8 +9,8 @@ try {
 }
 ?>
 
-<section>
-    <table class="table table-striped">
+<section class="m-3 overflow-x-auto">
+    <table class="table table-striped border table-hover">
         <tr>
             <th>id</th>
             <th>Pergunta</th>
