@@ -1,0 +1,133 @@
+body {
+    font-size: 12px;
+    max-width: 100%;
+
+}
+
+#top {
+    margin-top: 8px;
+}
+
+.txBusca {
+    border-radius: 6px;
+    padding: 5px 11px;
+}
+
+#btnBusca {
+    border-radius: var(--bs-border-radius);
+    ;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+col {
+    color: black;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+#nav {
+    display: flex;
+    background-color: #c1926f;
+    max-width: 99%;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+
+#navlink {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 60%;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.perfil{
+    display: flex;
+    margin: 5%;
+
+   
+
+}
+
+
+#imagens{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+
+
+
+
+
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.redessociais {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    gap: 30px 30px;
+    justify-content: center;
+
+}
+
+
+
+
+/* estilos para barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #c1926f;
+}

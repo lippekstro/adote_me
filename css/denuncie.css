@@ -1,0 +1,171 @@
+body{
+  font-size: 12px;
+  max-width: 100%;
+  margin: 45px;
+}
+
+#top{
+  margin-top: 8px;
+}
+
+.txBusca{
+  border-radius: 6px;
+  padding: 5px 11px;
+}
+
+#btnBusca{
+  border-radius: var(--bs-border-radius);;
+  background-color: black;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+col{
+  color: black;
+  text-decoration: underline;
+  padding: 10px;
+  margin: 0px; 
+  
+}
+
+
+
+#nav{
+  display: flex;
+  background-color: #c1926f;
+  max-width: 99%;
+  border: none;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+
+
+}
+
+
+#navlink{
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 60%;
+}
+
+#nav a{
+  color: white;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  text-decoration: none; /* Sublinhado ao passar nos links */
+}
+
+.text{
+  margin: 80px;
+  font-size: 12px;
+}
+
+h1{
+  text-align: center;
+}
+
+
+h2{
+  font-size: 1.5rem;
+
+}
+
+h4
+
+p{
+  text-align: justify ;
+}
+
+main{
+  width: 100%;
+  height: 40%;
+
+}
+
+#animais{
+  width: 60%;
+  height: 40%;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+
+}
+
+.text{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+}
+
+.fonte{
+  
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.fonte a{
+  text-decoration: underline;
+  color: black;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+}
+
+.copyright{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  
+}
+
+
+.copyright a {
+  color: white;
+  
+}
+
+.redessociais{
+  display: flex;
+  width: 100%;
+  margin: 10px;  
+  gap: 30px 30px;
+  justify-content: center;
+
+}
+
+
+
+
+/* estilos para barra de rolagem */
+ 
+::-webkit-scrollbar{
+  width: 7px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  background-color: #c1926f;
+} 
