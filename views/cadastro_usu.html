@@ -82,77 +82,84 @@
         </div>
       </div>
     </nav>
-    <br />
+   
+    <!-- Gabriel -->
+<div class="fundo">;
+  <form class="row g-3" id="formulariologin" style="margin-top: 120px; border: solid black 0.5px; /* fazer a borda no formulario */ border-radius: 10px; padding: 50px;box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);margin-left: auto;margin-right: auto;display: flex;;width: 35%;margin-bottom: 12.1%;background-color: white;">
     <h1>Cadastre-se</h1>
+
+    <!-- Gabriel -->
     <form class="row g-3" id="formulariologin">
       <div>
         <label for="inputAddress" class="form-label">Nome Completo</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress"
-          placeholder=""
-        />
+        <input type="text" class="form-control" id="inputAddress" placeholder="Nome Completo" required  />
       </div>
 
+      <!-- Gabriel -->
       <div class="col-md-6">
         <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" />
+        <input type="email" class="form-control" id="inputEmail4" required placeholder="Email"/>
       </div>
+
+      <!-- Gabriel -->
       <div class="col-md-6">
         <label for="inputPassword4" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="inputPassword4" />
+        <input type="password" class="form-control" id="inputPassword4" required placeholder="Senha" />
       </div>
+
+      <!-- Gabriel -->
       <div class="col-12">
         <label for="inputAddress" class="form-label">Endereço</label>
-        <input
-          type="text"
-          class="form-control"
-          id="inputAddress"
-          placeholder="Numero, Rua, apartamento..."
-        />
+        <input type="text" class="form-control" id="inputAddress" placeholder="Numero, Rua, apartamento..." required />
       </div>
 
-          <div class="col-md-6">
-            <label>Nascimento</label><br>
-            <input type="text" name="dia" size="2" maxlength="2" value="" placeholder="dd" />
-            <input type="text" name="mes" size="2" maxlength="2" value="" placeholder="mm"/>
-            <input type="text" name="ano" size="4" maxlength="4" value="" placeholder="aa" />
-          </div>
+      <!-- Gabriel -->
+      <div class="col-md-6">
+        <label>Nascimento </label><br>
+        <input type="number" name="dia" size="2" maxlength="2" value="" placeholder="dd" required />
+        <input type="number" name="mes" size="2" maxlength="2" value="" placeholder="mm" required />
+        <input type="number" name="ano" size="4" maxlength="4" value="" placeholder="aa" required />
+      </div>
 
 
-          <div class="col-md-6">
-            <label for="Gênero" class="form-label">Gênero</label>
-            <select id="Gênero" class="form-select">
-              <option selected>Escolha...</option>
-              <option value="Feminino">Feminino</option>
-              <option value="Masculino">Masculino</option>
-              <option value="Outros">Outros</option>
-            </select>
-          </div>
+      <div class="col-md-6">
+        <label for="Gênero" class="form-label">Gênero</label>
+        <select id="Gênero" class="form-select">  
+          <option selected>Escolha...</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
 
-       
 
-          <div class="col-md-6">
-            <label for="imagem">Imagem de perfil:</label>
-            <input type="file" name="imagem" id="imgbotton" accept="image/*" />
-          </div>
-          
-        <div class="col-md-6">
-            <label>CPF:</label>
-            <input type="text" name="cpf" size="9" maxlength="9" /> -
-            <input type="text" name="cpf2" size="2" maxlength="2" />
-          </div>
 
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="inputCity" />
-          </div>
+      <div class="col-md-6">
+        <label for="imagem">Imagem de perfil:(opcional)</label>
+        <input type="file" name="imagem" id="imgbotton" accept="image/*" />
+      </div>
 
+
+      <!-- Gabriel -->
+      <div class="col-md-6" style="margin-left: 1px;margin-top: 30px;">
+        <label>CPF:</label>
+        <input type="text" name="cpf" size="9" maxlength="9" required /> -
+        <input type="text" name="cpf2" size="2" maxlength="2" required />
+      </div>
+
+
+      <!-- Gabriel -->
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Cidade</label>
+        <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" />
+      </div>
+
+
+    
     
 
 
-      <div class="col-md-4">
+      <div class="col-md-4" style="margin-left: 40px;">
         <label for="inputState" class="form-label">Estado</label>
         <select id="inputState" class="form-select">
           <option selected>Escolha...</option>
@@ -185,13 +192,13 @@
           <option value="to">Tocantins</option>
         </select>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2" style="width: 160px;">
         <label for="inputZip" class="form-label">Telefone</label>
-        <input type="number" class="form-control" id="inputZip" />
+        <input type="number" class="form-control" id="inputZip" placeholder="Telefone"  required/>
       </div>
       <div class="col-12">
         <div class="form-check" id="check">
-          <input class="form-check-input" type="checkbox" id="gridCheck" />
+          <input class="form-check-input" type="checkbox" id="gridCheck" required/>
           <label class="form-check-label" for="gridCheck">
             <a href="">Aceito termos e condições</a>
           </label>

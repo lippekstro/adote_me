@@ -83,30 +83,39 @@
     </nav>
     <br>
  <!-- conteudo da pagina  -->
-    <h1>Envie sua mensagem</h1>
-    <form action="fale" id="fale">    
-      <div class="input-group">
-        <span class="input-group-text">Nome Completo</span>
-        <input type="text" aria-label="First name" class="form-control" placeholder="nome">
-      </div>
+    
+  <h1>Envie sua mensagem</h1>
+  <form action="fale" id="fale">
 
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Escreva sua sugestão ou duvidas</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-
-      <div class="mb-3">
-        <label for="formFileMultiple" class="form-label">Adicionar imagens</label>
-        <input class="form-control" type="file" id="formFileMultiple" multiple>
-      </div>      
-    </form>  
-    <div class="botoes">
-      <button type="button" class="btn btn-dark" id="botoes">Enviar</button>
+    <!-- Gabriel -->
+    <div class="input-group">
+      <span class="input-group-text">Nome Completo</span>
+      <input type="text" aria-label="First name" class="form-control" placeholder="Nome" required>
     </div>
+
+    <!-- Gabriel -->
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Escreva suas sugestões ou duvidas</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+
+    <!-- Gabriel -->
+    <div class="mb-3">
+      <label for="formFileMultiple" class="form-label">Adicionar imagens</label>
+      <input class="form-control" type="file" id="formFileMultiple" multiple required>
+    </div>
+  </form>
+  <div class="botoes">
+    
+      <button   type="submit" class="btn btn-primary" id="cadastrarbotton">Enviar</button><!-- Não sei se ta funcionando -->
+      
+    
+  </div>
+
       
 
 
