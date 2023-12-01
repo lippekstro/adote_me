@@ -129,7 +129,34 @@
             });
           </script>
         </div>
+
+
+
+        <script>
+          let passwordField1 = document.getElementById('passwordField1');
+          let passwordField2 = document.getElementById('passwordField2');
+      
+          function validarSenha() {
+              if (passwordField1.value != passwordField2.value) {
+                passwordField2.setCustomValidity("Senhas diferentes!");
+                passwordField2.reportValidity();
+                  return false;
+              } else {
+                passwordField2.setCustomValidity("");
+                  return true;
+              }
+          }
+      
+          // verificar também quando o campo for modificado, para que a mensagem suma quando as senhas forem iguais
+          passwordField2.addEventListener('input', validarSenha);
+       </script>
         
+
+
+
+
+
+
 
           <div class="col-md-6">
             <label for="Gênero" class="form-label">Gênero</label>
