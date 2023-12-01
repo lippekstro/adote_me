@@ -292,4 +292,8 @@ footer a {
 
 
     }
+
+    table td{
+        padding: 0;
+    }
 }

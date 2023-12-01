@@ -142,7 +142,7 @@ h1{
 #eye {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 75%;
     transform: translateY(-50%);
     cursor: pointer;
 }
