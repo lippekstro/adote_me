@@ -54,72 +54,20 @@ col {
     text-decoration: none;
 }
 
-
-/* conteudo da pagina */
-
-h1{
-    text-align: center;
-}
-
-
-.row{
-    display: flex;
-}
-
-
-
-.infomarcoes{
-    flex: 1;
-    margin: 10px;
-}
-
 .perfil{
     display: flex;
-
-}
-
-#carousel {
-    width: 3%;
-    display: inline-block;
-    text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-    min-width:40vw;
-}
-
-#infomarcoes {
-    width: 38%;
-    display: inline-block;
-    margin-right: 0vw;
-    text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-    min-width:40vw;
-}
-
-#carousel{
-    width: 50%;
-    height: 50%;
     margin: 5%;
-} 
 
- 
-.perfil_tutuor{
-    margin: 5%;
+   
+
 }
 
-.perfil_tutuor p {
-    margin-top: 20px;
-}
 
-#perfil_usu{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-}
+#imagens{
+    width: 100%;
+    height: 100%;
 
-#nome_usu{
-    margin: 50px;
 }
-
 
 
 
