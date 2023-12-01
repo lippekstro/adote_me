@@ -59,74 +59,65 @@ col {
 
 h1{
     text-align: center;
-}
-
-
-.row{
-    display: flex;
-}
-
-
-
-.infomarcoes{
-    flex: 1;
-    margin: 10px;
-}
-
-.perfil{
-    display: flex;
-
-}
-
-#carousel {
-    width: 3%;
-    display: inline-block;
-    text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-    min-width:40vw;
-}
-
-#infomarcoes {
-    width: 38%;
-    display: inline-block;
-    margin-right: 0vw;
-    text-align: center;
-    padding: 5vw 0vw 5vw 0vw;
-    min-width:40vw;
-}
-
-#carousel{
-    width: 50%;
-    height: 50%;
-    margin: 5%;
-} 
-
- 
-.perfil_tutuor{
-    margin: 5%;
-}
-
-.perfil_tutuor p {
     margin-top: 20px;
 }
 
-#perfil_usu{
+#perfil{
+    margin-top: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    height: 40%;
+
+}
+
+
+#corousel{
+    position: left;
+}
+
+.perfil_tutuor{
+    margin-top: none;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.perfil_tutor img{
+    margin-top: 40px;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;    
 }
 
-#nome_usu{
-    margin: 50px;
+#informacoes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+ 
 }
 
+#informacoes p{
+    flex-direction: column;
 
+}
 
+#informacoes h4{
+    text-align: center;
+}
+ul{    
+    
+    text-align: center;
+    list-style-type: none;
 
+}
 
+textarea{
+    border-radius: 3px;
+}
 
-
-
+#nome_usu h1{
+    margin-top: 35px;
+}
 
 .copyright {
     display: flex;
