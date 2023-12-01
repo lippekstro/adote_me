@@ -54,66 +54,21 @@ col {
     text-decoration: none;
 }
 
-
-/* conteudo da pagina */
-
-h1{
-    text-align: center;
-    margin-top: 20px;
-}
-
-#perfil{
-    margin-top: none;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 5%;
-    height: 40%;
-
-}
-
-
-#corousel{
-    position: left;
-}
-
-.perfil_tutuor{
-    margin-top: none;
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.perfil_tutor img{
-    margin-top: 40px;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;    
-}
-
-#informacoes{
+.perfil{
     display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
- 
-}
+    margin: 5%;
 
-#informacoes p{
-    flex-direction: column;
+   
 
 }
 
-#informacoes h4{
-    text-align: center;
-}
-ul{    
-    
-    text-align: center;
-    list-style-type: none;
+
+#imagens{
+    width: 100%;
+    height: 100%;
 
 }
 
-textarea{
-    border-radius: 3px;
-}
 
 
 #exampleFormControlTextarea1{
