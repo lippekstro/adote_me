@@ -178,3 +178,43 @@ form{
     border-radius: 8px;
     background-color: #c1926f;
 } 
+/*guilherme*/
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+    #txtBusca {
+        width: 60%;
+    }
+}
+
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+    .col {
+        flex: 1 1 50%;
+    }
+}
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    .col {
+        flex: 1 1 100%;
+    }
+}
