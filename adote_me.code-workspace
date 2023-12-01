@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "adote_me",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
