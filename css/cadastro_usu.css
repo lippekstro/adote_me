@@ -158,7 +158,17 @@ h1{
     width: 120px;
 }
 
+.mb-3{
+    position: relative;
+}
 
+#eye {
+    position: absolute;
+    right: 10px;
+    top: 75%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
 
 
 

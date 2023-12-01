@@ -14,6 +14,9 @@
   <i class="bi bi-instagram"></i>
   <i class="bi bi-twitter-x"></i>
 
+  <!-- site do scrit https://fontawesome.com/start -->
+  <script src="https://kit.fontawesome.com/782bd950e1.js" crossorigin="anonymous"></script>
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -71,7 +74,6 @@
   </nav>
 
   <!-- Gabriel -->
-  <div class="fundo">;
     <form class="row g-3" id="formulariologin">
       <h1>Cadastre-se</h1>
 
@@ -89,153 +91,149 @@
         </div>
 
         <!-- Gabriel -->
-        <div class="row">
-          <div class="col-6"><label for="inputPassword4" class="form-label">Senha</label>
-            <input type="password" class="form-control" id="inputPassword4" required placeholder="Senha" required />
-          </div>
-          <div class="col-6"><label for="inputPassword4" class="form-label">Repita a senha</label>
-            <input type="password" class="form-control" id="inputPassword4" required placeholder="Repita a senha"
-              required />
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <label for="Gênero" class="form-label">Gênero</label>
-          <select id="Gênero" class="form-select">
-            <option selected>Escolha...</option>
-            <option value="Feminino">Feminino</option>
-            <option value="Masculino">Masculino</option>
-            <option value="Outros">Outros</option>
-          </select>
-        </div>
-
-
-
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Telefone</label>
-          <input type="tel" class="form-control" id="inputZip" placeholder="Telefone" required />
-        </div>
-
-
-        <div class="col-md-6">
-          <label>Nascimento </label><br>
-          <input type="date" id="diaa" name="diaa" />
+        <div class="mb-3">
+          <label for="passwordField1" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="passwordField1" placeholder="Senha" required>
+          <i class="fa fa-eye" id="eye1"></i>
         
-          <label>CPF:</label>
-          <input type="text" name="cpf" size="9" maxlength="9" required />
-          <input type="text" name="cpf2" size="2" maxlength="2" required />
+          <script>
+            document.getElementById('eye1').addEventListener('click', function () {
+              var passwordField1 = document.getElementById('passwordField1');
+        
+              if (passwordField1.type === 'password') {
+                passwordField1.type = 'text';
+              } else {
+                passwordField1.type = 'password';
+              }
+            });
+          </script>
         </div>
+        
+        <div class="mb-3">
+          <label for="passwordField2" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="passwordField2" placeholder="Senha" required>
+          <i class="fa fa-eye" id="eye2"></i>
+        
+          <script>
+            document.getElementById('eye2').addEventListener('click', function () {
+              var passwordField2 = document.getElementById('passwordField2');
+        
+              if (passwordField2.type === 'password') {
+                passwordField2.type = 'text';
+              } else {
+                passwordField2.type = 'password';
+              }
+            });
+          </script>
+        </div>
+        
+
+          <div class="col-md-6">
+            <label for="Gênero" class="form-label">Gênero</label>
+            <select id="Gênero" class="form-select">
+              <option selected>Escolha...</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+
+
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Telefone</label>
+            <input type="tel" class="form-control" id="inputZip" placeholder="Telefone" required />
+          </div>
+
+
+          <div class="col-md-6">
+            <label>Nascimento </label><br>
+            <input type="date" id="diaa" name="diaa" />
+
+            <label>CPF:</label>
+            <input type="text" name="cpf" size="9" maxlength="9" required />
+            <input type="text" name="cpf2" size="2" maxlength="2" required />
+          </div>
+
+
+          <div class="col-md-6">
+            <label for="imagem">Imagem de perfil:(opcional)</label>
+            <input type="file" name="imagem" id="imgbotton" accept="image/*" />
+          </div>
+
+
+
+
+          <!-- Gabriel -->
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Numero, Rua, apartamento..." required />
+          </div>
+
+
+          <!-- Gabriel -->
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" />
+          </div>
 
 
 
 
 
 
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">Estado</label>
+            <select id="inputState" class="form-select">
+              <option selected>Escolha...</option>
+              <option value="ac">Acre</option>
+              <option value="al">Alagoas</option>
+              <option value="am">Amazonas</option>
+              <option value="ap">Amapá</option>
+              <option value="ba">Bahia</option>
+              <option value="ce">Ceará</option>
+              <option value="df">Distrito Federal</option>
+              <option value="es">Espírito Santo</option>
+              <option value="go">Goiás</option>
+              <option value="ma">Maranhão</option>
+              <option value="mt">Mato Grosso</option>
+              <option value="ms">Mato Grosso do Sul</option>
+              <option value="mg">Minas Gerais</option>
+              <option value="pa">Pará</option>
+              <option value="pb">Paraíba</option>
+              <option value="pr">Paraná</option>
+              <option value="pe">Pernambuco</option>
+              <option value="pi">Piauí</option>
+              <option value="rj">Rio de Janeiro</option>
+              <option value="rn">Rio Grande do Norte</option>
+              <option value="ro">Rondônia</option>
+              <option value="rs">Rio Grande do Sul</option>
+              <option value="rr">Roraima</option>
+              <option value="sc">Santa Catarina</option>
+              <option value="se">Sergipe</option>
+              <option value="sp">São Paulo</option>
+              <option value="to">Tocantins</option>
+            </select>
+          </div>
 
-  <!-- Gabriel -->
-  <!--  <div class="col-md-6" id="nas.cpf">
-        <label>Nascimento </label><br>
-        <input type="date" id="diaa" name="diaa" />
+          <div class="col-12">
+            <div class="form-check" id="check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required />
+              <label class="form-check-label" for="gridCheck">
+                <a href="">Aceito termos e condições</a>
+              </label>
+            </div>
+          </div>
+          <div class="col-12" id="botoes">
+            <button type="submit" class="btn btn-primary" id="cadastrarbotton">
+              Cadastrar
+            </button>
+            <button type="reset" class="btn btn-primary" id="limparbotton">
+              Limpar
+            </button>
+          </div>
+      </form>
 
-
-        <label>CPF:</label>
-        <input type="text" name="cpf" size="9" maxlength="9" required /> 
-        <input type="text" name="cpf2" size="2" maxlength="2" required />
- -->
-  <!-- <input type="number" name="dia" size="2" maxlength="2" value="" placeholder="dd" required />
-        <input type="number" name="mes" size="2" maxlength="2" value="" placeholder="mm" required />
-        <input type="number" name="ano" size="4" maxlength="4" value="" placeholder="aa" required /> 
-      </div>-->
-
-  <!-- Gabriel -->
-  <!--  <div class="col-md-6">
-        <label>CPF:</label>
-        <input type="text" name="cpf" size="9" maxlength="9" required /> 
-        <input type="text" name="cpf2" size="2" maxlength="2" required />
-      </div> -->
-
-
-
-
-
-
-  <div class="col-md-6">
-    <label for="imagem">Imagem de perfil:(opcional)</label>
-    <input type="file" name="imagem" id="imgbotton" accept="image/*" />
-  </div>
-
-
-
-
-  <!-- Gabriel -->
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Numero, Rua, apartamento..." required />
-  </div>
-
-
-  <!-- Gabriel -->
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">Cidade</label>
-    <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" />
-  </div>
-
-
-
-
-
-
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">Estado</label>
-    <select id="inputState" class="form-select">
-      <option selected>Escolha...</option>
-      <option value="ac">Acre</option>
-      <option value="al">Alagoas</option>
-      <option value="am">Amazonas</option>
-      <option value="ap">Amapá</option>
-      <option value="ba">Bahia</option>
-      <option value="ce">Ceará</option>
-      <option value="df">Distrito Federal</option>
-      <option value="es">Espírito Santo</option>
-      <option value="go">Goiás</option>
-      <option value="ma">Maranhão</option>
-      <option value="mt">Mato Grosso</option>
-      <option value="ms">Mato Grosso do Sul</option>
-      <option value="mg">Minas Gerais</option>
-      <option value="pa">Pará</option>
-      <option value="pb">Paraíba</option>
-      <option value="pr">Paraná</option>
-      <option value="pe">Pernambuco</option>
-      <option value="pi">Piauí</option>
-      <option value="rj">Rio de Janeiro</option>
-      <option value="rn">Rio Grande do Norte</option>
-      <option value="ro">Rondônia</option>
-      <option value="rs">Rio Grande do Sul</option>
-      <option value="rr">Roraima</option>
-      <option value="sc">Santa Catarina</option>
-      <option value="se">Sergipe</option>
-      <option value="sp">São Paulo</option>
-      <option value="to">Tocantins</option>
-    </select>
-  </div>
-
-  <div class="col-12">
-    <div class="form-check" id="check">
-      <input class="form-check-input" type="checkbox" id="gridCheck" required />
-      <label class="form-check-label" for="gridCheck">
-        <a href="">Aceito termos e condições</a>
-      </label>
-    </div>
-  </div>
-  <div class="col-12" id="botoes">
-    <button type="submit" class="btn btn-primary" id="cadastrarbotton">
-      Cadastrar
-    </button>
-    <button type="reset" class="btn btn-primary" id="limparbotton">
-      Limpar
-    </button>
-  </div>
-  </form>
   <br>
 
   <!-- rodapé da pagina -->
