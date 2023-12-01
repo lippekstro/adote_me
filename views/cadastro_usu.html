@@ -151,13 +151,6 @@
           passwordField2.addEventListener('input', validarSenha);
        </script>
         
-
-
-
-
-
-
-
           <div class="col-md-6">
             <label for="Gênero" class="form-label">Gênero</label>
             <select id="Gênero" class="form-select">
@@ -192,14 +185,39 @@
             <label for="imagem">Imagem de perfil:(opcional)</label>
             <input type="file" name="imagem" id="imgbotton" accept="image/*" />
           </div>
+          <hr> 
 
 
+          <p>Endereço</p>
+          <div class="col-md-6">
+            <label>CEP</label>
+            <input type="text" name="cpf" size="9" maxlength="9" required />
+            <input type="text" name="cpf2" size="2" maxlength="2" required />
+          </div>
+         
+          <div class="row">
 
 
-          <!-- Gabriel -->
-          <div class="col-12">
-            <label for="inputAddress" class="form-label">Endereço</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="Numero, Rua, apartamento..." required />
+            <div class="col">
+              <label for="inputCity" class="form-label">Rua</label>
+              <input type="text" class="form-control" id="inputCity" required placeholder="Rua" />
+            </div>
+            <div class="col">
+              <label for="inputCity" class="form-label">Nº</label>
+              <input type="text" class="form-control" id="inputCity" required placeholder="Número" />
+            </div>
+            
+            <div class="col">
+              <label for="inputCity" class="form-label">Bairro</label>
+              <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" />
+            </div>
+          </div>
+
+
+         
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Complemento</label>
+            <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" />
           </div>
 
 
@@ -208,11 +226,6 @@
             <label for="inputCity" class="form-label">Cidade</label>
             <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" />
           </div>
-
-
-
-
-
 
           <div class="col-md-4">
             <label for="inputState" class="form-label">Estado</label>
