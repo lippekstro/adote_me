@@ -4,19 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login</title>
-  <link rel="shortcut icon" href="/imgs/logofavicon.png" type="image/x-icon">
+  <title>Perfil</title>
+  <link rel="shortcut icon" href="/imgs/logofavicon.png" type="image/x-icon" />
 
-
-  <link rel="stylesheet" href="/css/login.css" />
-
+  <link rel="stylesheet" href="/css/perfil02.css" />
 
   <i class="bi bi-facebook"></i>
   <i class="bi bi-instagram"></i>
   <i class="bi bi-twitter-x"></i>
-  <!-- site do scrit https://fontawesome.com/start -->
-  <script src="https://kit.fontawesome.com/782bd950e1.js" crossorigin="anonymous"></script>
-
+  <!-- biblioteca externa para icones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -30,33 +27,34 @@
     <div class="container text-center" id="top">
       <div class="row">
         <div class="col">
-          <a href="index.html"><img src="/imgs/Imglogo.png" alt="Adote-Me" title="Adote-Me" id="AdoteMe"></a>
+          <a href="index.html"><img src="/imgs/Imglogo.png" alt="Adote-Me" title="Adote-Me" id="AdoteMe" /></a>
         </div>
         <div class="col">
-          <input list="browsers" name="browser" id="browser" placeholder="Buscar">
+          <input list="browsers" name="browser" id="browser" placeholder="Buscar" />
 
           <datalist id="browsers">
-            <option value="Cachorro">
-            <option value="Gato">
-            <option value="Coelho">
-            <option value="Caramelo">
-            <option value="Hamster">
-            <option value="Vira lata">
-            <option value="Peixe">
-            <option value="Ave">
-            <option value="Poodle">
-            <option value="Pug">
-            <option value="Golden">
-
-
-
+            <option value="Cachorro"></option>
+            <option value="Gato"></option>
+            <option value="Coelho"></option>
+            <option value="Caramelo"></option>
+            <option value="Hamster"></option>
+            <option value="Vira lata"></option>
+            <option value="Peixe"></option>
+            <option value="Ave"></option>
+            <option value="Poodle"></option>
+            <option value="Pug"></option>
+            <option value="Golden"></option>
           </datalist>
+
           <button id="btnBusca">Buscar</button>
         </div>
         <div class="col">
-          <!--                     <a href="login.html"><button type="submit" class="btn btn-dark" id="Login">Login</button></a> -->
-          <a href="cadastro_usu.html"><button type="submit" class="btn btn-dark"
-              id="Quero adotar">Cadastrar</button></a>
+          <a href="login.html"><button type="submit" class="btn btn-dark" id="Login">
+              Login
+            </button></a>
+          <a href="cadastro_usu.html"><button type="submit" class="btn btn-dark" id="Quero adotar">
+              Cadastrar
+            </button></a>
           <a href="denuncie.html"><button type="button" class="btn btn-danger">Denuncie</button></a>
         </div>
       </div>
@@ -67,64 +65,103 @@
       <div class="row row-cols-6" id="navlink">
         <div class="col"><a href="index.html">Home</a></div>
         <div class="col"><a href="catalogo.html">Catálago de Pet</a></div>
-        <!--<div class="col"><a href="faleconosco.html">Fale Conosco</a></div>-->
+        <!--           <div class="col"><a href="faleconosco.html">Fale Conosco</a></div>-->
         <div class="col"><a href="faq.html">FAQ</a></div>
-        <!--                 <div class="col"><a href=""></a></div>  falta criar link -->
+        <!--           <div class="col"><a href=""></a></div> --> <!-- falta criar um link -->
         <div class="col"><a href="dicas.html">Dicas de cuidado</a></div>
         <div class="col"><a href="sobrenos.html">Quem somos</a></div>
-
 
       </div>
     </div>
   </nav>
 
-  <!-- Gabriel-Botei a div "fundo" mais pra cima -->
-  <div class="fundo">
-    <br>
-
-    <form>
-      <h1>Login</h1>
-      <!-- Gabriel -->
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-          placeholder="E-mail" required>
-        <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.
+  <!-- conteudo da pagina -->
+  <main>
+    <div class="card-group">
+      <div class="card">
+        <img src="/imgs/marcos.jpeg" alt="marcos" title="marcos" id="perfil_usu">
+        <div class="card-body">
+          <h5 class="card-title">Marcos Antônio</h5>
+          <div class="col-4" id="perfil_tutor">
+            <p><i class="fas fa-map-marker-alt"></i>
+              São Luis - MA</p>
+              <p>São Raimundo</p>
+            <p><i class="fab fa-whatsapp"></i>
+            (98) 91234-5678</p>
+          </div>
         </div>
       </div>
+      <div class="card">
+        <div class="col-sm-6 col-md-5 col-lg-6" id="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" id="slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/imgs/cachorro_perfil05.jpg" class="d-block w-100" alt="..." id="imagens">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/cachorro_perfil02.jpg" class="d-block w-100" alt="..." id="imagens">
+              </div>
+              <div class="carousel-item">
+                <img src="/imgs/cachorro_perfil03.jpg" class="d-block w-100" alt="..." id="imagens">
+              </div>
 
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Senha</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
-        <i class="fa fa-eye" id="eye"></i>
-
-        <script>
-          document.getElementById('eye').addEventListener('click', function () {
-            var exampleInputPassword1 = document.getElementById('exampleInputPassword1');
-
-            if (exampleInputPassword1.type === 'password') {
-              exampleInputPassword1.type = 'text';
-            } else {
-              exampleInputPassword1.type = 'password';
-            }
-          });
-        </script>
-
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
       </div>
-
-      <!-- Gabriel -->
-      <div class="esquecisenha">
-        <a href="esquecisenha.html">Esqueceu a senha?</a>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Caramelonildo</h5>
+          <ul>
+            <li>Caramelonildo</li>
+            <li>2 anos</li>
+            <li>Vira-lata</li>
+            <li>Macho</li>
+            <li>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="mb-3 form-check" id="check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-        <label class="form-check-label" for="exampleCheck1">Não sou robô</label>
-      </div>
-      <button type="submit" class="btn btn-primary" id="entrar">Entrar</button>
-    </form>
-  </div>
+    </div>
 
-  <!-- rodapé da pagina -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </main> <!-- rodapé da pagina -->
 
   <div class="copyright">
     <footer>
