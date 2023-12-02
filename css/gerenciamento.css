@@ -68,11 +68,26 @@ a:hover {
     text-decoration: none; /* Sublinhado ao passar nos links */
 }
 
+h1{
+    text-align: center;
 
+}
 
+.gerenciamento{
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
+table th{
+    text-align: center;
+    margin: auto;
+}
 
-
+table td{
+    position: center;
+    margin: auto;
+    text-align: center;
+}
 
 
 
