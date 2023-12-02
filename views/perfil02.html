@@ -76,92 +76,84 @@
   </nav>
 
   <!-- conteudo da pagina -->
-  <main>
-    <div class="card-group">
-      <div class="card">
-        <img src="/imgs/marcos.jpeg" alt="marcos" title="marcos" id="perfil_usu">
-        <div class="card-body">
-          <h5 class="card-title">Marcos Antônio</h5>
-          <div class="col-4" id="perfil_tutor">
-            <p><i class="fas fa-map-marker-alt"></i>
-              São Luis - MA</p>
-              <p>São Raimundo</p>
-            <p><i class="fab fa-whatsapp"></i>
-            (98) 91234-5678</p>
-          </div>
+  <div class="container text-center" id="slide">
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
         </div>
-      </div>
-      <div class="card">
-        <div class="col-sm-6 col-md-5 col-lg-6" id="carousel">
-          <div id="carouselExampleIndicators" class="carousel slide" id="slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/imgs/cachorro_perfil05.jpg" class="d-block w-100" alt="..." id="imagens">
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="/imgs/cachorro_perfil05.jpg" class="d-block w-100" alt="..." id="imagens">
-              </div>
-              <div class="carousel-item">
-                <img src="/imgs/cachorro_perfil02.jpg" class="d-block w-100" alt="..." id="imagens">
-              </div>
-              <div class="carousel-item">
-                <img src="/imgs/cachorro_perfil03.jpg" class="d-block w-100" alt="..." id="imagens">
-              </div>
+            <div class="carousel-item">
+              <img src="/imgs/cachorro_perfil02.jpg" class="d-block w-100" alt="..." id="imagens">
+            </div>
+            <div class="carousel-item">
+              <img src="/imgs/cachorro_perfil03.jpg" class="d-block w-100" alt="..." id="imagens">
+            </div>
 
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="col">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Caramelonildo</h5>
+              <ul>
+                <li>2 anos</li>
+                <li>Vira-lata</li>
+                <li>Macho</li>
+                <li>
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </form>
+                </li>
+              </ul>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Caramelonildo</h5>
-          <ul>
-            <li>Caramelonildo</li>
-            <li>2 anos</li>
-            <li>Vira-lata</li>
-            <li>Macho</li>
-            <li>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-              </form>
-            </li>
-          </ul>
+        <br>
+        <div class="card-group">
+          <div class="card" id="tutor">
+            <img src="/imgs/marcos.jpeg" alt="marcos" title="marcos" id="perfil_usu">
+            <div class="card-body">
+              <h5 class="card-title">Marcos Antônio</h5>
+              <div class="col-4" id="perfil_tutor">
+                <p><i class="fas fa-map-marker-alt"></i>
+                  <strong>São Luis - MA</strong> / São Raimundo</p>
+                <p><i class="fab fa-whatsapp"></i>
+                  (98) 91234-5678</p>
+              </div>
+            </div>
+          </div>
         </div>
+
+
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </main> <!-- rodapé da pagina -->
+  </div>
+  <br>
+  
+  <!-- rodapé da pagina -->
 
   <div class="copyright">
     <footer>
@@ -191,3 +183,87 @@
 </body>
 
 </html>
+
+
+<!-- 
+
+  
+  <div class="card">
+    <div class="col-sm-6 col-md-5 col-lg-6" id="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" id="slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/imgs/cachorro_perfil05.jpg" class="d-block w-100" alt="..." id="imagens">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/cachorro_perfil02.jpg" class="d-block w-100" alt="..." id="imagens">
+          </div>
+          <div class="carousel-item">
+            <img src="/imgs/cachorro_perfil03.jpg" class="d-block w-100" alt="..." id="imagens">
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+ -->
+
+
+<!-- 
+
+ <div class="card-group">
+  <div class="card">
+    <img src="/imgs/marcos.jpeg" alt="marcos" title="marcos" id="perfil_usu">
+    <div class="card-body">
+      <h5 class="card-title">Marcos Antônio</h5>
+      <div class="col-4" id="perfil_tutor">
+        <p><i class="fas fa-map-marker-alt"></i>
+          São Luis - MA</p>
+          <p>São Raimundo</p>
+        <p><i class="fab fa-whatsapp"></i>
+        (98) 91234-5678</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Caramelonildo</h5>
+      <ul>
+        <li>Caramelonildo</li>
+        <li>2 anos</li>
+        <li>Vira-lata</li>
+        <li>Macho</li>
+        <li>
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+ -->
