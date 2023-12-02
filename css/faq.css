@@ -78,6 +78,7 @@ h1 {
     gap: 50px;
 }
 
+
 .copyright {
     display: flex;
     text-align: center;
@@ -112,7 +113,6 @@ footer a {
     margin: 10px;
     gap: 30px 30px;
     justify-content: center;
-
 }
 
 
