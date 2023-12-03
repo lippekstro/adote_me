@@ -183,22 +183,15 @@ footer a {
 
 
 
-    .conclusao p{
-        text-align: justify;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 5%;
-      }
-
-    }
-
-
     .accordion {
         margin-top: 0;
         text-align: justify;
         margin-left: 5%;
         margin-right: 5%;
     }
+
+
+}
     
 /*da barra da segunda barra*/
 /* Estilos para (tablet) */
