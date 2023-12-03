@@ -89,34 +89,6 @@ table td{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .copyright {
     display: flex;
     text-align: center;
@@ -297,6 +269,10 @@ footer a {
      .gerenciamento {
         margin-left: 3%;
         margin-right: 3%;
+    }
+
+    button{
+        font-size: 10px;
     }
 
     .table tbody{

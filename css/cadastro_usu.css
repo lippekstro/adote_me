@@ -295,6 +295,8 @@ footer a {
 
     #formulariologin{
         width: 90%;
+        margin-top: 20px;
+      
     }
 
     .col-md-6{
@@ -308,6 +310,9 @@ footer a {
     .col-md-4{
         margin-left: 0;
     }
+
+        
+
 
 
   
