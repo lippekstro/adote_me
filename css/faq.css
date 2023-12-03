@@ -133,3 +133,140 @@ footer a {
     border-radius: 8px;
     background-color: #c1926f;
 }
+
+
+
+
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+ 
+}
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    #carouselExampleAutoplaying{
+        width: 80%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 10px;
+
+    }
+
+  h1{
+        padding: 0;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%; 
+
+    }
+
+
+
+    .conclusao p{
+        text-align: justify;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+      }
+
+    }
+
+
+    .accordion {
+        margin-top: 0;
+        text-align: justify;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+    }
+    
+    
+    #nav{
+        justify-content: space-evenly;
+
+
+     }
+
+    #navlink{
+        gap:15px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+
+
+    }
+   
+
+
+
+
+
+
+}
+
+
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+ 
+ 
+     }
+     #nav{
+        display: flex;
+         justify-content: space-evenly;
+         
+
+ 
+ 
+      }
+ 
+     #navlink{
+         gap:15px;
+         width: 100%;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         
+ 
+     }
+
+     .col-12{
+        display: flex;
+        flex: auto;
+     }
+}
