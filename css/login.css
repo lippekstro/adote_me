@@ -80,7 +80,9 @@ form{
     flex-direction: column;
     width: 35%;
     margin-bottom: 12.1%;
-background-color: white;
+    background-color: white;
+    position: relative;
+    z-index: 1;
     
 }
 
@@ -107,15 +109,30 @@ h1{
     text-align: center;
     margin-bottom: 40px;
 }
-.fundo{
+/* .fundo{
     background-image: url(/imgs/patas.jpg);
     background-repeat: repeat;
     background-size: 500px;
     position: relative;
     min-height: 100vh;
     padding-bottom: 2.5rem;
+} */
+
+.fundo{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
+.fundo video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 .mb-3{
 
     position: relative;
@@ -289,6 +306,27 @@ footer a {
         width: 90%;
     }
 
+    .fundo{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+    }
+    
+    .fundo video{
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    form{
+        opacity: 90%;
+
+    }
 
 
 
