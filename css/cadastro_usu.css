@@ -118,6 +118,43 @@ h1{
 
 }
 
+#formulariologin{
+    margin-top: 120px;
+    border: solid black 0.5px; 
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 75%;
+    margin-bottom: 12.1%;
+    background-color: white;
+
+}
+
+.col-md-6{
+    margin-left: 1px;
+    margin-top: 30px;
+
+}
+
+
+
+.col-md-4{
+    margin-left: 40px;
+}
+.col-md-2{
+
+    width: 160px;
+}
+
+
+
+
+
+
+
 
 .copyright {
     display: flex;
@@ -156,6 +193,8 @@ footer a {
 }
 
 
+
+
 /* estilos para barra de rolagem */
  
 ::-webkit-scrollbar{
@@ -171,3 +210,105 @@ footer a {
     border-radius: 8px;
     background-color: #c1926f;
 } 
+
+
+
+
+
+
+
+
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+ 
+}
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    
+}
+
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+   
+
+
+
+
+
+
+}
+
+
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    .col {
+       /*  flex: 1 1 100%; */
+       justify-content: space-between;
+       margin: none;
+
+
+    }
+    #nav{
+        justify-content: space-evenly;
+
+
+     }
+
+    #navlink{
+        gap:15px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+
+
+    }
+   
+    #check{
+        margin-right: 15%;
+    }
+
+    #formulariologin{
+        width: 90%;
+    }
+
+    .col-md-6{
+        width: 90%;
+    }
+    
+    #imgbotton{
+        width: 80%;
+    }
+
+    .col-md-4{
+        margin-left: 0;
+    }
+
+
+  
+}
