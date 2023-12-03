@@ -226,4 +226,18 @@ footer a {
     .col {
         flex: 1 1 100%;
     }
+    #nav{
+        justify-content: space-evenly;
+
+    }
+
+    #navlink{
+        gap:15px;
+    }
+    #navlink a {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+      
+    }
 }

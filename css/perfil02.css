@@ -115,15 +115,11 @@ ul{
     width: 80%;
 }
 
-.carousel{
-    height: 200px;
-
-}
-
-
 #imagens{
+    margin-right: 10%;
+    margin-left: 10%;
     border-radius: 5px;
-    height: 750px;
+    height: 720px;
     width: 350px;
 
 }
