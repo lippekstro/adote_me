@@ -89,6 +89,20 @@ table td{
     text-align: center;
 }
 
+.material-symbols-outlined{
+    margin: 15px;
+    justify-content: space-between;
+    font-size: 28px;
+
+}
+
+
+#editar a{
+    color: rgb(0, 255, 30);
+    background-color: blueviolet;
+    
+}
+
 .copyright {
     display: flex;
     text-align: center;
