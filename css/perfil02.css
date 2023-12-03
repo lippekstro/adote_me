@@ -192,3 +192,155 @@ footer a {
     border-radius: 8px;
     background-color: #c1926f;
 }
+
+
+
+
+
+
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+ 
+}
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+  
+  h1{
+        padding: 0;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%; 
+
+    }
+
+
+    .row{
+        padding: none;
+        height: 50%;
+    }
+
+    .carousel-ineer{
+        height: 50px;
+    }
+
+    #exampleFormControlTextarea1{
+        width: 100%;
+        height: 150px;
+        resize: none;
+        overflow: auto;
+        position: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .carousel{
+        
+        height: 320px;
+    }
+
+    #imagens{
+        margin-right: 10%;
+        margin-left: 10%;
+        border-radius: 5px;
+        height: 300px;
+        width: 350px;
+    
+    }
+    #carouselExampleIndicators{
+        display: flex;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 5%;
+        width: 360px;
+    }
+    
+
+
+}
+
+
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+    }
+    
+    
+    #nav{
+        justify-content: space-evenly;
+
+
+     }
+
+    #navlink{
+        gap:15px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+
+
+    }
+
+   
+}
+
+
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+ 
+ 
+     }
+     #nav{
+        display: flex;
+         justify-content: space-evenly;
+         
+      }
+ 
+     #navlink{
+         gap:15px;
+         width: 100%;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         
+ 
+     }
+
+     .col-12{
+        display: flex;
+        flex: auto;
+     }
+
+}
