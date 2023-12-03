@@ -238,7 +238,7 @@ footer a {
 
     .botoes {
         padding: 0;
-        width: 240px;
+        width: 191px;
     }
 
     .botoes tbody{
@@ -285,9 +285,7 @@ footer a {
         margin-right: 3%;
     }
 
-    button{
-        font-size: 10px;
-    }
+   
 
     .table tbody{
         padding: none;
