@@ -149,6 +149,15 @@ h1{
     width: 160px;
 }
 
+.col label{
+    display: flex;
+}
+
+
+.col-md-2{
+    width: 120px;
+}
+
 
 
 
@@ -310,6 +319,12 @@ footer a {
     .col-md-4{
         margin-left: 0;
     }
+    .row{
+
+    align-content:space-around
+    }
+
+
 
         
 
