@@ -10,7 +10,7 @@ try {
 ?>
 
 <section class="m-3 overflow-x-auto">
-    <table class="table table-striped border table-hover">
+    <table class="table table-striped border table-hover text-center">
         <tr>
             <th>id</th>
             <th>Pergunta</th>
