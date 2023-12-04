@@ -2,20 +2,19 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/db/conexao.php';
 
 class endereco {
-    public  $id;
+    public  $id_endereco;
     public  $cep;
     public  $rua;
     public  $quadra;
     public  $bairro;
     public  $cidade;
     public  $estado;
+    public  $id_usuario;
 
-
-
-    public function __construct($id = false)
+    public function __construct( $id_endereco = false)
         {
-            if ($id) {
-                $this->id = $id;
+            if ($id_endereco) {
+                $this->id_endereco = $id_endereco;
                 $this->carregar();
             }
         }
@@ -23,25 +22,25 @@ class endereco {
 
         public function carregar()
         {
-            $query = "SELECT * FROM endereco WHERE id_endereco = :id";
+            $query = "SELECT * FROM enderecos WHERE id_endereco = :id";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':id', $this->id_endereco);
             $stmt->execute();
             /* ao encontrar ela cria um array e depois atribui todos os valores restantes ao objeto */
-            $produto = $stmt->fetch();
-            $this->cep = $enderecos ['cep'];
-            $this->rua = $enderecos ['rua'];
-            $this->quadra = $enderecos ['quadra'];
-            $this->bairro = $enderecos ['bairro'];
-            $this->cidade = $enderecos ['cidade'];
-            $this->estado = $enderecos ['estado'];
+            $id_endereco = $stmt->fetch();
+            $this->cep = $id_endereco ['cep'];
+            $this->rua = $id_endereco ['rua'];
+            $this->quadra = $id_endereco ['quadra'];
+            $this->bairro = $id_endereco ['bairro'];
+            $this->cidade = $id_endereco ['cidade'];
+            $this->estado = $id_endereco ['estado'];
 
         }
 
         public function criar()
         {
-            $query = "INSERT INTO endereco (cep, rua, quadra, bairro, cidade, estado) 
+            $query = "INSERT INTO enderecos (cep, rua, quadra, bairro, cidade, estado) 
             VALUES  (:cep, :rua, :quadra, :bairro, :cidade, :estado)";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
@@ -58,17 +57,17 @@ class endereco {
 
         public static function listar()
         {
-            $query = "SELECT * FROM endereco";
+            $query = "SELECT * FROM enderecos";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->execute();
             $lista = $stmt->fetchAll();
-            return $endereco;
+            return $lista;
         }
 
         public function editar()
         {
-            $query = "UPDATE endereco SET cep = :cep, rua = :rua, quadra = :quadra, bairro = :bairro, cidade = :cidade, estado = :estado WHERE id_endereco = :id";
+            $query = "UPDATE enderecos SET cep = :cep, rua = :rua, quadra = :quadra, bairro = :bairro, cidade = :cidade, estado = :estado WHERE id_endereco = :id";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':cep', $this->cep);
@@ -82,7 +81,7 @@ class endereco {
 
         public function deletar()
         {
-            $query = "DELETE FROM endereco WHERE id_endereco = :id";
+            $query = "DELETE FROM enderecos WHERE id_endereco = :id";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':id', $this->id_endereco);
