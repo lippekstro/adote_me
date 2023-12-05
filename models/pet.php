@@ -3,16 +3,19 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/db/conexao.php';
 
 class pet {
     public  $id_pet;
-    public  $tipo;
     public  $nome;
-    public  $idade;
+    public  $tipo; 
     public  $raca;
     public  $tamanho;
-    public  $sexo;
+    public  $genero;
+    public  $peso;
     public  $cor;
-    public  $vacina;
-    public  $cadastro;
+    public  $img_pet;
+    public  $adocao;
+    public  $adotado;
     public  $bio;
+    public  $id_usuario;
+
 
     public function __construct( $id_pet = false)
         {
@@ -88,14 +91,14 @@ class pet {
             $stmt->bindValue(':tipo', $this->tipo);
             $stmt->bindValue(':raca', $this->raca);
             $stmt->bindValue(':tamanho', $this->tamanho);
-            $stmt->bindValue(":genero", $this->genero);
-            $stmt->bindValue(":peso", $this->peso);
-            $stmt->bindValue(":cor", $this->cor);
-            $stmt->bindValue(":img_pet", $this->img_pet);
-            $stmt->bindValue(":adocao", $this->adocao);
-            $stmt->bindValue(":adotado", $this->adotado);
-            $stmt->bindValue(":bio", $this->bio);
-            $stmt->bindValue(":id_usuario", $this->id_usuario);
+            $stmt->bindValue(':genero', $this->genero);
+            $stmt->bindValue(':peso', $this->peso);
+            $stmt->bindValue(':cor', $this->cor);
+            $stmt->bindValue(':img_pet', $this->img_pet);
+            $stmt->bindValue(':adocao', $this->adocao);
+            $stmt->bindValue(':adotado', $this->adotado);
+            $stmt->bindValue(':bio', $this->bio);
+            $stmt->bindValue(':id_usuario', $this->id_usuario);
             $stmt->execute();
         }
 

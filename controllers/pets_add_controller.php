@@ -26,8 +26,9 @@ try {
     $pets->genero = $genero;
     $pets->peso = $peso;
     $pets->cor = $cor;
+    $pets->img_pet = $img_pet;
     $pets->adocao = $adocao;
-    $pets->adotado = $adotado;
+    $pets->adotado= $adotado;
     $pets->bio = $bio;
     $pets->id_usuario = $id_usuario;
 

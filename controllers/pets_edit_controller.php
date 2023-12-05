@@ -14,8 +14,8 @@ try {
     $adotado = $_POST['adotado'];
     $bio = $_POST['bio'];
     $id_usuario = $_POST['id_usuario'];
-
-
+    
+    
     $pets = new pet ($id_pet);
     $pets->nome = $nome;
     $pets->tipo = $tipo;
@@ -29,7 +29,7 @@ try {
     $pets->bio = $bio;
     $pets->id_usuario = $id_usuario;
 
-    $pets->atualizar();
+    $pets->editar();
 
     header('Location: /adote_me/views/admin/faqs_listar.php');
     exit();
