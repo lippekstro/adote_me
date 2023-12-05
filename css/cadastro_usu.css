@@ -163,11 +163,29 @@ h1{
     position: relative;
 }
 
+#col1{
+    margin-top: 15px;
+
+}
+
+#diaa{
+    margin-top: 15px;
+
+}
+
+#genero{
+    margin-top: 15px;
+}
+
+#telefone{
+    margin-top: 15px;
+
+}
 
 #eye1{
     position: absolute;
     right: 30px;
-    top: 75%;
+    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -175,7 +193,7 @@ h1{
 #eye2 {
     position: absolute;
     right: 30px;
-    top: 75%;
+    top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
 }

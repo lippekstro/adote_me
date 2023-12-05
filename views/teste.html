@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="/imgs/logofavicon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/css/cadastro_usu.css" />
+
+
+    <i class="bi bi-facebook"></i>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-twitter-x"></i>
+
+    <!-- site do scrit https://fontawesome.com/start -->
+    <script src="https://kit.fontawesome.com/782bd950e1.js" crossorigin="anonymous"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+        defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container text-center" id="top">
+            <div class="row">
+                <div class="col">
+                    <a href="index.html"><img src="/imgs/Imglogo.png" alt="Adote-Me" title="Adote-Me"
+                            id="AdoteMe" /></a>
+                </div>
+                <div class="col">
+                    <input list="browsers" name="browser" id="browser" placeholder="Buscar">
+
+                    <datalist id="browsers">
+                        <option value="Cachorro">
+                        <option value="Gato">
+                        <option value="Coelho">
+                        <option value="Caramelo">
+                        <option value="Hamster">
+                        <option value="Vira lata">
+                        <option value="Peixe">
+                        <option value="Ave">
+                        <option value="Poodle">
+                        <option value="Pug">
+                        <option value="Golden">
+
+
+
+                    </datalist>
+                    <button id="btnBusca">Buscar</button>
+                </div>
+                <div class="col">
+                    <a href="login.html"><button type="submit" class="btn btn-dark" id="Login">Login</button></a>
+                    <a href="denuncie.html"><button type="button" class="btn btn-danger">Denuncie</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container text-center" id="nav">
+            <div class="row row-cols-6" id="navlink">
+                <div class="col"><a href="index.html">Home</a></div>
+                <div class="col"><a href="catalogo.html">Catálogo de Pet</a></div>
+                <div class="col"><a href="sobrenos.html">Quem somos</a></div>
+                <div class="col"><a href="faq.html">FAQ</a></div>
+                <div class="col"><a href="dicas.html">Dicas de cuidado</a></div>
+
+            </div>
+        </div>
+    </nav>
+    <div class="video">
+         <video src="/imgs/videocadastro.mp4" autoplay muted loop></video>
+        <form class="row g-3" id="formulariologin">
+
+            <form class="row g-3" id="formulariologin">
+                <h1>Cadastre-se</h1>
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">Nome</span>
+                    <input type="text" class="form-control" placeholder=" " aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">E-mail</span>
+                    <input type="email" class="form-control" id="inputEmail4" required placeholder=" " required />
+                </div>
+
+                <div class="col">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Senha</span>
+                        <input type="password" class="form-control" id="passwordField1" placeholder="  " required>
+                        <i class="fa fa-eye" id="eye1"></i>
+                        <script>
+                            document.getElementById('eye1').addEventListener('click', function () {
+                                var passwordField1 = document.getElementById('passwordField1');
+
+                                if (passwordField1.type === 'password') {
+                                    passwordField1.type = 'text';
+                                } else {
+                                    passwordField1.type = 'password';
+                                }
+                            });
+                        </script>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping">Repita</span>
+                        <input type="password" class="form-control" id="passwordField2" placeholder=" " required>
+                        <i class="fa fa-eye" id="eye2"></i>
+
+
+                        <script>
+                            document.getElementById('eye2').addEventListener('click', function () {
+                                var passwordField2 = document.getElementById('passwordField2');
+
+                                if (passwordField2.type === 'password') {
+                                    passwordField2.type = 'text';
+                                } else {
+                                    passwordField2.type = 'password';
+                                }
+                            });
+                        </script>
+
+                        <script>
+                            let passwordField1 = document.getElementById('passwordField1');
+                            let passwordField2 = document.getElementById('passwordField2');
+
+                            function validarSenha() {
+                                if (passwordField1.value != passwordField2.value) {
+                                    passwordField2.setCustomValidity("Senhas diferentes!");
+                                    passwordField2.reportValidity();
+                                    return false;
+                                } else {
+                                    passwordField2.setCustomValidity("");
+                                    return true;
+                                }
+                            }
+
+                            // verificar também quando o campo for modificado, para que a mensagem suma quando as senhas forem iguais
+                            passwordField2.addEventListener('input', validarSenha);
+                        </script>
+                    </div>
+
+                </div>
+                <br>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+
+                            <div class="input-group flex-nowrap">
+
+                                <span class="input-group-text" id="col1">Gênero</span>
+                                <select id="genero" class="form-select">
+                                    <option selected>Escolha...</option>
+                                    <option value="Feminino">Feminino</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Outros">Outros</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+
+                                <span class="input-group-text" id="col1">Telefone</span>
+                                <input type="tel" class="form-control" id="telefone" placeholder="Telefone"  required />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+
+                                <span class="input-group-text" id="col1">Nascimento</span>
+                                <input type="date" id="diaa" name="diaa" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group flex-nowrap">
+
+                    <span class="input-group-text" id="addon-wrapping">CPF</span>
+                    <input type="text" name="cpf" size="9" maxlength="9" required />
+                    <input type="text" name="cpf2" size="2" maxlength="2" required />
+                </div>
+                <div class="col-md-6">
+                    <label for="imagem">Imagem de perfil:(opcional)</label>
+                    <input type="file" name="imagem" id="imgbotton" accept="image/*" />
+                </div>
+                <hr>
+                <p>Endereço</p>
+
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">CEP</span>
+                    <input type="text" name="cpf" size="9" maxlength="9" required />
+
+                                              
+                </div>
+
+                <div class="col">
+                    <label for="inputCity" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="inputCity" required placeholder="Rua" />
+                                                
+                </div>
+                <div class="col">
+                    <label for="inputCity" class="form-label">Nº</label>
+                    <input type="text" class="form-control" id="inputCity" required placeholder="Número" />
+                </div>
+                <div class="col">
+                    <label for="inputCity" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" />
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" />
+                </div>
+
+
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" />
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">Estado</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Escolha...</option>
+                        <option value="ac">Acre</option>
+                        <option value="al">Alagoas</option>
+                        <option value="am">Amazonas</option>
+                        <option value="ap">Amapá</option>
+                        <option value="ba">Bahia</option>
+                        <option value="ce">Ceará</option>
+                        <option value="df">Distrito Federal</option>
+                        <option value="es">Espírito Santo</option>
+                        <option value="go">Goiás</option>
+                        <option value="ma">Maranhão</option>
+                        <option value="mt">Mato Grosso</option>
+                        <option value="ms">Mato Grosso do Sul</option>
+                        <option value="mg">Minas Gerais</option>
+                        <option value="pa">Pará</option>
+                        <option value="pb">Paraíba</option>
+                        <option value="pr">Paraná</option>
+                        <option value="pe">Pernambuco</option>
+                        <option value="pi">Piauí</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="rn">Rio Grande do Norte</option>
+                        <option value="ro">Rondônia</option>
+                        <option value="rs">Rio Grande do Sul</option>
+                        <option value="rr">Roraima</option>
+                        <option value="sc">Santa Catarina</option>
+                        <option value="se">Sergipe</option>
+                        <option value="sp">São Paulo</option>
+                        <option value="to">Tocantins</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check" id="check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck" required />
+                      <label class="form-check-label" for="gridCheck">
+                        <a href="">Aceito termos e condições</a>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="col-12" id="botoes">
+                    <button type="submit" class="btn btn-primary" id="cadastrarbotton">
+                      Cadastrar
+                    </button>
+                    <button type="reset" class="btn btn-primary" id="limparbotton">
+                      Limpar
+                    </button>
+                  </div>            
+            </form>
+        </form>
+    </div>
+    <br>
+    
+    <!-- rodapé da pagina -->
+
+  <div class="copyright">
+    <footer>
+      <p>ADOT.ME. TODOS OS DIREITOS RESERVADOS.2023</p>
+      <a href="termos.html">Termos e condições</a>
+      <br />
+      <a href="faleconosco.html">Fale conosco</a>
+      <div class="redessociais">
+        <a href="https://www.facebook.com/search/top?q=pets"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg></a>
+        <a href="https://www.instagram.com/adot.me.2023/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg></a>
+        <a href="https://twitter.com/Adot_me2023"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+          </svg></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+     
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- rodapé da pagina -->
+    <!-- 
+  <div class="copyright">
+    <footer>
+      <p>ADOT.ME. TODOS OS DIREITOS RESERVADOS.2023</p>
+      <a href="termos.html">Termos e condições</a>
+      <br />
+      <a href="faleconosco.html">Fale conosco</a>
+      <div class="redessociais">
+        <a href="https://www.facebook.com/search/top?q=pets"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+            height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+          </svg></a>
+        <a href="https://www.instagram.com/adot.me.2023/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+          </svg></a>
+        <a href="https://twitter.com/Adot_me2023"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+            fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+            <path
+              d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" />
+          </svg></a>
+      </div>
+    </footer>
+  </div>
+  </div>
+</body>
+
+</html> 
