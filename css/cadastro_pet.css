@@ -185,9 +185,17 @@ footer a {
     flex-direction: column;
     text-align: center;
     text-decoration: none;
+    color: white;
+
 
 
 }
+
+footer p {
+    width: 100%;
+    margin: 0;
+    
+};
 
 
 .copyright a {
@@ -263,8 +271,9 @@ footer a {
      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
      flex-direction: column;
      width: 80%;
-     margin-top: 50px;
-     margin-bottom: 3%;
+     margin: none;
+     margin-top: 35px;
+     margin-bottom: 6%;
      flex-direction: column;
 
  
@@ -285,69 +294,91 @@ footer a {
         margin-right: 15%;
     }
 
-    
-#caixas {
-    margin: 50px;
-    gap: 30px;
-    justify-content: flex-start;
-}
-
-#check{
-    justify-content: flex-start;
-
-}
-
-#check {
-    column-gap: 20px;
-    display: flex;
-
-
-}
-
-
-
-}
-
-/*da barra da segunda barra*/
-/* Estilos para (tablet) */
-@media only screen and (max-width: 768px) {
-    .col {
-        flex: 1 1 50%;
-    }
-}
-
-/* Estilos para (celulares) */
-@media only screen and (max-width: 480px) {
-    .col {
-        /*  flex: 1 1 100%; */
-        justify-content: space-between;
-        margin: none;
-
-
+        
+    form #caixas {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        flex-wrap: wrap;
+        text-align: center;
+                
+        
     }
 
-    #nav {
-        justify-content: space-evenly;
-
-
-    }
-
-    #navlink {
-        gap: 15px;
-        width: 100%;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-
-
+    #check{
+        justify-content: flex-start;
 
     }
 
     #check {
-        margin-right: 15%;
+        column-gap: 20px;
+        display: flex;
+        padding: 0%;
+        gap: 0%;
+
+
     }
 
+    #check a{
+        text-align: left;
+        font-size: 12px;
+
+
+    }
+
+    #top{
+        padding-left: none;
+        padding-right: none;
+        margin: none;
+    }
+
+   
+
+/*da barra da segunda barra*/
+    /* Estilos para (tablet) */
+    @media only screen and (max-width: 768px) {
+        .col {
+            flex: 1 1 50%;
+        }
+    }
+
+    /* Estilos para (celulares) */
+    @media only screen and (max-width: 480px) {
+        *{
+           
+            padding: 0;
+        } 
+
+       
+
+        
+        .col {
+            /*  flex: 1 1 100%; */
+            justify-content: space-between;
+            margin: none;
+
+
+        }
+
+
+        #navlink {
+            gap: 10px;
+            width: 100%;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: 0%;
+            align-content: flex-start;
 
 
 
+        }
+
+        
+    
+
+
+
+
+    }
 }
