@@ -1,7 +1,7 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/db/conexao.php';
 
-class endereco {
+class usuario {
     public  $id_usuario;
     public  $nome;
     public  $nascimento;
