@@ -104,12 +104,6 @@ h1 {
     margin: 15px;
 }
 
-/* #tipo #vacinado #Idade #Raca #cor #tamanho #genero #adocao{
-    margin: 15px;
-} */
-
-
-
 #exampleFormControlTextarea1{
     width: 70%;
     height: 150px;
@@ -127,7 +121,7 @@ p{
     margin-right: 15%;
 }
  
-#descicao{
+#descricao{
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -156,6 +150,12 @@ p{
 #caixas {
     margin: 50px;
     gap: 30px;
+    justify-content: flex-start;
+}
+
+#check{
+    justify-content: flex-start;
+
 }
 
 #check {
@@ -235,10 +235,7 @@ footer a {
 
 /*estilo para (para celular)*/
 @media only screen and (max-width: 480px) {
-
-    body{
-        max-width: 100%;
-    }
+   
     .row {
         flex-direction: column;
         text-align: center;
@@ -258,26 +255,54 @@ footer a {
     
     #formulariologin {
     
-   
-    display: flex;
+        
+     display: flex;
      border: solid black 0.5px;
      border-radius: 10px;
-     padding: 50px;
+     padding: 5px;
      box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
-     margin-left: 15%;
-     margin-right: 15%;
      flex-direction: column;
      width: 80%;
      margin-top: 50px;
      margin-bottom: 3%;
      flex-direction: column;
+
  
- 
- 
-   
- 
- 
- }  
+    }  
+
+
+    #descricao{
+        margin: none;
+    }
+
+
+    #exampleFormControlTextarea1{
+        width: 70%;
+        height: 150px;
+        resize: none;
+        overflow: auto;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    
+#caixas {
+    margin: 50px;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+#check{
+    justify-content: flex-start;
+
+}
+
+#check {
+    column-gap: 20px;
+    display: flex;
+
+
+}
 
 
 
