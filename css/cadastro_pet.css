@@ -1,36 +1,37 @@
-body{
+body {
     font-size: 12px;
     max-width: 100%;
 }
 
-#top{
+#top {
     margin-top: 8px;
 }
 
-.txBusca{
+.txBusca {
     border-radius: 6px;
     padding: 5px 11px;
 }
 
-#btnBusca{
-    border-radius: var(--bs-border-radius);;
+#btnBusca {
+    border-radius: var(--bs-border-radius);
+    ;
     background-color: black;
     color: white;
     padding: 6px 12px;
     font-size: 16px;
 }
 
-col{
+col {
     color: black;
     text-decoration: underline;
     padding: 10px;
-    margin: 0px; 
-    
+    margin: 0px;
+
 }
 
 
 
-#nav{
+#nav {
     display: flex;
     background-color: #c1926f;
     max-width: 99%;
@@ -38,12 +39,12 @@ col{
     padding: 10px;
     color: rgb(255, 255, 255);
     justify-content: center;
-  
+
 
 }
 
 
-#navlink{
+#navlink {
     display: flex;
     justify-content: center;
     margin-left: 100px;
@@ -51,56 +52,88 @@ col{
     width: 60%;
 }
 
-#nav a{
+#nav a {
     color: white;
     text-decoration: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 a:hover {
-    text-decoration: none; /* Sublinhado ao passar nos links */
+    text-decoration: none;
+    /* Sublinhado ao passar nos links */
 }
 
 
-h1{
+.container {
+    margin: 0 auto; /* Centraliza o conteúdo do container */
+}
+
+
+h1 {
     text-align: center;
 }
 
-form{
-    display: flex;
-     /*border: solid black 0.5px; fazer a borda no formulario */
+#formulariologin {
+    
+   
+   display: flex;
+    border: solid black 0.5px;
     border-radius: 10px;
     padding: 50px;
-/*  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);*/
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    /*flex-direction: column;*/
-    width: 100%;
-    margin-top: 15%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 50px;
     margin-bottom: 3%;
-    justify-content: center;
+    flex-direction: column;
+
+
+
+  
+
+
+}
+
+.col{
+    margin: 15px;
+}
+
+/* #tipo #vacinado #Idade #Raca #cor #tamanho #genero #adocao{
+    margin: 15px;
+} */
+
+
+
+#exampleFormControlTextarea1{
+    width: 70%;
+    height: 150px;
+    resize: none;
+    overflow: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+   }
+
+p{
+    width: 70%;
+    resize: none;
+    overflow: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
  
-
-    
+#descicao{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 
-
-
-#nasc.cpf{
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-
-}
-
-
-#file-upload-button{
+#file-upload-button {
     color: white;
     font-size: 16px;
     background: #0D6EFD;
@@ -108,28 +141,28 @@ form{
 
 }
 
-#check{
+#check {
     display: flex;
     justify-content: center;
-    gap: 20px
+    gap: 20px;
 }
 
-#botoes{
+#botoes {
     display: flex;
     justify-content: center;
     gap: 15px
 }
 
-#caixas{
+#caixas {
     margin: 50px;
     gap: 30px;
 }
 
-#check{
+#check {
     column-gap: 20px;
     display: flex;
-    
-    
+
+
 }
 
 
@@ -173,20 +206,20 @@ footer a {
 
 
 /* estilos para barra de rolagem */
- 
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     width: 7px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #c1926f;
-} 
+}
 
 
 
@@ -202,6 +235,10 @@ footer a {
 
 /*estilo para (para celular)*/
 @media only screen and (max-width: 480px) {
+
+    body{
+        max-width: 100%;
+    }
     .row {
         flex-direction: column;
         text-align: center;
@@ -219,6 +256,31 @@ footer a {
 
 
     
+    #formulariologin {
+    
+   
+    display: flex;
+     border: solid black 0.5px;
+     border-radius: 10px;
+     padding: 50px;
+     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+     margin-left: 15%;
+     margin-right: 15%;
+     flex-direction: column;
+     width: 80%;
+     margin-top: 50px;
+     margin-bottom: 3%;
+     flex-direction: column;
+ 
+ 
+ 
+   
+ 
+ 
+ }  
+
+
+
 }
 
 /*da barra da segunda barra*/
@@ -232,34 +294,35 @@ footer a {
 /* Estilos para (celulares) */
 @media only screen and (max-width: 480px) {
     .col {
-       /*  flex: 1 1 100%; */
-       justify-content: space-between;
-       margin: none;
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
 
 
     }
-    #nav{
+
+    #nav {
         justify-content: space-evenly;
 
 
-     }
+    }
 
-    #navlink{
-        gap:15px;
+    #navlink {
+        gap: 15px;
         width: 100%;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
-        
+
 
 
     }
-   
-    #check{
+
+    #check {
         margin-right: 15%;
     }
-        
 
 
-  
+
+
 }
