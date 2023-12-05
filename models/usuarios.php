@@ -16,7 +16,7 @@ class endereco {
     public function __construct( $id_usuario = false)
         {
             if ($id_usuario) {
-                $this->id_endereco = $id_usuario;
+                $this->id_usuario = $id_usuario;
                 $this->carregar();
             }
         }
@@ -24,22 +24,22 @@ class endereco {
 
         public function carregar()
         {
-            $query = "SELECT * FROM usuarios WHERE id_usuario = :id_usuarios";
+            $query = "SELECT * FROM usuarios WHERE id_usuario = :id";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':id', $this->id_usuario);
             $stmt->execute();
             /* ao encontrar ela cria um array e depois atribui todos os valores restantes ao objeto */
             $id_usuario= $stmt->fetch();
-            $this->cep = $id_usuario ['nome'];
-            $this->rua = $id_usuario ['nascimento'];
-            $this->quadra = $id_usuario ['cpf'];
-            $this->bairro = $id_usuario ['genero'];
-            $this->cidade = $id_usuario ['telefone'];
-            $this->estado = $id_usuario ['email'];
-            $this->estado = $id_usuario ['senha'];
-            $this->estado = $id_usuario ['img_usuario'];
-            $this->estado = $id_usuario ['nivel_acesso'];
+            $this->nome = $id_usuario ['nome'];
+            $this->nascimento = $id_usuario ['nascimento'];
+            $this->cpf= $id_usuario ['cpf'];
+            $this->genero = $id_usuario ['genero'];
+            $this->telefone = $id_usuario ['telefone'];
+            $this->email = $id_usuario ['email'];
+            $this->senha = $id_usuario ['senha'];
+            $this->img_usuario = $id_usuario ['img_usuario'];
+            $this->nivel_acesso= $id_usuario ['nivel_acesso'];
         }
 
         public function criar()
@@ -74,7 +74,7 @@ class endereco {
 
         public function editar()
         {
-            $query = "UPDATE usuarios SET nome = :nome, nascimento = :nascimento, cpf = :cpf, genero = :genero, telefone = :telefone, email = :email,senha=:senha,img_usuario=:img_usuario,nivel_acesso=:nivel_acesso  WHERE id_usuarios = :id";
+            $query = "UPDATE usuarios SET nome = :nome, nascimento = :nascimento, cpf = :cpf, genero = :genero, telefone = :telefone, email = :email,senha=:senha,img_usuario=:img_usuario,nivel_acesso=:nivel_acesso  WHERE id_usuario = :id";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':nome', $this->nome);
