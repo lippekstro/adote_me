@@ -310,15 +310,31 @@ footer a {
 
  
  
-      }
- 
-     #navlink{
-         gap:15px;
-         width: 100%;
-         flex-direction: row;
-         flex-wrap: nowrap;
-         justify-content: space-between;
-         
- 
-     } 
+     
+         #navlink{
+            gap:15px;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: none;
+            
+            
+    
+       }
+       #navlink col a {
+           margin: none;
+           width: 100%;
+       }
+       col a{
+           width: 100%;
+       }
+    
+       .row .col{
+           width: 100%;
+       }
+    
+    
+}
+
 }

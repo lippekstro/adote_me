@@ -362,18 +362,33 @@ footer p {
         }
 
 
-        #navlink {
-            gap: 10px;
+        #navlink{
+            gap: 5px;       
+            row-gap: 5px;
+            column-gap: 5px;
             width: 100%;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: nowrap;
             justify-content: space-between;
-            margin: 0%;
-            align-content: flex-start;
-
-
-
-        }
+            
+            
+    
+       }
+       #navlink col a {
+           margin: none;
+           width: 100%;
+       }
+       col a{
+           width: 100%;
+           
+       }
+    
+       .row .col{
+           width: 100%;
+           
+       }
+    
+    
         
         #exampleFormControlTextarea1{
             width: 70%;
