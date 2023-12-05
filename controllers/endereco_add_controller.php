@@ -1,15 +1,25 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/faq.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/endereco.php';
 
 try {
-    $pergunta = $_POST['pergunta'];
-    $resp = $_POST['resposta'];
+    $cep = $_POST['cep'];
+    $quadra = $_POST['quadra'];
+    $bairro = $_POST['bairro'];
+    $cidade = $_POST['cidade'];
+    $estado = $_POST['estado'];
+    $rua = $_POST['rua'];
+    $id_usuario = $_POST['id_usuario'];
 
-    $faq = new Faq();
-    $faq->faq_pergunta = $pergunta;
-    $faq->faq_resposta = $resp;
+    $enderecos = new endereco ($id_endereco);
+    $enderecos->cep = $cep;
+    $enderecos->rua = $rua;
+    $enderecos->quadra = $quadra;
+    $enderecos->bairro = $bairro;
+    $enderecos->cidade = $cidade;
+    $enderecos->estado = $estado;
+    $enderecos->id_usuario = $id_usuario;
 
-    $faq->criar();
+    $enderecos->criar();
 
     header('Location: /adote_me/views/admin/faqs_listar.php');
     exit();
