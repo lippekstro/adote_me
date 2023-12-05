@@ -13,6 +13,10 @@ try {
     $img_usuario = $_POST['img_usuario'];
     $nivel_acesso= $_POST['nivel_acesso'];
 
+    if (!empty($_FILES['img_usuario']['tmp_name'])) {
+        $img_usuario = file_get_contents($_FILES['img_usuario']['tmp_name']);
+    }
+
     $usuarios = new usuario($id_usuario);
     $usuarios->nome = $nome;
     $usuarios->nascimento = $nascimento;

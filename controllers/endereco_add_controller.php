@@ -8,8 +8,9 @@ try {
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
     $rua = $_POST['rua'];
+    $id_endereco = $_POST['id_endereco'];
     $id_usuario = $_POST['id_usuario'];
-
+    
     $enderecos = new endereco ($id_endereco);
     $enderecos->cep = $cep;
     $enderecos->rua = $rua;
