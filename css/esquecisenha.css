@@ -162,7 +162,22 @@ footer a {
 @media only screen and (max-width: 768px) {
 
 
-
+    form{
+        display: flex;
+        border: solid black 0.5px; /* fazer a borda no formulario */
+        border-radius: 10px;
+        padding: 50px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-bottom: 500px;
+        margin-top: 60%;
+    
+        
+    }
 
 
 
@@ -192,6 +207,27 @@ footer a {
         margin-right: 5%;
         margin-top: 5%; 
 
+    }
+
+    form{
+        border: solid black 0.5px; /* fazer a borda no formulario */
+        border-radius: 10px;
+        padding: 50px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-bottom: 500px;
+        margin-top: 60%;
+    
+        
+    }
+
+    .formulario{      
+        margin-top: 30%;
+        margin-bottom: 80%;
     }
 
   
