@@ -9,18 +9,13 @@ try {
     $tamanho = $_POST['tamanho'];
     $genero = $_POST['genero'];
     $peso = $_POST['peso'];
-    $img_pet = $_POST['cor'];
-    $cor = $_POST['img_pet'];
+    $cor = $_POST['cor'];
     $adocao = $_POST['adocao'];
     $adotado = $_POST['adotado'];
     $bio = $_POST['bio'];
     $id_usuario = $_POST['id_usuario'];
-    
-    if (!empty($_FILES['img_pet']['tmp_name'])) {
-        $img_pet = file_get_contents($_FILES['img_pet']['tmp_name']);
-    }
 
-    
+
     $pets = new pet ($id_pet);
     $pets->nome = $nome;
     $pets->tipo = $tipo;
