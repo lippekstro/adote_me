@@ -1,37 +1,36 @@
-body {
+body{
     font-size: 12px;
     max-width: 100%;
 }
 
-#top {
+#top{
     margin-top: 8px;
 }
 
-.txBusca {
+.txBusca{
     border-radius: 6px;
     padding: 5px 11px;
 }
 
-#btnBusca {
-    border-radius: var(--bs-border-radius);
-    ;
+#btnBusca{
+    border-radius: var(--bs-border-radius);;
     background-color: black;
     color: white;
     padding: 6px 12px;
     font-size: 16px;
 }
 
-col {
+col{
     color: black;
     text-decoration: underline;
     padding: 10px;
-    margin: 0px;
-
+    margin: 0px; 
+    
 }
 
 
 
-#nav {
+#nav{
     display: flex;
     background-color: #c1926f;
     max-width: 99%;
@@ -39,12 +38,12 @@ col {
     padding: 10px;
     color: rgb(255, 255, 255);
     justify-content: center;
-
+  
 
 }
 
 
-#navlink {
+#navlink{
     display: flex;
     justify-content: center;
     margin-left: 100px;
@@ -52,19 +51,24 @@ col {
     width: 60%;
 }
 
-#nav a {
+#nav a{
     color: white;
     text-decoration: none;
 }
 
-a {
+a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
 a:hover {
-    text-decoration: none;
-    /* Sublinhado ao passar nos links */
+    text-decoration: none; /* Sublinhado ao passar nos links */
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: none;
 }
 
 
@@ -100,9 +104,7 @@ h1 {
 
 }
 
-.col{
-    margin: 15px;
-}
+
 
 #exampleFormControlTextarea1{
     width: 70%;
@@ -161,8 +163,7 @@ p{
 #check {
     column-gap: 20px;
     display: flex;
-
-
+    
 }
 
 
