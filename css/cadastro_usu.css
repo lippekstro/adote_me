@@ -191,6 +191,7 @@ h1{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 10;
 }
 
 #eye2 {
@@ -199,6 +200,8 @@ h1{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
+    z-index: 10;
+
 }
 
 .video{
