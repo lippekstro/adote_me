@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <main>
+
+        
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="cadastro_pet.html">cadastro de pet</a></li>
+                <li><a href="cadastro_pet.html">cadastro de pet</a></li>
+                <li><a href="faq.html">cadastro de pet</a></li>
+            </ul>
+        </menu>
+
+        <style>
+            menu {
+                display: none;
+            }
+
+            #burguer {
+                background-color: rgb(33, 33, 33);
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                width: 20px;
+            }
+
+            #burguer:hover {
+                background-color: white;
+                color: black;
+            }
+
+            ul{
+                background-color: aqua;
+            }
+        </style> 
+    </main>
+    <script>
+        function clickMenu() {
+            var itens = document.getElementById('itens');
+
+            if (itens.style.display === 'block') {
+                itens.style.display = 'none';
+            } else { 
+                itens.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
