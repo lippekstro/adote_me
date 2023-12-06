@@ -124,6 +124,23 @@ ul{
 
 }
 
+.faq{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+form{
+    border-radius: 10px;
+}
+
+.faqs p {
+    text-align: center;
+}
+
+
+
 
 
 

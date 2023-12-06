@@ -2,6 +2,8 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/pet.php';
 
+
+
 try {
   $id = $_GET['id'];
   $pet = new Pet($id);
@@ -12,6 +14,7 @@ try {
 
 
 ?>
+<link rel="stylesheet" href="/adote_me/css/perfil02.css">
 
 <!-- conteudo da pagina -->
 <div class="container text-center" id="slide">
@@ -84,6 +87,22 @@ try {
 
     </div>
   </div>
+</div>
+<div class="faqs">
+  <form action="perguntas">
+    <p>Perguntas e respostas</p>
+    <br>
+    <p>Pergunte o que você quer saber</p>
+    <div class="input-group">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
+      <textarea class="form-control" aria-label="With textarea"></textarea>
+    </div>
+  </form>
+
+
+
+
+
 </div>
 
 <?php
