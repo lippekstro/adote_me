@@ -88,33 +88,33 @@ try {
   </div>
 </div>
 <div class="forum">
-  <form action="perguntas2">
-
-    <h5 class="card-title" id="titulo1">Perguntas e Respostas</h5>
-    <br>
-    <p>Pergunte o que você quer saber</p>
-    <div class="input-group">
-      <textarea class="form-control" aria-label="With textarea" placeholder="Escreva..." id="campoperguntas"></textarea>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
-
-      <div class="resposta">
-
-        <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Pergunta</label>
-          <div class="col-sm-10">
-            <input type="text" readonly class="form-control-plaintext" id="staticpergunta" value="">
+        <form action="perguntas2">
+      
+          <h5 class="card-title" id="titulo1">Perguntas e Respostas</h5>
+          <br>
+          <p>Pergunte o que você quer saber</p>
+          <div class="input-group">
+            <textarea class="form-control" aria-label="With textarea" placeholder="Escreva..." id="campoperguntas"></textarea>
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
           </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Resposta</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputresposta">
+
+          <div class="resposta">
+      
+            <div class="mb-3 row">
+              <label for="staticEmail" class="col-sm-2 col-form-label">Pergunta</label>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticpergunta" value="">
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="inputPassword" class="col-sm-2 col-form-label">Resposta</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputresposta">
+              </div>
+            </div>
           </div>
-        </div>
+        </form>
       </div>
-    </div>
-  </form>
-</div>
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';
