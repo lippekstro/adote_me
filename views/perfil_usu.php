@@ -97,8 +97,8 @@ try {
 
 
     <div class="input-group">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
       <textarea class="form-control" aria-label="With textarea" placeholder="Escreva..." id="campoperguntas"></textarea>
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
     </div>
   </form>
 
