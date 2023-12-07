@@ -98,7 +98,19 @@ try {
       <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
 
       <div class="resposta">
-        <p></p>
+
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-sm-2 col-form-label">Pergunta</label>
+          <div class="col-sm-10">
+            <input type="text" readonly class="form-control-plaintext" id="staticpergunta" value="">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-sm-2 col-form-label">Resposta</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputresposta">
+          </div>
+        </div>
       </div>
     </div>
   </form>
