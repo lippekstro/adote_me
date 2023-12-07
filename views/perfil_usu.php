@@ -88,22 +88,19 @@ try {
     </div>
   </div>
 </div>
-<div class="faqs">
-  <form action="perguntas">
-    <p>Perguntas e respostas</p>
+<form action="perguntas2">
+
+    <h5 class="card-title" id="titulo1">Perguntas e Respostas</h5>
     <br>
+
     <p>Pergunte o que você quer saber</p>
+
+
     <div class="input-group">
       <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
-      <textarea class="form-control" aria-label="With textarea"></textarea>
+      <textarea class="form-control" aria-label="With textarea" placeholder="Escreva..." id="campoperguntas"></textarea>
     </div>
   </form>
-
-
-
-
-
-</div>
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';

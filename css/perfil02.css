@@ -124,20 +124,76 @@ ul{
 
 }
 
+
 .faq{
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 5%;
     width: 100%;
+    ;
 }
 
 form{
-    border-radius: 10px;
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+
 }
 
 .faqs p {
     text-align: center;
 }
+
+h5{
+    text-align: center;
+}
+
+
+
+
+#perguntas_pet p{
+    text-align: left;
+}
+
+#perguntas1{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.--bs-card-border-color{
+    border-color: white;
+}
+
+#button-addon2{
+    background-color: #0d6efd;
+}
+#button-addon2  {
+    color: white
+}
+
+
+
+
+#infopet{
+    border: none;
+}
+#tutor{
+    border: none;
+   }
+
+#pergunta1{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.card{
+    border: 0;
+}
+
+
 
 
 
@@ -345,30 +401,32 @@ footer a {
          
       }
  
-     
-      #navlink{
-        gap:15px;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin: none;
+     #navlink{
+         gap:15px;
+         width: 100%;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         
+ 
+     }
+
+     .col-12{
+        display: flex;
+        flex: auto;
+     }
+
+     form{
+        margin-left: 5%;
+        margin-right: 5%;
+     }
+
+  
+
+     #perguntas_pet p{
         
-        
-
-   }
-   #navlink col a {
-       margin: none;
-       width: 100%;
-   }
-   col a{
-       width: 100%;
-   }
-
-   .row .col{
-       width: 100%;
-   }
-
-
+        width: 100px;
+        text-align: justify;
+    }
 
 }
