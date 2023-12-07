@@ -134,31 +134,31 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
             <div class="col">
                 <label for="inputCity" class="form-label">Rua</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Rua" />
+                <input type="text" class="form-control" id="inputCity" required placeholder="Rua" required/>
 
             </div>
             <div class="col">
                 <label for="inputCity" class="form-label">Nº</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Número" />
+                <input type="text" class="form-control" id="inputCity" required placeholder="Número" required/>
             </div>
             <div class="col">
                 <label for="inputCity" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" />
+                <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" required/>
             </div>
 
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">Complemento</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" />
+                <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" required />
             </div>
 
 
             <div class="col-md-6">
                 <label for="inputCity" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" />
+                <input type="text" class="form-control" id="inputCity" required placeholder="Cidade"required />
             </div>
             <div class="col-md-4">
                 <label for="inputState" class="form-label">Estado</label>
-                <select id="inputState" class="form-select">
+                <select id="inputState" class="form-select" required>
                     <option selected>Escolha...</option>
                     <option value="ac">Acre</option>
                     <option value="al">Alagoas</option>
