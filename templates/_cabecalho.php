@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -55,9 +60,19 @@
                 </div>
 
                 <div class="col">
+                    <?php if(!isset($_SESSION['usuario'])): ?>
                     <a href="/adote_me/views/login.php"><button type="submit" class="btn btn-dark" id="Login">
                             Login
                         </button></a>
+                    <?php elseif(isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] == 1): ?>
+                        <a href="/adote_me/views/"><button type="submit" class="btn btn-dark" id="Login">
+                            Perfil
+                        </button></a>
+                    <?php elseif(isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] == 2): ?>
+                        <a href="/adote_me/views/"><button type="submit" class="btn btn-dark" id="Login">
+                            Gerenciar
+                        </button></a>
+                    <?php endif; ?>
                     <a href="/adote_me/views/cadastro_usu.php"><button type="submit" class="btn btn-dark" id="Quero adotar">
                             Cadastrar
                         </button></a>

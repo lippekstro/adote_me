@@ -6,11 +6,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/pet.php';
 try {
   $id = $_GET['id'];
   $pet = new Pet($id);
-  $dono = Pet::donoDoPet($pet->id_usuario);
+  $dono = Pet::buscaDadosDoPetDono($pet->id_usuario);
 } catch (PDOException $e) {
   echo $e->getMessage();
 }
-
 
 ?>
 <link rel="stylesheet" href="/adote_me/css/perfil_usu.css">
@@ -26,15 +25,8 @@ try {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/imgs/cachorro_perfil05.jpg" class="d-block w-100" alt="..." id="imagens">
+          <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" class="d-block w-100" alt="..." id="imagens">
         </div>
-        <div class="carousel-item">
-          <img src="/imgs/cachorro_perfil02.jpg" class="d-block w-100" alt="..." id="imagens">
-        </div>
-        <div class="carousel-item">
-          <img src="/imgs/cachorro_perfil03.jpg" class="d-block w-100" alt="..." id="imagens">
-        </div>
-
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -69,15 +61,15 @@ try {
       <br>
       <div class="card-group">
         <div class="card" id="tutor">
-          <img src="data:image;charset=utf8;base64,<?= base64_encode($dono['img_usuario']) ?>" alt="marcos" title="marcos" id="perfil_usu">
+          <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="marcos" title="marcos" id="perfil_usu">
           <div class="card-body">
-            <h5 class="card-title"><?= $dono['nome'] ?></h5>
+            <h5 class="card-title"><?= $dono[0]['nome'] ?></h5>
             <div class="col-4" id="perfil_tutor">
               <p><i class="fas fa-map-marker-alt"></i>
-                <strong>São Luis - MA</strong> / São Raimundo
+                <strong><?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?>
               </p>
               <p><i class="fab fa-whatsapp"></i>
-                (98) 91234-5678</p>
+              <?= $dono[0]['telefone'] ?></p>
             </div>
           </div>
         </div>
