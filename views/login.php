@@ -39,7 +39,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
     <!-- Gabriel -->
     <div class="esquecisenha">
-      <a href="esquecisenha.html">Esqueceu a senha?</a>
+      <a href="/adote_me/views/esquecisenha.php">Esqueceu a senha?</a>
     </div>
     <div class="mb-3 form-check" id="check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
