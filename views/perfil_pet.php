@@ -79,22 +79,7 @@ try {
     </div>
   </div>
 </div>
-<div class="forum">
-  <form action="perguntas2">
 
-    <h5 class="card-title" id="titulo1">Perguntas e Respostas</h5>
-    <br>
-    <p>Pergunte o que você quer saber</p>
-    <div class="input-group">
-      <textarea class="form-control" aria-label="With textarea" placeholder="Escreva..." id="campoperguntas"></textarea>
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Enviar</button>
-
-      <div class="resposta">
-        <p></p>
-      </div>
-    </div>
-  </form>
-</div>
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';

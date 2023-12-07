@@ -2,6 +2,9 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
 
+
+<link rel="stylesheet" href="/adote_me/css/login.css">
+
 <!-- Gabriel-Botei a div "fundo" mais pra cima -->
 <div class="fundo">
   <video src="/imgs/videologin.mp4" autoplay muted loop></video>
