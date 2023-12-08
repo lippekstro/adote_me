@@ -1,6 +1,10 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
+
+<head>
+<link rel="stylesheet" href="/adote_me/css/cadastro_pet.css">
+</head>
 <div class="video">
     <video src="/imgs/videocadastro.mp4" autoplay muted loop></video>
     <form class="row g-3" id="formulariologin">

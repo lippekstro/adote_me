@@ -12,7 +12,10 @@ try {
 }
 
 ?>
+<head>
 <link rel="stylesheet" href="/adote_me/css/perfil_usu.css">
+</head>
+
 
 <!-- conteudo da pagina -->
 <div class="container text-center" id="slide">

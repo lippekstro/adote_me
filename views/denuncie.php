@@ -1,6 +1,13 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
+
+
+<head>
+    <link rel="stylesheet" href="/adote_me/css/denucie.css">
+</head>
+
+
 <main>
   <img src="/imgs/denuncie.png" alt="" title="animais" id="animais" />
   <h1><b>Denuncie maus-tratos.</b></h1>

@@ -1,6 +1,10 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
+
+<head>
+<link rel="stylesheet" href="/adote_me/css/termos.css">
+</head>
 <div class="text">
   <h1>Termos e Condições</h1>
   <h4>Introdução</h4>

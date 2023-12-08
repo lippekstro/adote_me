@@ -2,6 +2,11 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
 
+<head>
+<link rel="stylesheet" href="/adote_me/css/sobrenos.css">
+
+</head>
+
 <div class="inicio">
   <p>
     Bem-vindo a <strong>Adot.me</strong> onde os corações se unem para criar lares

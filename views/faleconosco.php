@@ -2,6 +2,11 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
 
+
+<head>
+    <link rel="stylesheet" href="/adote_me/css/faleconosco.css">
+</head>
+
 <h1>Envie sua mensagem</h1>
 <form action="fale" id="fale">
 

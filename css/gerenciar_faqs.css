@@ -76,6 +76,7 @@ h1{
 .gerenciamento{
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 17%;
 }
 
 
@@ -106,6 +107,12 @@ table td{
     background-color: blueviolet;
     
 }
+
+
+
+
+
+
 
 .copyright {
     display: flex;
@@ -142,7 +149,6 @@ footer a {
     gap: 30px 30px;
     justify-content: center;
 }
-
 
 /* estilos para barra de rolagem */
  

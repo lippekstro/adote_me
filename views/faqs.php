@@ -8,8 +8,11 @@ try {
     echo $e->getMessage();
 }
 
-
 ?>
+
+<head>
+    <link rel="stylesheet" href="/adote_me/css/faqs.css">
+</head>
 
 <section class="m-3 d-flex justify-content-center">
     <div class="accordion col col-lg-6 col-sm-11" id="accordionExample">

@@ -10,6 +10,11 @@ try {
 
 ?>
 
+
+<head>
+    <link rel="stylesheet" href="/adote_me/css/catalogo_pet.css">
+</head>
+
 <!-- configuração para caroseul  -->
 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
