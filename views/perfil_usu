@@ -1,0 +1,36 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/pet.php';
+
+
+try {
+  $id = $_GET['id'];
+  $pet = new Pet($id);
+  $dono = Pet::buscaDadosDoPetDono($pet->id_usuario);
+} catch (PDOException $e) {
+  echo $e->getMessage();
+}
+
+?>
+<head>
+<link rel="stylesheet" href="/adote_me/css/perfil_usu.css">
+</head>
+
+
+<!-- conteudo da pagina -->
+
+<div class="perfil_usu">
+
+
+
+
+</div>
+
+
+
+
+
+
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';
+?>
