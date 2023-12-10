@@ -13,7 +13,7 @@ try {
 
 ?>
 <head>
-<link rel="stylesheet" href="/adote_me/css/perfil_usu.css">
+<link rel="stylesheet" href="/adote_me/css/perfil_pet.css">
 </head>
 
 
