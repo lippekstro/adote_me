@@ -82,7 +82,70 @@ session_start();
         </div>
     </header>
     <nav>
-        <div class="container text-center" id="nav">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" id="menu">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link active" href="catalogo.php">Catalogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sobrenos.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/adote_me/views/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="dicas.html">Dicas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="cadastro_pet.php">Cadastrar Pet</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <style>
+    #menu {
+      background-color: #c1926f;
+      font-size: 16px;
+    }
+
+    #menu a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #navbarScroll {
+      justify-content: space-between;
+      padding: 0 15px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    ul{
+      justify-content: space-evenly;
+      width: 100%;
+     
+    }
+
+
+
+    /* Additional styles for smaller screens */
+    @media only screen and (max-width: 480px) {
+      #menu {
+        font-size: 14px;
+      }
+    }
+  </style>
+       <!--  <div class="container text-center" id="nav">
             <div class="row row-cols-6" id="navlink">
 
                 <div class="col"><a href="/adote_me/views/catalogo_pet.php">Catálogo de pets</a></div>
@@ -92,7 +155,7 @@ session_start();
                 <div class="col"><a href="/adote_me/views/cadastro_pet.php">Cadastro de Pet</a></div>
 
             </div>
-        </div>
+        </div> -->
     </nav>
     </header>
     <main>
