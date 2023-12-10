@@ -83,7 +83,7 @@ session_start();
     </header>
     <nav>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar02">
     <div class="container-fluid" id="menu">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -99,7 +99,7 @@ session_start();
             <a class="nav-link active" href="/adote_me/views/sobrenos.php">Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/adote_me/views/faq.html">FAQ</a>
+            <a class="nav-link active" href="/adote_me/views/faq.php">FAQ</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/adote_me/views/dicas.php">Dicas</a>
@@ -135,7 +135,11 @@ session_start();
       width: 100%;
      
     }
+    #navbar02{
+      padding: none;
+      margin: none;
 
+    }
 
 
     /* Additional styles for smaller screens */

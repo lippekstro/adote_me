@@ -65,17 +65,23 @@ col {
 }
 
 .fundo {
-    background-image: url(/imgs/patas.jpg);
+    background-image: url(/adote_me/imgs/patas.jpg);
     background-repeat: repeat;
     background-size: 500px;
     position: relative;
     min-height: 100vh;
     padding-bottom: 2.5rem;
+
 }
 
 h1 {
     text-align: center;
-    gap: 50px;
+    margin: 0;
+    
+}
+
+.accordion-header{
+    margin: 0;
 }
 
 
