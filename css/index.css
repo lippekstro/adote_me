@@ -342,6 +342,13 @@ footer a {
 
 
     }
+    .conteudo p {
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+        width: 180px;
+        left: 30%
+     }
    
 
 

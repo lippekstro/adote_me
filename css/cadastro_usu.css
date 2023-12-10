@@ -137,8 +137,12 @@ h1{
     margin-bottom: 5%;
     background-color: white;
     margin-top: 5%;
-    /* opacity: 95%; */
-/*     background-image: linear-gradient(white,#c1926f );*/
+
+}
+
+
+#rua{
+    height: 20px;
 }
 
 .col-md-6{

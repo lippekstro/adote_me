@@ -93,19 +93,19 @@ session_start();
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
           <li class="nav-item">
-            <a class="nav-link active" href="catalogo.php">Catalogo</a>
+            <a class="nav-link active" href="/adote_me/views/catalogo.php">Catálogo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="sobrenos.html">Quem Somos</a>
+            <a class="nav-link active" href="/adote_me/views/sobrenos.php">Quem Somos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="/adote_me/views/faq.html">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="dicas.html">Dicas</a>
+            <a class="nav-link active" href="/adote_me/views/dicas.php">Dicas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="cadastro_pet.php">Cadastrar Pet</a>
+            <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
           </li>
         </ul>
       </div>
