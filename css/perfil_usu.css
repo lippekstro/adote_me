@@ -194,6 +194,15 @@ table th {
 
 }
 
+table tr{
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
 .copyright {
     display: flex;
     text-align: center;

@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     <link rel="stylesheet" href="/adote_me/css/cadastro_usu.css">
 </head>
 <div class="video">
-    <video src="/imgs/videocadastro.mp4" autoplay muted loop></video>
+    <video src="/adote_me/imgs/videocadastro.mp4" autoplay muted loop></video>
     <form class="row g-3" id="formulariologin">
 
         <form class="row g-3" id="formulariologin">
@@ -138,28 +138,43 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
             </div>
 
             <div class="col">
-                <label for="inputCity" class="form-label">Rua</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Rua" required/>
+                <div class="input-group flex-nowrap">
 
+                    <span class="input-group-text" id="col1">Rua</span>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Rua" required />
+                </div>
             </div>
             <div class="col">
-                <label for="inputCity" class="form-label">Nº</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Número" required/>
+                <div class="input-group flex-nowrap">
+
+                    <span class="input-group-text" id="col1">nº</span>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Número" required />
+                </div>
             </div>
             <div class="col">
-                <label for="inputCity" class="form-label">Bairro</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" required/>
+                <div class="input-group flex-nowrap">
+
+                    <span class="input-group-text" id="col1">Bairro</span>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Bairro" required />
+                </div>
+            </div>
+            <br>
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Complemnto</span>
+                <input type="text" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
             </div>
 
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Complemento</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" required />
-            </div>
 
+            
 
-            <div class="col-md-6">
-                <label for="inputCity" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="inputCity" required placeholder="Cidade"required />
+            
+
+            <div class="col">
+                <div class="input-group flex-nowrap">
+
+                    <span class="input-group-text" id="col1">Cidade</span>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Cidade" required />
+                </div>
             </div>
             <div class="col-md-4">
                 <label for="inputState" class="form-label">Estado</label>

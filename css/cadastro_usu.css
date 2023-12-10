@@ -58,7 +58,7 @@ col{
 
 a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 a:hover {
@@ -91,7 +91,7 @@ h1{
 
 
 #file-upload-button{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
     background: #0D6EFD;
     padding: 6px 12px;
@@ -102,6 +102,10 @@ h1{
     display: flex;
     justify-content: center;
     gap: 20px
+}
+
+#check a {
+    color: black;
 }
 
 #botoes{
@@ -220,6 +224,11 @@ h1{
     z-index: -1;
 }
 
+
+
+.form-check{
+    color: black;
+}
 
 
 
