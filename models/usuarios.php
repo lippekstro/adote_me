@@ -45,8 +45,7 @@ class usuario
 
     public function criar()
     {
-        $query = "INSERT INTO usuarios (nome, nascimento, cpf, genero, telefone, email,senha,img_usuario,nivel_acesso) 
-            VALUES  (:nome, :nascimento, :cpf, :genero, :telefone, :email,senha,img_usuario,nivel_acesso)";
+        $query = "INSERT INTO usuarios (nome, nascimento, cpf, genero, telefone, email,senha, img_usuario) VALUES  (:nome, :nascimento, :cpf, :genero, :telefone, :email, :senha,:img_usuario)";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
         $stmt->bindValue(':nome', $this->nome);
@@ -57,10 +56,9 @@ class usuario
         $stmt->bindValue(':email', $this->email);
         $stmt->bindValue(':senha', $this->senha);
         $stmt->bindValue(':img_usuario', $this->img_usuario);
-        $stmt->bindValue(':nivel_acesso', $this->nivel_acesso);
         $stmt->execute();
-        $this->id_usuario = $conexao->lastInsertId();
-        return $this->id_usuario;
+        $id_usuario = $conexao->lastInsertId();
+        return $id_usuario;
     }
 
     public static function listar()

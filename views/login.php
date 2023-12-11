@@ -8,19 +8,19 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 <!-- Gabriel-Botei a div "fundo" mais pra cima -->
 <div class="fundo">
   <video src="/adote_me/imgs/videologin.mp4" autoplay muted loop></video>
-  <form>
+  <form action="/adote_me/controllers/login_controller.php" method="POST">
     <h1>Login</h1>
     <!-- Gabriel -->
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail" required>
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail" required>
       <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.
       </div>
     </div>
 
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">Senha</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
+      <input type="password" name="senha" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
       <i class="fa fa-eye" id="eye"></i>
 
       <script>

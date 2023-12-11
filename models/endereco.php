@@ -4,8 +4,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/db/conexao.php';
 class endereco {
     public  $id_endereco;
     public  $cep;
+    public  $numero;
     public  $rua;
-    public  $quadra;
+    public  $complemento;
     public  $bairro;
     public  $cidade;
     public  $estado;
@@ -31,7 +32,7 @@ class endereco {
             $id_endereco = $stmt->fetch();
             $this->cep = $id_endereco ['cep'];
             $this->rua = $id_endereco ['rua'];
-            $this->quadra = $id_endereco ['quadra'];
+            $this->complemento = $id_endereco ['complemento'];
             $this->bairro = $id_endereco ['bairro'];
             $this->cidade = $id_endereco ['cidade'];
             $this->estado = $id_endereco ['estado'];
@@ -40,16 +41,18 @@ class endereco {
 
         public function criar()
         {
-            $query = "INSERT INTO enderecos (cep, rua, quadra, bairro, cidade, estado) 
-            VALUES  (:cep, :rua, :quadra, :bairro, :cidade, :estado)";
+            $query = "INSERT INTO enderecos (cep, rua, numero, complemento, bairro, cidade, estado, id_usuario) 
+            VALUES  (:cep, :rua, :numero, :complemento, :bairro, :cidade, :estado, :usuario)";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':cep', $this->cep);
             $stmt->bindValue(':rua', $this->rua);
-            $stmt->bindValue(':quadra', $this->quadra);
+            $stmt->bindValue(':numero', $this->numero);
+            $stmt->bindValue(':complemento', $this->complemento);
             $stmt->bindValue(':bairro', $this->bairro);
             $stmt->bindValue(':cidade', $this->cidade);
             $stmt->bindValue(':estado', $this->estado);
+            $stmt->bindValue(':usuario', $this->id_usuario);
             $stmt->execute();
             $this->id_endereco = $conexao->lastInsertId();
             return $this->id_endereco;
@@ -67,12 +70,13 @@ class endereco {
 
         public function editar()
         {
-            $query = "UPDATE enderecos SET cep = :cep, rua = :rua, quadra = :quadra, bairro = :bairro, cidade = :cidade, estado = :estado WHERE id_endereco = :id";
+            $query = "UPDATE enderecos SET cep = :cep, rua = :rua, numero = :numero, complemento = :complemento, bairro = :bairro, cidade = :cidade, estado = :estado WHERE id_endereco = :id";
             $conexao = Conexao::conectar();
             $stmt = $conexao->prepare($query);
             $stmt->bindValue(':cep', $this->cep);
             $stmt->bindValue(':rua', $this->rua);
-            $stmt->bindValue(':quadra', $this->quadra);
+            $stmt->bindValue(':numero', $this->numero);
+            $stmt->bindValue(':complemento', $this->complemento);
             $stmt->bindValue(':bairro', $this->bairro);
             $stmt->bindValue(":cidade", $this->cidade);
             $stmt->bindValue(":estado", $this->estado);
