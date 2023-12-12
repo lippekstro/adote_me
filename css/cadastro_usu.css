@@ -337,6 +337,13 @@ footer a {
 
 /* Estilos para (celulares) */
 @media only screen and (max-width: 480px) {
+    *{
+           
+        padding: 0;
+    } 
+
+    
+    
     .col {
        /*  flex: 1 1 100%; */
        justify-content: space-between;
@@ -352,7 +359,9 @@ footer a {
 
     
      #navlink{
-        gap:15px;
+        gap: 5px;   
+        row-gap: 5px;
+        column-gap: 5px;
         width: 100%;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -373,6 +382,14 @@ footer a {
    .row .col{
        width: 100%;
    }
+
+   .row{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    gap: 10px;
+}
 
 
    

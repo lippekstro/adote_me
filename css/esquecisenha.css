@@ -88,6 +88,8 @@ text-align: center;
 #botoes{
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
 }
 
 h1{
@@ -333,6 +335,14 @@ footer a {
        .row .col{
            width: 100%;
        }
+
+       .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 10px;
+    }
     
     
 }

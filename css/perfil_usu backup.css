@@ -412,6 +412,14 @@ footer a {
         flex: auto;
      }
 
+     .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 10px;
+        }
+
      form{
         margin-left: 5%;
         margin-right: 5%;

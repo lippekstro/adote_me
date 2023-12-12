@@ -1,6 +1,11 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
+
+<head>
+  <link rel="stylesheet" href="/adote_me/css/gerenciar_pets.css">
+</head>
+
 <h1>Gerenciamento de Pet's</h1>
 
 <div class="gerenciamento">

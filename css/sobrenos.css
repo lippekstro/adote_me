@@ -176,36 +176,14 @@ footer a {
 }
 /*estilo para (para celular)*/
 @media only screen and (max-width: 480px) {
-    .row {
-        flex-direction: column;
-        text-align: center;
-    }
+    
 
-    #txtBusca {
-        width: 100%;
+      #nav {
         margin-top: 10px;
-    }
-
-    #btnBusca {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-  
-  h1{
-        padding: 0;
-        text-align: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 10%; 
-
-    }
+      }
 
 
-    .row{
-        padding: none;
-        height: 50%;
-    }
+
 
     .carousel-ineer{
         height: 50px;
@@ -294,37 +272,28 @@ footer a {
          
     }
  
-    #navlink{
-        gap:15px;
-        width: 100%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        margin: none;
-        
-        
-
-   }
-   #navlink col a {
-       margin: none;
-       width: 100%;
-   }
-   col a{
-       width: 100%;
-   }
-
-   .row .col{
-       width: 100%;
-   }
-
-
-
+     #navlink{
+         gap:15px;
+         width: 100%;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         
+ 
+     }
 
      .col-12{
         display: flex;
         flex: auto;
      }
 
+     .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 10px;
+    }
      #textos{
         margin-bottom: 0;
      }

@@ -400,6 +400,15 @@ footer a {
         flex: auto;
      }
 
+
+     .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 10px;
+        }
+
       #nav {
         margin-top: 10px;
       }

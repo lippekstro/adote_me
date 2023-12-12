@@ -385,6 +385,12 @@ footer p {
 
         }
 
+        #nav{
+            justify-content: space-evenly;
+    
+    
+         }
+
 
         #navlink{
             gap: 5px;       
@@ -394,7 +400,8 @@ footer p {
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: space-between;
-            
+            margin: none;
+
             
     
        }
