@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 <link rel="stylesheet" href="/adote_me/css/cadastro_pet.css">
 </head>
 <div class="video">
-    <video src="/adote_me/imgs/videocadastro.mp4" autoplay muted loop></video>
+    <video src="/adote_me/imgs/gato_cadastro_pet.mp4" autoplay muted loop></video>
         <form class="row g-3" id="formulariologin">
 
             <form class="row g-3" id="formulariologin">

@@ -102,23 +102,30 @@ session_start();
               <a class="nav-link active" href="/adote_me/views/catalogo.php">Catálogo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/sobrenos.php">Quem Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/faq.php">FAQ</a>
+              <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="/adote_me/views/dicas.php">Dicas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
+              <a class="nav-link active" href="/adote_me/views/sobrenos.php">Quem Somos</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/adote_me/views/faq.php">FAQ</a>
+            </li>
+        
+           
           </ul>
         </div>
       </div>
     </nav>
 
     <style>
+      body{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+      }
+      
       #menu {
         background-color: #c1926f;
         font-size: 16px;

@@ -39,7 +39,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     </div>
 
     <div class="conteudo2">
-        <a href="/adote_me/views/catalogo_pet.php"><button type="submit" class="btn btn-dark" id="Queroadotar">
+        <a href="/adote_me/views/catalogo.php"><button type="submit" class="btn btn-dark" id="Queroadotar">
                 Quero adotar
             </button></a>
         <a href="/adote_me/views/faleconosco.php"><button type="submit" class="btn btn-dark" id="Queroadotar">

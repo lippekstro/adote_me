@@ -178,6 +178,7 @@ p{
     margin: 50px;
     gap: 30px;
     justify-content: flex-start;
+    font-size: 12px;
 }
 
 #check{
@@ -435,6 +436,10 @@ footer p {
             margin-right: 0;
             margin-bottom: 5px;
             gap: 10px;
+        }
+
+        #caixas{
+            font-size: 10px;
         }
         
 
