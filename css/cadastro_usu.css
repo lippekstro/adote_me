@@ -383,6 +383,7 @@ footer a {
     #formulariologin{
         width: 90%;
         margin-top: 20px;
+        padding: 20px;
       
     }
 
@@ -400,6 +401,10 @@ footer a {
     .row{
 
     align-content:space-around
+    }
+
+    #gap .row{
+        gap: 15px;
     }
 
 

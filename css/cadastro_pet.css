@@ -317,14 +317,7 @@ footer p {
     }
 
 
-    #exampleFormControlTextarea1{
-        width: 70%;
-        height: 150px;
-        resize: none;
-        overflow: auto;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
+ 
 
         
     form #caixas {
@@ -440,7 +433,31 @@ footer p {
 
         #caixas{
             font-size: 10px;
+            gap: 10px;
+            
         }
+
+        
+
+         
+        #formulariologin {
+        
+            
+            display: flex;
+            border: solid black 0.5px;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+            width: 90%;
+            margin: none;
+            margin-top: 35px;
+            margin-bottom: 6%;
+            flex-direction: column;
+            margin-right: 5%;
+            margin-left: 5%;
+    
+        
+        }  
         
 
         
