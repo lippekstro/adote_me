@@ -325,4 +325,18 @@ footer a {
     table td{
         padding: 0;
     }
+
+        
+    .copyright {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        margin-top: 140px;
+        bottom: 0;
+        width: 100%;
+        height: 10rem;
+
+    }
 }

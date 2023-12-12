@@ -2,8 +2,9 @@
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
 
+
 <head>
-  <link rel="stylesheet" href="/adote_me/css/gerenciar_pets.css">
+  <link rel="stylesheet" href="/adote_me/css/gerenciar_pet.css">
 </head>
 
 <h1>Gerenciamento de Pet's</h1>
@@ -94,17 +95,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';
 ?>
