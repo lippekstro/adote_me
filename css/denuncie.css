@@ -1,7 +1,6 @@
 body{
   font-size: 12px;
   max-width: 100%;
-  margin: 45px;
 }
 
 #top{
@@ -127,10 +126,6 @@ main{
   margin-top: 0px;
   margin-bottom: 20px;
 
-}
-
-td a{
-  color: black;
 }
 
 .copyright {
@@ -376,48 +371,32 @@ footer a {
         justify-content: space-between;
         margin: none;
         
-                
+        
 
-          }
-          #navlink col a {
-              margin: none;
-              width: 100%;
-          }
-          col a{
-              width: 100%;
-          }
-          
+   }
+   #navlink col a {
+       margin: none;
+       width: 100%;
+   }
+   col a{
+       width: 100%;
+   }
 
-
-          .row .col{
-              width: 100%;
-          }
-          .row{
-            width: 100%;
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 5px;
-            gap: 10px;
-            }
+   .row .col{
+       width: 100%;
+   }
 
 
 
-            .col-12{
-                display: flex;
-                flex: auto;
-            }
+     .col-12{
+        display: flex;
+        flex: auto;
+     }
 
-            .text{
-              margin-left: 5%;
-              margin-right: 5%;
-
-            }
-            table{
-              width: 40%;
-              
-
-            }
-            
+     table{
+      margin: none;
+     }
+    
     
     
 

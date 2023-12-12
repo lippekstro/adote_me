@@ -4,12 +4,12 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
 
 <head>
-  <link rel="stylesheet" href="/adote_me/css/css/denuncie.css">
+  <link rel="stylesheet" href="/adote_me/css/denuncie.css">
 </head>
 
 
 <main>
-  <img src="adote_me/imgs/denuncie.png" alt="" title="animais" id="animais" />
+  <img src="/adote_me/imgs/denuncie.png" alt="" title="animais" id="animais" />
 
   <div class="text">
     <h2>Saiba como denunciar maus-tratos ou crueldade contra animais</h2>
