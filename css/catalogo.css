@@ -96,15 +96,7 @@ h5{
     font-weight: bolder;
 }
 
-/* .conteudo p {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: rgb(174, 13, 13);
-    font-size: 90px;
-} */
+
 
 #carouselExampleAutoplaying{
     margin-left: auto;
@@ -124,7 +116,7 @@ h5{
 }
 
 #carouselimg{
-    width: 100%;
+    width: 60%;
     height: 500px;
     filter: brightness(50%)
 
@@ -188,7 +180,7 @@ footer a {
 } 
 
 
-
+/* 
 @media only screen and (min-width: 2560px) {
 
     #carouselimg{
@@ -198,11 +190,11 @@ footer a {
     
     } 
 
-}
+} */
 
 
 /* estilo para (tablet) */
-@media only screen and (max-width: 1920px ) {
+/* @media only screen and (max-width: 1920px ) {
     #carouselimg{
         height: 900px;
         filter: brightness(50%)
@@ -217,15 +209,12 @@ footer a {
         filter: brightness(50%)
     
     
-    } 
-    
-
-
-
-
-
- 
+    }
 }
+ */
+
+
+
 /*estilo para (para celular)*/
 @media only screen and (max-width: 480px) {
     .row {
