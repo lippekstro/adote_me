@@ -4,6 +4,19 @@ body {
 
 }
 
+.perfilPEts{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.perfilPEts div{
+    margin: 3rem;
+}
+
+
+
 #top {
     margin-top: 8px;
 }
@@ -198,6 +211,20 @@ h5{
 }
 
 
+
+ul{
+    margin-top: 40px;
+    font-size: 24px;
+
+
+}
+
+
+
+
+li{
+    text-align: center;
+}
 
 
 

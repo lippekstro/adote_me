@@ -12,15 +12,98 @@ try {
 }
 
 ?>
+
 <head>
-<link rel="stylesheet" href="/adote_me/css/perfil_pet.css">
+  <link rel="stylesheet" href="/adote_me/css/perfil_pet.css">
 </head>
 
+<h1><?= $pet->nome ?></h1>
 
-<!-- conteudo da pagina -->
-<div class="container text-center" id="slide">
+
+
+<div class="perfilPEts" class="row" >
+  <div class="col-8 col-sm-6">
+    <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" class="d-block w-100" alt="..." id="imagens">
+  </div>
+  <div class="col-sm-3">
+    <ul>
+      <li><?= 'depois' ?></li>
+      <li><?= $pet->raca ?></li>
+      <li><?= $pet->genero ?></li>
+      <li>
+        <form>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"><?= $pet->bio ?></textarea>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </div>
+  <br>
+  <hr>
+</div>
+
+
+
+<!-- <div class="d-flex justify-content-center">
+
+  <div>
+    <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="marcos" title="marcos" id="perfil_usu">
+  </div>
+
+  <div>
+    <h5 class="card-title"><?= $dono[0]['nome'] ?></h5>
+    <p><i class="fas fa-map-marker-alt"></i>
+      <strong><?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?>
+    </p>
+  </div>
+
+
+<div>
+  <p><i class="fab fa-whatsapp"></i>
+    <?= $dono[0]['telefone'] ?></p>
+</div>
+
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="container text-center">
   <div class="row">
-    <!-- <div id="carouselExampleIndicators" class="carousel slide">
+   
+    <div class="col" id="div02">
+
+    </div>
+    <div class="col" id="div03">
+      <div class="card-group">
+        
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+<!-- conteudo da pagina -->
+<!-- <div class="container text-center" id="slide">
+  <div class="row"> -->
+<!-- <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -28,10 +111,10 @@ try {
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active"> -->
-          <div class="imagemperfil">
-            <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" class="d-block w-100" alt="..." id="imagens">
-          </div>
-   <!--      </div>
+<!--  <div class="imagemperfil">
+      <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" class="d-block w-100" alt="..." id="imagens">
+    </div> -->
+<!--      </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -42,7 +125,7 @@ try {
         <span class="visually-hidden">Next</span>
       </button>
     </div> -->
-    <div class="col">
+<!--  <div class="col">
       <div class="col">
         <div class="card">
           <div class="card-body">
@@ -64,7 +147,6 @@ try {
         </div>
       </div>
       <br>
-      <hr>
       <div class="card-group">
         <div class="card" id="tutor">
           <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="marcos" title="marcos" id="perfil_usu">
@@ -75,15 +157,15 @@ try {
                 <strong><?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?>
               </p>
               <p><i class="fab fa-whatsapp"></i>
-              <?= $dono[0]['telefone'] ?></p>
+                <?= $dono[0]['telefone'] ?></p>
             </div>
           </div>
         </div>
       </div>
 
 
-    </div>
-  </div>
+    </div> -->
+</div>
 </div>
 
 
