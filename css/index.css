@@ -358,7 +358,16 @@ footer a {
 
 }
 
-
+@media only screen and (min-width: 769px) {
+    .conteudo p b{
+        text-align: center;
+        font-size: 15px;
+        margin-top: 20px;
+        width: 180px;
+        left: 30%
+     }
+    
+}
 
 /* Estilos para (celulares) */
 @media only screen and (max-width: 480px) {

@@ -58,7 +58,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Peso*</span>
+                        <span class="input-group-text" id="col1">Peso (kg)*</span>
                         <input type="text" name="peso" class="form-control" id="peso" placeholder=" " required />
 
                     </div>
@@ -113,9 +113,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         <div class="col">
             <div class="input-group flex-nowrap">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="adocao" value="1" id="adocao">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Para Adoção?
+                    <input class="form-check-input" type="checkbox" name="adocao" value="1" id="adocao" required>
+                    <label class="form-check-label" for="flexCheckDefault" >
+                        Para Adoção?*
                     </label>
                 </div>
             </div>

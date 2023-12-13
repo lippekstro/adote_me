@@ -3,15 +3,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 ?>
 
 <head>
-<link rel="stylesheet" href="adote_me/css/sobrenos.css">
+<link rel="stylesheet" href="/adote_me/css/sobrenos.css">
 
 </head>
 
-<div class="inicio text-center">
+<div class="inicio text-center" id="iniciotext">
   <p>
     Bem-vindo a <strong>Adot.me</strong> onde os corações se unem para criar lares
     para animais de estimação. Nossa jornada começou com a paixão por
-    ajudar animais abandonados <br> e uma visão clara de construir um mundo
+    ajudar animais abandonados e uma visão clara de construir um mundo
     onde todos os animais tenham um lar amoroso e acolhedor.
   </p>
 </div>
