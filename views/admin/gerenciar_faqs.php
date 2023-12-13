@@ -1,10 +1,18 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/faq.php';
+
+try {
+  $listaFaqs = Faq::listar();
+} catch (PDOException $e) {
+  echo $e->getMessage();
+}
+
 ?>
 
-<head>
-  <link rel="stylesheet" href="/adote_me/css/gerenciar_faqs.css">
-</head>
+
+<link rel="stylesheet" href="/adote_me/css/gerenciar_faqs.css">
+
 
 <h1>Gerenciamento de FAQ</h1>
 
@@ -15,83 +23,25 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     <thead>
       <tr>
         <th scope="col">ID</th>
-        <th scope="col">FAQ</th>
-        <th scope="col">Ação</th>
+        <th scope="col">Pergunta</th>
+        <th scope="col">Resposta</th>
+        <th scope="col" colspan="2">Ação</th>
       </tr>
     </thead>
     <tbody>
+      <?php foreach($listaFaqs as $faq): ?>
       <tr>
-        <th scope="row">1</th>
-        <td>Snoop</td>
+        <th scope="row"><?= $faq['id_faq'] ?></th>
+        <td><?= $faq['faq_pergunta'] ?></td>
+        <td><?= $faq['faq_resposta'] ?></td>
         <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
+          <a href="" class="btn btn-primary" id="botaofaq">Editar</a>
+        </td>
+        <td style="padding: 0;">
+          <a href="" class="btn btn-danger" id="botaofaq">Deletar</a>
         </td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Snoop</td>
-        <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Snoop</td>
-        <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Snoop</td>
-        <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Snoop</td>
-        <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">6</th>
-        <td>Snoop</td>
-        <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
-        </td>
-      </tr>
-
-      <tr>
-        <th scope="row">7</th>
-        <td>Snoop</td>
-        <td style="padding: 0;">
-          <button type="button" class="btn btn-success" id="botaofaq">Adicionar</button>
-          <button type="button" class="btn btn-primary" id="botaofaq">Editar</button>
-          <button type="button" class="btn btn-secondary" id="botaofaq">Arquivar</button>
-          <button type="button" class="btn btn-danger" id="botaofaq">Deletar</button>
-        </td>
-      </tr>
-
+      <?php endforeach; ?>
     </tbody>
   </table>
 
