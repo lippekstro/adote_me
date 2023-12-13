@@ -73,7 +73,6 @@ try {
           <img src="data:image;charset=utf8;base64,<?= base64_encode($p['img_pet']) ?>" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title"><?= $p['nome'] ?></h5>
-            <p class="card-text"><?= $p['bio'] ?></p>
             <a href="/adote_me/views/perfil_pet.php?id=<?= $p['id_pet'] ?>"><button type="button" class="btn btn-info">Saiba mais</button></a>
           </div>
         </div>
