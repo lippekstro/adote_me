@@ -27,15 +27,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                         <span class="input-group-text" id="col1">Tipo</span>
                         <select name="tipo" id="genero" class="form-select">
                             <option selected>Escolha...</option>
-                            <option value="Caes">Cães</option>
-                            <option value="Gatos">Gatos</option>
-                            <option value="Papagaio">Papagaio</option>
-                            <option value="Tartaruga">Tartaruga</option>
-                            <option value="Peixe">Peixe</option>
-                            <option value="Ave">Ave</option>
-                            <option value="Hamsters">Hamsters</option>
-                            <option value="Coelhos">Coelhos</option>
-                            <option value="Outros">Outros</option>
+                            <option value="cachorro">Cães</option>
+                            <option value="gato">Gatos</option>
+                            <option value="papagaio">Papagaio</option>
+                            <option value="tartaruga">Tartaruga</option>
+                            <option value="peixe">Peixe</option>
+                            <option value="ave">Ave</option>
+                            <option value="hamster">Hamsters</option>
+                            <option value="coelho">Coelhos</option>
+                            <option value="outros">Outros</option>
                         </select>
 
                     </div>
