@@ -15,8 +15,14 @@ try {
 
 
 <h1>Gerenciamento de FAQ</h1>
+  <div class="button-faq"  class="d-grid gap-2 d-md-block" >
+    <a href=""><button class="btn btn-primary" type="button" id= "adicionar">Adiconar FAQ</button></a>
+  </div>
+  <hr>
 
-<div class="gerenciamento">
+
+
+  <div class="gerenciamento">
 
 
   <table class="table">
@@ -54,5 +60,5 @@ try {
 
 
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';
 ?>

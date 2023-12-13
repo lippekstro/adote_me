@@ -73,46 +73,50 @@ h1{
 
 }
 
-.gerenciamento{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 17%;
+section{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
 }
 
+.input-group{
+    display: flex;
+    width: 100%;
+    margin: 20px;
+
+}
 
 .button-faq{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+
+
+}
+
+
+.form-control{
+width: 70%;
+height: 150px;
+resize: none;
+overflow: auto;
+margin-left: 15%;
+margin-right: 15%;
 }
 
 
 
 
-table th{
-    text-align: center;
-    margin: auto;
-}
-
-table td{
-    position: center;
-    margin: auto;
-    text-align: center;
-    
-}
-
-.material-symbols-outlined{
-    margin: 15px;
-    justify-content: space-between;
-    font-size: 28px;
-
-}
 
 
-#editar a{
-    color: rgb(0, 255, 30);
-    background-color: blueviolet;
-    
-}
+
+
+
+
+
+
 
 
 
@@ -211,7 +215,7 @@ footer a {
         text-align: center;
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 10%; 
+        margin-top: 5%; 
 
     }
 
@@ -247,26 +251,6 @@ footer a {
 
     }
 
-    .gerenciamento{
-        padding: none;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    .botoes {
-        padding: 0;
-        width: 191px;
-    }
-
-    .botoes tbody{
-        padding: none;
-    }
-
-    #adiconar{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
 
    
@@ -328,34 +312,49 @@ footer a {
         flex: auto;
      }
 
-     .gerenciamento {
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
    
-
-    .table tbody{
-        padding: none;
-
-
-    }
-
-    table td{
-        padding: 0;
-    }
-    #botaofaq{
-        width: 66px;
-        font-size: 12px;
-        padding: none;
-        margin: none;
-    }
 
     #adiconar{
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
+    .button-faq{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 11%;
+    
+    
+    }
+
+    section{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    
+
+    .adicionar{
+        width: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+
+    
+    .input-group{
+
+    width: 100%;
+    height: 150px;
+    resize: none;
+    overflow: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    
 
    
 }
