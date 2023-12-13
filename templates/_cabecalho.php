@@ -88,7 +88,10 @@ session_start();
                 Logout
               </button></a>
           <?php endif; ?>
-          <a href="/adote_me/views/denuncie.php"><button type="button" class="btn btn-danger" id="denuncie">Denuncie</button></a>
+
+          <?php if (!(isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] > 1)) : ?>
+            <a href="/adote_me/views/denuncie.php"><button type="button" class="btn btn-danger" id="denuncie">Denuncie</button></a>
+          <?php endif; ?>
         </div>
       </div>
     </div>

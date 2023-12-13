@@ -10,13 +10,25 @@ try {
     $genero = $_POST['genero'];
     $peso = $_POST['peso'];
     $cor = $_POST['cor'];
-    $adocao = $_POST['adocao'];
-    $adotado = $_POST['adotado'];
+
+    if (isset($_POST['adocao'])) {
+        $adocao = $_POST['adocao'];
+    } else {
+        $adocao = 0;
+    }
+
+    if (isset($_POST['adotado'])) {
+        $adotado = $_POST['adotado'];
+    } else {
+        $adotado = null;
+    }
     $bio = $_POST['bio'];
-    $id_usuario = $_POST['id_usuario'];
 
+    if (!empty($_FILES['img_pet']['tmp_name'])) {
+        $img_pet = file_get_contents($_FILES['img_pet']['tmp_name']);
+    }
 
-    $pets = new pet ($id_pet);
+    $pets = new pet($id_pet);
     $pets->nome = $nome;
     $pets->tipo = $tipo;
     $pets->raca = $raca;
@@ -27,13 +39,17 @@ try {
     $pets->adocao = $adocao;
     $pets->adotado = $adotado;
     $pets->bio = $bio;
-    $pets->id_usuario = $id_usuario;
+
+    if($img_pet){
+        $pets->img_pet = $img_pet;
+    } else {
+        $pets->img_pet = $pets->img_pet;
+    }
 
     $pets->editar();
 
-    header('Location: /adote_me/views/admin/faqs_listar.php');
+    header('Location: /adote_me/views/perfil_usu.php');
     exit();
-
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

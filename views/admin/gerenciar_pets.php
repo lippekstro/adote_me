@@ -33,11 +33,11 @@ try {
           <th scope="row"><?= $pet['id_pet'] ?></th>
           <td><?= $pet['nome'] ?></td>
           <td style="padding: 0;">
-            <a href="" class="btn btn-primary">Editar</a>
+            <a href="/adote_me/views/editar_pet.php?id_pet=<?= $pet['id_pet'] ?>" class="btn btn-primary">Editar</a>
 
           </td>
           <td style="padding: 0;">
-            <a href="" class="btn btn-danger">Deletar</a>
+            <a href="/adote_me/controllers/pets_delete_controller.php?id_pet=<?= $pet['id_pet'] ?>" class="btn btn-danger">Deletar</a>
           </td>
         </tr>
       <?php endforeach; ?>

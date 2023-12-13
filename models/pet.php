@@ -109,10 +109,10 @@ class pet
         return $lista;
     }
 
-   
+
     public function editar()
     {
-        $query = "UPDATE pets SET nome = :nome, tipo = :tipo, raca = :raca, tamanho = :tamanho,genero= :genero, peso = :peso,cor=:cor,img_pet=:img_pet,adocao=:adocao,adotado=:adotado,bio=:bio,id_usuario=:id_usuario,  WHERE id_pet = :id";
+        $query = "UPDATE pets SET nome = :nome, tipo = :tipo, raca = :raca, tamanho = :tamanho, genero= :genero, peso = :peso, cor = :cor, img_pet = :img_pet, adocao = :adocao, adotado = :adotado, bio = :bio WHERE id_pet = :id";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
         $stmt->bindValue(':nome', $this->nome);
@@ -126,7 +126,7 @@ class pet
         $stmt->bindValue(':adocao', $this->adocao);
         $stmt->bindValue(':adotado', $this->adotado);
         $stmt->bindValue(':bio', $this->bio);
-        $stmt->bindValue(':id_usuario', $this->id_usuario);
+        $stmt->bindValue(':id', $this->id_pet);
         $stmt->execute();
     }
 

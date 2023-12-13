@@ -7,7 +7,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
 </head>
 
-<div class="inicio">
+<div class="inicio text-center">
   <p>
     Bem-vindo a <strong>Adot.me</strong> onde os corações se unem para criar lares
     para animais de estimação. Nossa jornada começou com a paixão por
