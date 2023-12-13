@@ -11,9 +11,7 @@ body {
     flex-wrap: wrap;
     
 }
-.perfilPEts div{
-    margin: 3rem;
-}
+
 
 
 
@@ -129,11 +127,10 @@ ul{
 }
 
 #imagens{
-    margin-right: 10%;
-    margin-left: 10%;
+  
     border-radius: 5px;
-    height: 720px;
-    width: 350px;
+    height: auto;
+    width: auto;
 
 }
 

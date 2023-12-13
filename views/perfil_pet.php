@@ -21,15 +21,15 @@ try {
 
 
 
-<div class="perfilPEts" class="row" >
+<div class="perfilPEts" class="row">
   <div class="col-8 col-sm-6">
     <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" class="d-block w-100" alt="..." id="imagens">
   </div>
   <div class="col-sm-3">
     <ul>
-      <li><?= 'depois' ?></li>
-      <li><?= $pet->raca ?></li>
-      <li><?= $pet->genero ?></li>
+      <li>seria o nascimento<?= 'depois' ?></li>
+      <li>Raça: <?= $pet->raca ?></li>
+      <li>Gênero: <?= $pet->genero ?></li>
       <li>
         <form>
           <div class="mb-3">
@@ -43,41 +43,21 @@ try {
   <br>
   <hr>
 </div>
-
-
-
-<!-- <div class="d-flex justify-content-center">
-
-  <div>
-    <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="marcos" title="marcos" id="perfil_usu">
+<hr>
+<div class="container">
+    <div class="row">
+      <div class="col-4">
+        <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="marcos" title="marcos" id="perfil_usu">
+      </div>
+      <div class="col-6">
+        <h5 class="card-title"><?= $dono[0]['nome'] ?></h5>
+        <p><i class="fas fa-map-marker-alt"></i>
+          <strong><?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?>
+        </p>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <h5 class="card-title"><?= $dono[0]['nome'] ?></h5>
-    <p><i class="fas fa-map-marker-alt"></i>
-      <strong><?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?>
-    </p>
-  </div>
-
-
-<div>
-  <p><i class="fab fa-whatsapp"></i>
-    <?= $dono[0]['telefone'] ?></p>
 </div>
-
-</div>
- -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 
