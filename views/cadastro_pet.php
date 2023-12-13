@@ -121,17 +121,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
             </div>
         </div>
 
-        <div class="col visually-hidden" id="div_adotado">
-            <div class="input-group flex-nowrap">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="adotado" value="1" id="adotado">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Adotado?
-                    </label>
-                </div>
-            </div>
-        </div>
-
         <div class="col-md-6">
             <label for="imagem">Imagem de Pet</label>
             <input type="file" name="img_pet" id="imgbotton" accept="image/*" required />
@@ -182,8 +171,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     </form>
 </div>
 
-
-<script src="/adote_me/js/selecionaAdocao.js"></script>
 
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_rodape.php';
