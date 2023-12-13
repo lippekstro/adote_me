@@ -64,13 +64,18 @@ session_start();
             <a href="/adote_me/views/login.php"><button type="submit" class="btn btn-dark" id="Login">
                 Login
               </button></a>
-          <?php elseif (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] == 1) : ?>
+          <?php else : ?>
             <a href="/adote_me/views/perfil_usu.php"><button type="submit" class="btn btn-dark" id="Login">
                 Perfil
               </button></a>
-          <?php elseif (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] == 2) : ?>
-            <a href="/adote_me/views/"><button type="submit" class="btn btn-dark" id="Login">
-                Gerenciar
+          <?php endif; ?>
+
+          <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] > 1) : ?>
+            <a href="/adote_me/views/admin/gerenciar_faqs.php"><button type="submit" class="btn btn-dark" id="Login">
+                Gerenciar Faqs
+              </button></a>
+            <a href="/adote_me/views/admin/gerenciar_pets.php"><button type="submit" class="btn btn-dark" id="Login">
+                Gerenciar Pets
               </button></a>
           <?php endif; ?>
 
@@ -101,9 +106,11 @@ session_start();
             <li class="nav-item">
               <a class="nav-link active" href="/adote_me/views/catalogo.php">Catálogo</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
-            </li>
+            <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] < 2) : ?>
+              <li class="nav-item">
+                <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
+              </li>
+            <?php endif; ?>
             <li class="nav-item">
               <a class="nav-link active" href="/adote_me/views/dicas.php">Dicas</a>
             </li>
@@ -113,19 +120,19 @@ session_start();
             <li class="nav-item">
               <a class="nav-link active" href="/adote_me/views/faq.php">FAQ</a>
             </li>
-        
-           
+
+
           </ul>
         </div>
       </div>
     </nav>
 
     <style>
-      body{
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
 
       }
-      
+
       #menu {
         background-color: #c1926f;
         font-size: 16px;

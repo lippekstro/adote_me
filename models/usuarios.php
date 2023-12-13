@@ -97,7 +97,8 @@ class usuario
         $stmt->execute();
     }
 
-    public static function logar($email, $senha){
+    public static function logar($email, $senha)
+    {
         $query = "SELECT * FROM Usuarios WHERE email = :email";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
@@ -118,5 +119,16 @@ class usuario
             header("Location: /adote_me/views/login.php");
             exit();
         }
+    }
+
+    public static function listarMeusPets($id_usuario)
+    {
+        $query = "SELECT u.*, p.* FROM Pets p JOIN Usuarios u ON p.id_usuario = u.id_usuario WHERE u.id_usuario = :id";
+        $conexao = Conexao::conectar();
+        $stmt = $conexao->prepare($query);
+        $stmt->bindValue(':id', $id_usuario);
+        $stmt->execute();
+        $lista = $stmt->fetchAll();
+        return $lista;
     }
 }

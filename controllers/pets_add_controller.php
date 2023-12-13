@@ -4,13 +4,20 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/pet.php';
 try {
     $nome = $_POST['nome'];
     $tipo = $_POST['tipo'];
+    $idade = $_POST['idade'];
     $raca = $_POST['raca'];
     $tamanho = $_POST['tamanho'];
     $genero = $_POST['genero'];
     $peso = $_POST['peso'];
     $cor = $_POST['cor'];
     $adocao = $_POST['adocao'];
-    $adotado = $_POST['adotado'];
+
+    if(isset($_POST['adotado'])){
+        $adotado = $_POST['adotado'];
+    } else {
+        $adotado = null;
+    }
+    
     $bio = $_POST['bio'];
     $id_usuario = $_POST['id_usuario'];
 
@@ -18,7 +25,7 @@ try {
         $img_pet = file_get_contents($_FILES['img_pet']['tmp_name']);
     }
 
-    $pets = new pet ($id_pet);
+    $pets = new pet ();
     $pets->nome = $nome;
     $pets->tipo = $tipo;
     $pets->raca = $raca;
@@ -40,7 +47,7 @@ try {
 
     $pets->criar();
 
-    header('Location: /adote_me/views/admin/faqs_listar.php');
+    header('Location: /adote_me/views/catalogo.php');
     exit();
 
 } catch (PDOException $e) {
