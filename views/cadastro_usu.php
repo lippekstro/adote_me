@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         <h1>Cadastre-se</h1>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Nome*</span>
-            <input type="text" name="nome" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" name="nome" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
 
         <div class="input-group flex-nowrap">
@@ -42,7 +42,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         </div>
         <div class="col">
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">Repita</span>
+                <span class="input-group-text" id="addon-wrapping">Repita*</span>
                 <input type="password" class="form-control" id="passwordField2" placeholder=" " required>
                 <i class="fa fa-eye" id="eye2"></i>
 
@@ -102,15 +102,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col3">Telefone</span>
+                        <span class="input-group-text" id="col3">Telefone*</span>
                         <input type="tel" name="telefone" class="form-control" id="col3" placeholder="Telefone" required />
                     </div>
                 </div>
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col3">Nascimento</span>
-                        <input type="date" id="diaa" name="nascimento" />
+                        <span class="input-group-text" id="col3">Nascimento*</span>
+                        <input type="date" id="diaa" name="nascimento" required/>
 
                     </div>
                 </div>
@@ -119,9 +119,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
         <div class="input-group flex-nowrap">
 
-            <span class="input-group-text" id="addon-wrapping">CPF</span>
-            <input type="text" name="cpf" size="9" maxlength="9" required />
-            <input type="text" name="cpf2" size="2" maxlength="2" required />
+            <span class="input-group-text" id="addon-wrapping">CPF*</span>
+            <input type="text" name="cpf" size="11" maxlength="11" required />
         </div>
         <div class="col-md-6">
             <label for="imagem">Imagem de perfil:(opcional)</label>
@@ -132,7 +131,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
 
         <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">CEP</span>
+            <span class="input-group-text" id="addon-wrapping">CEP*</span>
             <input type="text" name="cep" id="cep" size="9" maxlength="9" required />
             <button type="button" class="btn btn-primary" onclick="buscarCep()">Buscar CEP</button>
         </div>
@@ -143,7 +142,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
             <div class="input-group flex-nowrap">
 
 
-                <span class="input-group-text" id="col3">Rua</span>
+                <span class="input-group-text" id="col3">Rua*</span>
                 <input type="text" name="rua" class="form-control" id="rua" placeholder="Rua" required />
 
 
@@ -155,7 +154,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
         <div class="col">
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="col3">Número</span>
+                <span class="input-group-text" id="col3">Número*</span>
                 <input type="text" name="numero" class="form-control" id="numero" placeholder="Número" required />
             </div>
         </div>
@@ -163,14 +162,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
         <div class="col">
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="col3">Bairro</span>
+                <span class="input-group-text" id="col3">Bairro*</span>
                 <input type="text" name="bairro" class="form-control" id="bairro" placeholder="Bairro" required />
             </div>
         </div>
         <br>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Complemento</span>
-            <input type="text" name="complemento" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+            <input type="text" name="complemento" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" >
         </div>
 
 
@@ -183,7 +182,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
             <div class="input-group flex-nowrap">
 
 
-                <span class="input-group-text" id="col3">Cidade</span>
+                <span class="input-group-text" id="col3">Cidade*</span>
                 <input type="text" name="cidade" class="form-control" id="cidade" placeholder="Cidade" required />
             </div>
         </div>
@@ -224,7 +223,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
 
         <div class="col-md-4">
-            <label for="inputState" class="form-label">Estado</label>
+            <label for="inputState" class="form-label">Estado*</label>
             <input type="text" name="estado" class="form-control" id="estado" placeholder="Estado" required />
         </div>
 

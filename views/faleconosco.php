@@ -12,11 +12,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
   <!-- Gabriel -->
   <div class="input-group">
-    <span class="input-group-text">Nome</span>
+    <span class="input-group-text">Nome*</span>
     <input type="text" aria-label="First name" class="form-control" placeholder="Nome" required>
   </div>
   <div class="input-group">
-    <span class="input-group-text">E-mail</span>
+    <span class="input-group-text">E-mail*</span>
     <input type="text" aria-label="First name" class="form-control" placeholder="E-mail" required>
   </div>
 
@@ -26,7 +26,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
       <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
     </div> -->
   <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Escreva suas sugestões ou duvidas</label>
+    <label for="exampleFormControlTextarea1" class="form-label">Escreva suas sugestões ou duvidas*</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
   </div>
 

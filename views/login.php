@@ -12,14 +12,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     <h1>Login</h1>
     <!-- Gabriel -->
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <label for="exampleInputEmail1" class="form-label">Email*</label>
       <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail" required>
       <div id="emailHelp" class="form-text">Nunca compartilharemos seu e-mail com mais ninguém.
       </div>
     </div>
 
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Senha</label>
+      <label for="exampleInputPassword1" class="form-label">Senha*</label>
       <input type="password" name="senha" class="form-control" id="exampleInputPassword1" placeholder="Senha" required>
       <i class="fa fa-eye" id="eye"></i>
 

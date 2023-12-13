@@ -29,18 +29,18 @@
     <div class="info">
       <div id="editar" class="tab-content active-tab">
         <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">Nome</span>
-          <input type="text" class="form-control" placeholder=" " value="<?= $usuario->nome ?>" aria-label="Username" aria-describedby="addon-wrapping">
+          <span class="input-group-text" id="addon-wrapping">Nome*</span>
+          <input type="text" class="form-control" placeholder=" " value="<?= $usuario->nome ?>" aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
         <div class="input-group flex-nowrap">
-          <span class="input-group-text" id="addon-wrapping">CPF</span>
+          <span class="input-group-text" id="addon-wrapping">CPF*</span>
           <input type="text" name="cpf" size="9" maxlength="9" value="<?= $usuario->cpf ?>" required />
         </div>
         <div class="col">
           <div class="input-group flex-nowrap">
 
-            <span class="input-group-text" id="col1">Nascimento</span>
-            <input type="date" id="diaa" name="diaa" value="<?= $usuario->nascimento ?>" />
+            <span class="input-group-text" id="col1">Nascimento*</span>
+            <input type="date" id="diaa" name="diaa" value="<?= $usuario->nascimento ?>" required/>
 
           </div>
         </div>
@@ -61,7 +61,7 @@
         <div class="col">
           <div class="input-group flex-nowrap">
 
-            <span class="input-group-text" id="col1">Telefone</span>
+            <span class="input-group-text" id="col1">Telefone*</span>
             <input type="tel" class="form-control" id="telefone" placeholder=" " value="<?= $usuario->telefone ?>" required />
           </div>
         </div>
@@ -81,7 +81,7 @@
 
   <div id="acesso" class="tab-content">
     <div class="input-group flex-nowrap" id="email">
-      <span class="input-group-text" id="addon-wrapping">E-mail</span>
+      <span class="input-group-text" id="addon-wrapping">E-mail*</span>
       <input type="email" class="form-control" id="inputEmail4" required placeholder=" " required />
     </div>
 
@@ -89,7 +89,7 @@
 
     <div class="col" id="acesso">
       <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">Senha</span>
+        <span class="input-group-text" id="addon-wrapping">Senha*</span>
         <input type="password" class="form-control" id="passwordField1" placeholder="  " required>
         <i class="fa fa-eye" id="eye1"></i>
         <script>
@@ -107,7 +107,7 @@
     </div>
     <div class="col" id="acesso">
       <div class="input-group flex-nowrap">
-        <span class="input-group-text" id="addon-wrapping">Repita</span>
+        <span class="input-group-text" id="addon-wrapping">Repita*</span>
         <input type="password" class="form-control" id="passwordField2" placeholder=" " required>
         <i class="fa fa-eye" id="eye2"></i>
 
@@ -211,23 +211,23 @@
   <div id="endereco" class="tab-content">
 
     <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">CEP</span>
+      <span class="input-group-text" id="addon-wrapping">CEP*</span>
       <input type="text" name="cpf" size="9" maxlength="9" required />
 
 
     </div>
 
     <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">Rua</span>
+      <span class="input-group-text" id="addon-wrapping">Rua*</span>
       <input type="text" class="form-control" id="inputCity" required placeholder="Rua" required />
 
     </div>
     <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">nº</span>
+      <span class="input-group-text" id="addon-wrapping">nº*</span>
       <input type="text" class="form-control" id="inputCity" required placeholder="Número" required />
     </div>
     <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">Bairro</span>
+      <span class="input-group-text" id="addon-wrapping">Bairro*</span>
       <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" required />
     </div>
 
@@ -238,12 +238,12 @@
 
 
     <div class="input-group flex-nowrap">
-      <span class="input-group-text" id="addon-wrapping">Cidade</span>
+      <span class="input-group-text" id="addon-wrapping">Cidade*</span>
       <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" required />
     </div>
 
     <div class="col-md-4">
-      <label for="inputState" class="form-label">Estado</label>
+      <label for="inputState" class="form-label">Estado*</label>
       <select id="inputState" class="form-select" required>
         <option selected>Escolha...</option>
         <option value="ac">Acre</option>

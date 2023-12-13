@@ -23,8 +23,8 @@ try {
         <input type="hidden" name="id" value="<?= $pet->id_pet ?>">
 
         <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">Nome</span>
-            <input type="text" name="nome" class="form-control" aria-label="Username" aria-describedby="addon-wrapping" value="<?= $pet->nome ?>">
+            <span class="input-group-text" id="addon-wrapping">Nome*</span>
+            <input type="text" name="nome" class="form-control" aria-label="Username" aria-describedby="addon-wrapping" value="<?= $pet->nome ?>" required>
         </div>
 
 
@@ -53,14 +53,14 @@ try {
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Idade</span>
+                        <span class="input-group-text" id="col1">Idade*</span>
                         <input type="number" class="form-control" id="idade" name="idade" value="" required />
                     </div>
                 </div>
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Tamanho</span>
+                        <span class="input-group-text" id="col1">Tamanho*</span>
                         <input type="text" name="tamanho" class="form-control" id="tamanho" value="<?= $pet->tamanho ?>" required />
 
                     </div>
@@ -68,7 +68,7 @@ try {
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Peso</span>
+                        <span class="input-group-text" id="col1">Peso*</span>
                         <input type="text" name="peso" class="form-control" id="peso" value="<?= $pet->peso ?>" required />
 
                     </div>
@@ -82,7 +82,7 @@ try {
 
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="genero">Gênero</span>
+                        <span class="input-group-text" id="genero">Gênero*</span>
                         <select name="genero" id="genero" class="form-select">
                             <option value="F" <?= $pet->genero == 'F' ? 'selected' : '' ?>>Fêmea</option>
                             <option value="M" <?= $pet->genero == 'M' ? 'selected' : '' ?>>Macho</option>
@@ -95,7 +95,7 @@ try {
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Raça</span>
+                        <span class="input-group-text" id="col1">Raça*</span>
                         <input type="text" name="raca" class="form-control" id="raca" value="<?= $pet->raca ?>" required />
                     </div>
                 </div>
@@ -142,8 +142,8 @@ try {
         </div>
 
         <div class="col-md-6">
-            <label for="imagem">Imagem de Pet</label>
-            <input type="file" name="img_pet" id="imgbotton" accept="image/*" />
+            <label for="imagem">Imagem de Pet*</label>
+            <input type="file" name="img_pet" id="imgbotton" accept="image/*" required/>
         </div>
 
 

@@ -12,8 +12,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     <form action="/adote_me/controllers/pets_add_controller.php" method="POST" class="row g-3" id="formulariologin" enctype="multipart/form-data">
         <h1>Cadastre seu pet</h1>
         <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">Nome</span>
-            <input type="text" name="nome" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
+            <span class="input-group-text" id="addon-wrapping">Nome*</span>
+            <input type="text" name="nome" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping" required>
         </div>
 
 
@@ -43,14 +43,14 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Idade</span>
+                        <span class="input-group-text" id="col1">Idade*</span>
                         <input type="number" class="form-control" id="idade" name="idade" placeholder=" " required />
                     </div>
                 </div>
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Tamanho</span>
+                        <span class="input-group-text" id="col1">Tamanho*</span>
                         <input type="text" name="tamanho" class="form-control" id="tamanho" placeholder=" " required />
 
                     </div>
@@ -58,7 +58,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Peso</span>
+                        <span class="input-group-text" id="col1">Peso*</span>
                         <input type="text" name="peso" class="form-control" id="peso" placeholder=" " required />
 
                     </div>
@@ -86,7 +86,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Raça</span>
+                        <span class="input-group-text" id="col1">Raça*</span>
                         <input type="text" name="raca" class="form-control" id="raca" placeholder=" " required />
                     </div>
                 </div>
@@ -133,7 +133,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         </div>
 
         <div class="col-md-6">
-            <label for="imagem">Imagem de Pet</label>
+            <label for="imagem">Imagem de Pet*</label>
             <input type="file" name="img_pet" id="imgbotton" accept="image/*" required />
         </div>
 
