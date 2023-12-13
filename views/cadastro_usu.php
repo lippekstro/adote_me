@@ -13,18 +13,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     <form action="/adote_me/controllers/usuario_add_controller.php" class="row g-3" id="formulariologin" method="POST" enctype="multipart/form-data" novalidate>
         <h1>Cadastre-se</h1>
         <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">Nome</span>
+            <span class="input-group-text" id="addon-wrapping">Nome*</span>
             <input type="text" name="nome" class="form-control" placeholder=" " aria-label="Username" aria-describedby="addon-wrapping">
         </div>
 
         <div class="input-group flex-nowrap">
-            <span class="input-group-text" id="addon-wrapping">E-mail</span>
+            <span class="input-group-text" id="addon-wrapping">E-mail*</span>
             <input type="email" name="email" class="form-control" id="inputEmail4" placeholder=" " required />
         </div>
 
         <div class="col">
             <div class="input-group flex-nowrap">
-                <span class="input-group-text" id="addon-wrapping">Senha</span>
+                <span class="input-group-text" id="addon-wrapping">Senha*</span>
                 <input type="password" name="senha" class="form-control" id="passwordField1" placeholder="  " required>
                 <i class="fa fa-eye" id="eye1"></i>
                 <script>
