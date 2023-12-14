@@ -54,7 +54,7 @@ try {
                     <div class="input-group flex-nowrap">
 
                         <span class="input-group-text" id="col1">Idade*</span>
-                        <input type="number" class="form-control" id="idade" name="idade" value="" required />
+                        <input type="number" class="form-control" id="idade" name="idade" value="<?= $pet->idade ?>" required />
                     </div>
                 </div>
                 <div class="col">

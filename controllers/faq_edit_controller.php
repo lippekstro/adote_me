@@ -12,7 +12,7 @@ try {
 
     $faq->atualizar();
 
-    header('Location: /adote_me/views/admin/faqs_listar.php');
+    header('Location: /adote_me/views/perfil_usu.php');
     exit();
 
 } catch (PDOException $e) {

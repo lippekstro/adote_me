@@ -7,6 +7,7 @@ class pet
     public  $nome;
     public  $tipo;
     public  $raca;
+    public  $idade;
     public  $tamanho;
     public  $genero;
     public  $peso;
@@ -39,6 +40,7 @@ class pet
         $this->nome = $id_pet['nome'];
         $this->tipo = $id_pet['tipo'];
         $this->raca = $id_pet['raca'];
+        $this->idade = $id_pet['idade'];
         $this->tamanho = $id_pet['tamanho'];
         $this->genero = $id_pet['genero'];
         $this->peso = $id_pet['peso'];
@@ -52,13 +54,13 @@ class pet
 
     public function criar()
     {
-        $query = "INSERT INTO pets (nome,tipo,raca,tamanho, genero,peso,cor,img_pet,adocao,adotado,bio,id_usuario) 
-            VALUES (:nome ,:tipo,:raca,:tamanho, :genero,:peso,:cor,:img_pet,:adocao,:adotado,:bio,:id_usuario)  ";
+        $query = "INSERT INTO pets (nome, tipo, raca, idade, tamanho, genero, peso, cor, img_pet, adocao, adotado,bio, id_usuario) VALUES (:nome, :tipo, :raca, :idade, :tamanho, :genero, :peso, :cor, :img_pet, :adocao, :adotado, :bio, :id_usuario)  ";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
         $stmt->bindValue(':nome', $this->nome);
         $stmt->bindValue(':tipo', $this->tipo);
         $stmt->bindValue(':raca', $this->raca);
+        $stmt->bindValue(':idade', $this->idade);
         $stmt->bindValue(':tamanho', $this->tamanho);
         $stmt->bindValue(':genero', $this->genero);
         $stmt->bindValue(':peso', $this->peso);
@@ -85,7 +87,7 @@ class pet
 
     public static function listarDisponiveis()
     {
-        $query = "SELECT * FROM pets WHERE adocao = 1";
+        $query = "SELECT * FROM pets WHERE adocao = 1 AND adotado = 0";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
         $stmt->execute();
@@ -112,12 +114,13 @@ class pet
 
     public function editar()
     {
-        $query = "UPDATE pets SET nome = :nome, tipo = :tipo, raca = :raca, tamanho = :tamanho, genero= :genero, peso = :peso, cor = :cor, img_pet = :img_pet, adocao = :adocao, adotado = :adotado, bio = :bio WHERE id_pet = :id";
+        $query = "UPDATE pets SET nome = :nome, tipo = :tipo, raca = :raca, idade = :idade, tamanho = :tamanho, genero= :genero, peso = :peso, cor = :cor, img_pet = :img_pet, adocao = :adocao, adotado = :adotado, bio = :bio WHERE id_pet = :id";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
         $stmt->bindValue(':nome', $this->nome);
         $stmt->bindValue(':tipo', $this->tipo);
         $stmt->bindValue(':raca', $this->raca);
+        $stmt->bindValue(':idade', $this->idade);
         $stmt->bindValue(':tamanho', $this->tamanho);
         $stmt->bindValue(':genero', $this->genero);
         $stmt->bindValue(':peso', $this->peso);

@@ -6,6 +6,7 @@ try {
     $nome = $_POST['nome'];
     $tipo = $_POST['tipo'];
     $raca = $_POST['raca'];
+    $idade = $_POST['idade'];
     $tamanho = $_POST['tamanho'];
     $genero = $_POST['genero'];
     $peso = $_POST['peso'];
@@ -20,7 +21,7 @@ try {
     if (isset($_POST['adotado'])) {
         $adotado = $_POST['adotado'];
     } else {
-        $adotado = null;
+        $adotado = 0;
     }
     $bio = $_POST['bio'];
 
@@ -32,6 +33,7 @@ try {
     $pets->nome = $nome;
     $pets->tipo = $tipo;
     $pets->raca = $raca;
+    $pets->idade = $idade;
     $pets->tamanho = $tamanho;
     $pets->genero = $genero;
     $pets->peso = $peso;

@@ -309,11 +309,6 @@
         </tbody>
       </table>
 
-      <div class="opcao">
-        <button onclick="salvarEdicao()" id="salvar">Salvar</button>
-        <button onclick="cancelarEdicao()" id="canceclar">Cancelar</button>
-      </div>
-
 
 
 

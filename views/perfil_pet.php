@@ -6,7 +6,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/pet.php';
 try {
   $id = $_GET['id'];
   $pet = new Pet($id);
-  $dono = Pet::buscaDadosDoPetDono($pet->id_usuario);
+  $dono = Pet::buscaDadosDoPetDono($id);
 } catch (PDOException $e) {
   echo $e->getMessage();
 }
@@ -29,32 +29,32 @@ try {
 
 
 
-  <div class="row" id="perfil">
-    <div class="col" id="dono">
-      <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="" id="fotodono">
-      <div class="info_dono">
-        <p><?= $dono[0]['nome'] ?></p>
-        <p><span class="material-symbols-outlined">
-            phone_forwarded
-          </span>
-          <?= $dono[0]['telefone'] ?></p>
-        <p><span class="material-symbols-outlined">
-            pin_drop
-          </span>
-          <?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?></p>
-      </div>
-    </div>
-    <div class="col" id="pet">
-      <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" alt="" id="fotopet">
-    </div>
-    <div class="col" id="info">
-      <p><?= 'depois' ?></p>
-      <p><?= $pet->raca ?></p>
-      <p><?= $pet->genero ?></p>
-      <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais:</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> <?= $pet->bio ?></textarea>
+<div class="row" id="perfil">
+  <div class="col" id="dono">
+    <img src="data:image;charset=utf8;base64,<?= base64_encode($dono[0]['img_usuario']) ?>" alt="" id="fotodono">
+    <div class="info_dono">
+      <p><?= $dono[0]['nome'] ?></p>
+      <p><span class="material-symbols-outlined">
+          phone_forwarded
+        </span>
+        <?= $dono[0]['telefone'] ?></p>
+      <p><span class="material-symbols-outlined">
+          pin_drop
+        </span>
+        <?= $dono[0]['cidade'] ?> - <?= $dono[0]['estado'] ?></strong> / <?= $dono[0]['bairro'] ?></p>
     </div>
   </div>
+  <div class="col" id="pet">
+    <img src="data:image;charset=utf8;base64,<?= base64_encode($pet->img_pet) ?>" alt="" id="fotopet">
+  </div>
+  <div class="col" id="info">
+    <p>Idade:<?= $pet->idade ?></p>
+    <p>Raça:<?= $pet->raca ?></p>
+    <p>Genero:<?= $pet->genero == 'M' ? 'Macho' : 'Femea' ?></p>
+    <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled><?= $pet->bio ?></textarea>
+  </div>
+</div>
 
 
 <?php

@@ -6,6 +6,7 @@ try {
     $tipo = $_POST['tipo'];
     $idade = $_POST['idade'];
     $raca = $_POST['raca'];
+    $idade = $_POST['idade'];
     $tamanho = $_POST['tamanho'];
     $genero = $_POST['genero'];
     $peso = $_POST['peso'];
@@ -34,6 +35,7 @@ try {
     $pets->nome = $nome;
     $pets->tipo = $tipo;
     $pets->raca = $raca;
+    $pets->idade = $idade;
     $pets->tamanho = $tamanho;
     $pets->genero = $genero;
     $pets->peso = $peso;

@@ -123,7 +123,7 @@ class usuario
 
     public static function listarMeusPets($id_usuario)
     {
-        $query = "SELECT u.*, p.* FROM Pets p JOIN Usuarios u ON p.id_usuario = u.id_usuario WHERE u.id_usuario = :id";
+        $query = "SELECT u.*, p.* FROM Pets p JOIN Usuarios u ON p.id_usuario = u.id_usuario WHERE u.id_usuario = :id AND adotado = 0";
         $conexao = Conexao::conectar();
         $stmt = $conexao->prepare($query);
         $stmt->bindValue(':id', $id_usuario);

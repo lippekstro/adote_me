@@ -16,7 +16,7 @@ try {
 
 <h1>Gerenciamento de FAQ</h1>
   <div class="button-faq"  class="d-grid gap-2 d-md-block" >
-    <a href=""><button class="btn btn-primary" type="button" id= "adicionar">Adiconar FAQ</button></a>
+    <a href="/adote_me/views/admin/adicionar_faqs.php"><button class="btn btn-primary" type="button" id= "adicionar">Adiconar FAQ</button></a>
   </div>
   <hr>
 
@@ -41,10 +41,10 @@ try {
         <td><?= $faq['faq_pergunta'] ?></td>
         <td><?= $faq['faq_resposta'] ?></td>
         <td style="padding: 0;">
-          <a href="" class="btn btn-primary" id="botaofaq">Editar</a>
+          <a href="/adote_me/views/admin/editar_faqs.php?id=<?= $faq['id_faq'] ?>" class="btn btn-primary" id="botaofaq">Editar</a>
         </td>
         <td style="padding: 0;">
-          <a href="" class="btn btn-danger" id="botaofaq">Deletar</a>
+          <a href="/adote_me/controllers/faq_delete_controller.php?id=<?= $faq['id_faq'] ?>" class="btn btn-danger" id="botaofaq">Deletar</a>
         </td>
       </tr>
       <?php endforeach; ?>
