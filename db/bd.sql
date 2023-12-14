@@ -29,7 +29,7 @@ CREATE TABLE enderecos(
     complemento VARCHAR(255),
     bairro VARCHAR(255) NOT NULL,
     cidade VARCHAR(255) NOT NULL,
-    estado ENUM( 'ac', 'al', 'am', 'ap', 'ba', 'ce', 'df', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'ro', 'rs', 'rr', 'sc', 'se', 'sp', 'to'),
+    estado ENUM('ac', 'al', 'am', 'ap', 'ba', 'ce', 'df', 'es', 'go', 'ma', 'mt', 'ms', 'mg', 'pa', 'pb', 'pr', 'pe', 'pi', 'rj', 'rn', 'ro', 'rs', 'rr', 'sc', 'se', 'sp', 'to'),
     id_usuario INT,
     FOREIGN KEY (id_usuario) REFERENCES usuarios (id_usuario)
 );
