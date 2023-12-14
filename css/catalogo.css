@@ -251,12 +251,16 @@ footer a {
     
     #card{
     display: flex;
-    margin: 60px;
     justify-content: center;
     position: center;
-    margin-left: 5%;
+    margin-left: 1%;
     margin-right: 5%; 
     margin-top: 5%;  
+    }
+
+    #card img{
+        width: 384px;
+        height: 290px;
     }
 
 

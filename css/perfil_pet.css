@@ -99,7 +99,10 @@ height: 90%;
 
 }
 
-
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+}
 
 #exampleFormControlTextarea1{
     width: 100%;
@@ -289,6 +292,28 @@ footer a {
          
  
      }
+
+     
+     main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+     #dono{
+        margin-top: 5%;
+        width: 100%;
+     }
+
+     #perfil{
+        flex-direction: column-reverse;
+     }
+
+     .col{
+        margin-bottom: 1px;
+     }
+
+
+
 
 
 
