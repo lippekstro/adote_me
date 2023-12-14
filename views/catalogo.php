@@ -70,7 +70,7 @@ try {
     <?php foreach ($pets_diponiveis as $p) : ?>
       <div class="col">
         <div class="card h-100">
-          <img src="data:image;charset=utf8;base64,<?= base64_encode($p['img_pet']) ?>" class="card-img-top" width="100%">
+          <img  src="data:image;charset=utf8;base64,<?= base64_encode($p['img_pet']) ?>"  id="imgPet" class="card-img-top">
           <div class="card-body text-center">
             <h5 class="card-title"><?= $p['nome'] ?></h5>
             <a href="/adote_me/views/perfil_pet.php?id=<?= $p['id_pet'] ?>"><button type="button" class="btn btn-info">Saiba mais</button></a>
