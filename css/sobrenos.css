@@ -88,7 +88,12 @@ h2{
     margin-bottom: 50px;
 
 }
-  
+ 
+main{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
 .conteudo{
     justify-content: center;
     margin-top: 10px;
@@ -104,7 +109,7 @@ h2{
 
 }
 
-#textos{
+#textosp{
     margin-bottom: 9%;
 }
 
@@ -316,4 +321,10 @@ footer a {
         margin: 0;
      
      }
+
+     main{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
 }
