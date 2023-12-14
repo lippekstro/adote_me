@@ -130,7 +130,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         <div class="bio">
             <p>Escreva uma descrição:</p>
             <div class="col">
-                <textarea name="bio" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sobre o pet..."></textarea>
+                <textarea name="bio" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sobre o pet..." disabled ></textarea>
             </div>
         </div>
 
@@ -141,15 +141,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
             <div class="form-check" id="check">
                 <input class="form-check-input" type="checkbox" id="gridCheck" required />
                 <label class="form-check-label" for="gridCheck">
-                    <a href="">Aceito termos e condições</a>
-                </label>
+                  Aceito termos e condições
+                </label> 
             </div>
 
             <div class="form-check" id="check">
                 <input class="form-check-input" type="checkbox" id="gridCheck" required />
                 <label class="form-check-label" for="gridCheck">
-                    <a href=""> Declaro estar ciente da proibição de venda de animais de estimação no adot.me.
-                        😊</a>
+                     Declaro estar ciente da proibição de venda de animais de estimação no adot.me.
+                        😊
                 </label>
             </div>
 
