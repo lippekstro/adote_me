@@ -143,7 +143,7 @@ try {
 
         <div class="col-md-6">
             <label for="imagem">Imagem de Pet*</label>
-            <input type="file" name="img_pet" id="imgbotton" accept="image/*" required/>
+            <input type="file" name="img_pet" id="imgbotton" accept="image/*"/>
         </div>
 
 

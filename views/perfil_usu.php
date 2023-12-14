@@ -299,10 +299,10 @@
               <th scope="row"><?= $pets['id_pet'] ?></th>
               <td><?= $pets['nome'] ?></td>
               <td style="padding: 0;">
-                <a href="" class="btn btn-primary">Editar</a>
+                <a href="/adote_me/views/editar_pet.php?id_pet=<?= $pets['id_pet'] ?>" class="btn btn-primary">Editar</a>
               </td>
               <td style="padding: 0;">
-                <a href="" class="btn btn-danger">Delete</a>
+                <a href="/adote_me/controllers/pets_delete_controller.php?id_pet=<?= $pets['id_pet'] ?>" class="btn btn-danger">Delete</a>
               </td>
             </tr>
           <?php endforeach; ?>

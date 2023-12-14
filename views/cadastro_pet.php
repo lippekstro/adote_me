@@ -130,7 +130,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         <div class="bio">
             <p>Escreva uma descrição:</p>
             <div class="col">
-                <textarea name="bio" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sobre o pet..." disabled ></textarea>
+                <textarea name="bio" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escreva sobre o pet..." ></textarea>
             </div>
         </div>
 
