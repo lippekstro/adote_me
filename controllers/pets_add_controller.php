@@ -21,7 +21,7 @@ try {
     if (isset($_POST['adotado'])) {
         $adotado = $_POST['adotado'];
     } else {
-        $adotado = null;
+        $adotado = 0;
     }
 
     $bio = $_POST['bio'];
