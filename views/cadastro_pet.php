@@ -43,7 +43,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
                 <div class="col">
                     <div class="input-group flex-nowrap">
 
-                        <span class="input-group-text" id="col1">Idade*</span>
+                        <span class="input-group-text" id="col1">Idade(anos)*</span>
                         <input type="number" class="form-control" id="idade" name="idade" placeholder=" " required />
                     </div>
                 </div>

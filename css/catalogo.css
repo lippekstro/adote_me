@@ -117,12 +117,16 @@ h5{
 
 #carouselimg{
     width: 60%;
-    height: 500px;
+    height: 80%;
     filter: brightness(50%)
 
 
 } 
 
+.card-img-top{
+    width: 365px;
+    height: 380pxx;
+}
 
 
 
