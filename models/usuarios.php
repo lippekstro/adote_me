@@ -131,4 +131,14 @@ class usuario
         $lista = $stmt->fetchAll();
         return $lista;
     }
+
+    public static function meuEndereco($id_usuario){
+        $query = "SELECT e.* FROM Usuarios u JOIN Enderecos e ON u.id_usuario = e.id_usuario WHERE u.id_usuario = :id";
+        $conexao = Conexao::conectar();
+        $stmt = $conexao->prepare($query);
+        $stmt->bindValue(':id', $id_usuario);
+        $stmt->execute();
+        $endereco = $stmt->fetch();
+        return $endereco;
+    }
 }

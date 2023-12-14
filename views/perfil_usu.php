@@ -6,6 +6,7 @@
     $id_usuario = $_SESSION['usuario']['id_usuario'];
     $usuario = new usuario($id_usuario);
     $meusPets = usuario::listarMeusPets($id_usuario);
+    $endereco = usuario::meuEndereco($id_usuario);
   } catch (PDOException $e) {
     echo $e->getMessage();
   }
@@ -212,42 +213,41 @@
 
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">CEP*</span>
-      <input type="text" name="cpf" size="9" maxlength="9" required />
+      <input type="text" name="cep" size="9" maxlength="9" value="<?= $endereco['cep'] ?>" required />
 
 
     </div>
 
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">Rua*</span>
-      <input type="text" class="form-control" id="inputCity" required placeholder="Rua" required />
+      <input type="text" class="form-control" id="inputCity" required placeholder="Rua" value="<?= $endereco['rua'] ?>" required />
 
     </div>
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">nº*</span>
-      <input type="text" class="form-control" id="inputCity" required placeholder="Número" required />
+      <input type="text" class="form-control" id="inputCity" required placeholder="Número" value="<?= $endereco['numero'] ?>" required />
     </div>
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">Bairro*</span>
-      <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" required />
+      <input type="text" class="form-control" id="inputCity" required placeholder="Bairro" value="<?= $endereco['bairro'] ?>" required />
     </div>
 
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">Complemento</span>
-      <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" required />
+      <input type="text" class="form-control" id="inputCity" required placeholder="Complemento" value="<?= $endereco['complemento'] ?>" required />
     </div>
 
 
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">Cidade*</span>
-      <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" required />
+      <input type="text" class="form-control" id="inputCity" required placeholder="Cidade" value="<?= $endereco['cidade'] ?>" required />
     </div>
 
     <div class="col-md-4">
       <label for="inputState" class="form-label">Estado*</label>
       <select id="inputState" class="form-select" required>
-        <option selected>Escolha...</option>
-        <option value="ac">Acre</option>
-        <option value="al">Alagoas</option>
+        <option value="ac" <?= $endereco['estado'] == 'ac' ? 'selected' : '' ?> >Acre</option>
+        <option value="al" <?= $endereco['estado'] == 'al' ? 'selected' : '' ?>>Alagoas</option>
         <option value="am">Amazonas</option>
         <option value="ap">Amapá</option>
         <option value="ba">Bahia</option>
@@ -255,7 +255,7 @@
         <option value="df">Distrito Federal</option>
         <option value="es">Espírito Santo</option>
         <option value="go">Goiás</option>
-        <option value="ma">Maranhão</option>
+        <option value="ma" <?= $endereco['estado'] == 'ma' ? 'selected' : '' ?>>Maranhão</option>
         <option value="mt">Mato Grosso</option>
         <option value="ms">Mato Grosso do Sul</option>
         <option value="mg">Minas Gerais</option>
