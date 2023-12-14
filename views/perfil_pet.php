@@ -51,7 +51,7 @@ try {
       <p><?= 'depois' ?></p>
       <p><?= $pet->raca ?></p>
       <p><?= $pet->genero ?></p>
-      <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais</label>
+      <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais:</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"> <?= $pet->bio ?></textarea>
     </div>
   </div>
