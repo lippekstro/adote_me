@@ -54,7 +54,9 @@ try {
 
     $pets->criar();
 
-    header('Location: /adote_me/views/catalogo.php');
+    setcookie('msg', 'Pet adicionado!', time() + 10, '/adote_me/');
+    setcookie('tipo', 'sucesso', time() + 10, '/adote_me/');
+    header('Location: /adote_me/views/perfil_usu.php');
     exit();
 } catch (PDOException $e) {
     echo $e->getMessage();

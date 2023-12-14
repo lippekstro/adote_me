@@ -1,10 +1,32 @@
 <?php
+if(isset($_COOKIE['msg'])){
+  setcookie('msg', '', time() - 10, '/adote_me/');
+  setcookie('tipo', '', time() - 10, '/adote_me/');
+}
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
-?>
 
-<head>
+
+
+
+?>
 <link rel="stylesheet" href="/adote_me/css/login.css">
-</head>
+
+<?php if (isset($_COOKIE['msg'])) : ?>
+  <?php if ($_COOKIE['tipo'] === 'sucesso') : ?>
+    <div class="alert alert-success text-center m-3" role="alert">
+      <?= $_COOKIE['msg'] ?>
+    </div>
+  <?php elseif ($_COOKIE['tipo'] === 'perigo') : ?>
+    <div class="alert alert-danger text-center m-3" role="alert">
+      <?= $_COOKIE['msg'] ?>
+    </div>
+  <?php else : ?>
+    <div class="alert alert-info text-center m-3" role="alert">
+      <?= $_COOKIE['msg'] ?>
+    </div>
+  <?php endif; ?>
+<?php endif; ?>
+
 <!-- Gabriel-Botei a div "fundo" mais pra cima -->
 <div class="fundo">
   <video src="/adote_me/imgs/videologin.mp4" autoplay muted loop></video>

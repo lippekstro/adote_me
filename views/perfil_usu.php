@@ -1,4 +1,8 @@
   <?php
+  if (isset($_COOKIE['msg'])) {
+    setcookie('msg', '', time() - 10, '/adote_me/');
+    setcookie('tipo', '', time() - 10, '/adote_me/');
+  }
   require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
   require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/usuarios.php';
 
@@ -14,6 +18,21 @@
   ?>
   <link rel="stylesheet" href="/adote_me/css/perfil_usu.css" />
 
+  <?php if (isset($_COOKIE['msg'])) : ?>
+    <?php if ($_COOKIE['tipo'] === 'sucesso') : ?>
+      <div class="alert alert-success text-center m-3" role="alert">
+        <?= $_COOKIE['msg'] ?>
+      </div>
+    <?php elseif ($_COOKIE['tipo'] === 'perigo') : ?>
+      <div class="alert alert-danger text-center m-3" role="alert">
+        <?= $_COOKIE['msg'] ?>
+      </div>
+    <?php else : ?>
+      <div class="alert alert-info text-center m-3" role="alert">
+        <?= $_COOKIE['msg'] ?>
+      </div>
+    <?php endif; ?>
+  <?php endif; ?>
 
   <h1> Suas configurações</h1>
 
@@ -41,7 +60,7 @@
           <div class="input-group flex-nowrap">
 
             <span class="input-group-text" id="col1">Nascimento*</span>
-            <input type="date" id="diaa" name="diaa" value="<?= $usuario->nascimento ?>" required/>
+            <input type="date" id="diaa" name="diaa" value="<?= $usuario->nascimento ?>" required />
 
           </div>
         </div>
@@ -246,7 +265,7 @@
     <div class="col-md-4">
       <label for="inputState" class="form-label">Estado*</label>
       <select id="inputState" class="form-select" required>
-        <option value="ac" <?= $endereco['estado'] == 'ac' ? 'selected' : '' ?> >Acre</option>
+        <option value="ac" <?= $endereco['estado'] == 'ac' ? 'selected' : '' ?>>Acre</option>
         <option value="al" <?= $endereco['estado'] == 'al' ? 'selected' : '' ?>>Alagoas</option>
         <option value="am">Amazonas</option>
         <option value="ap">Amapá</option>

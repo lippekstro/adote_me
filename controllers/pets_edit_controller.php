@@ -42,7 +42,7 @@ try {
     $pets->adotado = $adotado;
     $pets->bio = $bio;
 
-    if($img_pet){
+    if ($img_pet) {
         $pets->img_pet = $img_pet;
     } else {
         $pets->img_pet = $pets->img_pet;
@@ -50,6 +50,8 @@ try {
 
     $pets->editar();
 
+    setcookie('msg', 'Pet Editado!', time() + 10, '/adote_me/');
+    setcookie('tipo', 'info', time() + 10, '/adote_me/');
     header('Location: /adote_me/views/perfil_usu.php');
     exit();
 } catch (PDOException $e) {

@@ -8,9 +8,10 @@ try {
 
     $faq->deletar();
 
+    setcookie('msg', 'FAQ deletada!', time() + 10, '/adote_me/');
+    setcookie('tipo', 'perigo', time() + 10, '/adote_me/');
     header('Location: /adote_me/views/perfil_usu.php');
     exit();
-
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

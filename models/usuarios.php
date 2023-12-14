@@ -116,6 +116,9 @@ class usuario
             header("Location: /adote_me/index.php");
             exit();
         } else {
+            setcookie('msg', 'Email ou Senha Incorreto!', time() + 10, '/adote_me/');
+            setcookie('tipo', 'perigo', time() + 10, '/adote_me/');
+
             header("Location: /adote_me/views/login.php");
             exit();
         }
