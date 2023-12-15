@@ -30,10 +30,8 @@ session_start();
         <div class="col">
           <a href="/adote_me/index.php"><img src="/adote_me/imgs/Imglogo.png" alt="Adote-Me" title="Adote-Me" id="AdoteMe" /></a>
         </div>
-        <div class="col">
-
+        <!-- <div class="col">
           <input list="browsers" name="browser" id="browser" placeholder="Buscar">
-
           <datalist id="browsers">
             <option value="Cachorro">
             <option value="Gato">
@@ -46,18 +44,9 @@ session_start();
             <option value="Poodle">
             <option value="Pug">
             <option value="Golden">
-
-
-
           </datalist>
           <button id="btnBusca">Buscar</button>
-
-          <!--  datalist -->
-
-
-
-
-        </div>
+        </div> -->
 
         <div class="col">
           <?php if (!isset($_SESSION['usuario'])) : ?>
