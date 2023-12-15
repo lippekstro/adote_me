@@ -50,6 +50,10 @@ try {
   <div class="col" id="info">
     <p>Idade:<?= $pet->idade ?></p>
     <p>Raça:<?= $pet->raca ?></p>
+    <p>Peso (Kg):<?= $pet->peso ?></p>
+
+    <p>Tamanho:<?= $pet->tamanho ?></p>
+
     <p>Genero:<?= $pet->genero == 'M' ? 'Macho' : 'Femea' ?></p>
     <label for="exampleFormControlTextarea1" class="form-label">Informações Adicionais:</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" disabled><?= $pet->bio ?></textarea>
