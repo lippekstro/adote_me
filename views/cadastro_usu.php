@@ -18,8 +18,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
         </div>
 
         <div class="input-group flex-nowrap">
+           <!--  <span class="input-group-text" id="addon-wrapping">E-mail*</span>
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder=" " required /> -->
+        
+        
             <span class="input-group-text" id="addon-wrapping">E-mail*</span>
-            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder=" " required />
+            <input type="email" name="email" class="form-control" id="inputEmail4" placeholder=" " required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        
         </div>
 
         <div class="col">

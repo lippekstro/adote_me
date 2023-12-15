@@ -18,9 +18,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
 
 
 
-<div class="container text-center" id="textos">
+<div class="container text-center" id="textosp">
   <div class="row">
-    <div class="col" id="textos">
+    <div class="col" id="textosp">
       <h2>Nossa Missão</h2>
       Nossa missão é simples, mas poderosa: unir animais de estimação que
       precisam de um lar com pessoas que desejam dar amor e cuidados a
@@ -28,7 +28,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
       uma segunda chance,e estamos comprometidos em tornar essa visão uma
       realidade.
     </div>
-    <div class="col" id="textos">
+    <div class="col" id="textosp">
       <h2>Nossos Valores</h2>
 
       Amor pelos Animais:O bem-estar dos animais está no centro de tudo o
@@ -42,7 +42,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
       as necessidades de seus animais de estimação e como cuidar deles da
       melhor maneira.
     </div>
-    <div class="col" id="textos">
+    <div class="col" id="textosp">
       <h2>O Que Fazemos</h2>
 
       Na <strong> Adot.me</strong>,trabalhamos incansavelmente para promover
@@ -52,7 +52,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
       abrangem uma variedade de espécies,raças e tamanhos,garantindo que
       todos encontrem o companheiro perfeito para suas vidas.
     </div>
-    <div class="col" id="textos">
+    <div class="col" id="textosp">
       <h2>Nosso Compromisso</h2>
 
       Na <strong> Adot.me</strong>,estamos empenhados em criar um mundo onde nenhum

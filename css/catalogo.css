@@ -252,7 +252,7 @@ footer a {
     }
 
     #card img{
-        width: 384px;
+        
         height: 290px;
     }
 
@@ -375,3 +375,16 @@ footer a {
 
   
 }
+    @media only screen and (max-width: 390px) {
+        .card-body #imgPet{
+           width:  100px;
+            
+        }
+
+
+    }
+
+    #imgPet{
+        height: 300px;
+        
+    }
