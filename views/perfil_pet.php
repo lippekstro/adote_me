@@ -37,7 +37,7 @@ try {
       <p><span class="material-symbols-outlined">
           phone_forwarded
         </span>
-        <?= $dono[0]['telefone'] ?></p>
+        <a href="tel:+55<?= $dono[0]['telefone'] ?>"><?= $dono[0]['telefone'] ?></a></p>
       <p><span class="material-symbols-outlined">
           pin_drop
         </span>

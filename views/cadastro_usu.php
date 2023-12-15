@@ -10,7 +10,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/templates/_cabecalho.php';
     <video src="/adote_me/imgs/videocadastro.mp4" autoplay muted loop></video>
 
 
-    <form action="/adote_me/controllers/usuario_add_controller.php" class="row g-3" id="formulariologin" method="POST" enctype="multipart/form-data" novalidate>
+    <form action="/adote_me/controllers/usuario_add_controller.php" class="row g-3" id="formulariologin" method="POST" enctype="multipart/form-data">
         <h1>Cadastre-se</h1>
         <div class="input-group flex-nowrap">
             <span class="input-group-text" id="addon-wrapping">Nome*</span>

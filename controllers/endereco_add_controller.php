@@ -3,7 +3,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/endereco.php';
 
 try {
     $cep = $_POST['cep'];
-    $quadra = $_POST['quadra'];
+    $complemento = $_POST['complemento'];
     $bairro = $_POST['bairro'];
     $cidade = $_POST['cidade'];
     $estado = $_POST['estado'];
@@ -14,7 +14,7 @@ try {
     $enderecos = new endereco ($id_endereco);
     $enderecos->cep = $cep;
     $enderecos->rua = $rua;
-    $enderecos->quadra = $quadra;
+    $enderecos->complemento = $complemento;
     $enderecos->bairro = $bairro;
     $enderecos->cidade = $cidade;
     $enderecos->estado = $estado;
