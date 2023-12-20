@@ -11,9 +11,10 @@ try {
 
     $faq->criar();
 
-    header('Location: /adote_me/views/admin/faqs_listar.php');
+    setcookie('msg', 'FAQ adicionada!', time() + 10, '/adote_me/');
+    setcookie('tipo', 'sucesso', time() + 10, '/adote_me/');
+    header('Location: /adote_me/views/perfil_usu.php');
     exit();
-
 } catch (PDOException $e) {
     echo $e->getMessage();
 }

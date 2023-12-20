@@ -1,0 +1,295 @@
+body{
+    font-size: 12px;
+    max-width: 100%;
+}
+
+#top{
+    margin-top: 8px;
+}
+
+.txBusca{
+    border-radius: 6px;
+    padding: 5px 11px;
+}
+
+#btnBusca{
+    border-radius: var(--bs-border-radius);;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+col{
+    color: black;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0px; 
+    
+}
+
+
+
+#nav{
+    display: flex;
+    background-color: #c1926f;
+    max-width: 99%;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+  
+
+}
+
+
+#navlink{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 60%;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+a:hover {
+    text-decoration: none; /* Sublinhado ao passar nos links */
+}
+
+.text{
+    margin: 45px;
+    font-size: 12px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+
+}
+
+p{
+    text-align: justify ;
+}
+
+
+
+
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.redessociais {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    gap: 30px 30px;
+    justify-content: center;
+}
+
+/* estilos para barra de rolagem */
+ 
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: #c1926f;
+} 
+
+
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+ 
+}
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+  
+  h1{
+        padding: 0;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%; 
+
+    }
+
+
+    .row{
+        padding: none;
+        height: 50%;
+    }
+
+  
+   
+    
+
+
+}
+
+
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+    }
+    
+    
+    #nav{
+        justify-content: space-evenly;
+
+
+     }
+
+    
+     #navlink{
+        gap:15px;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: none;
+        
+        
+
+   }
+   #navlink col a {
+       margin: none;
+       width: 100%;
+   }
+   col a{
+       width: 100%;
+   }
+
+   .row .col{
+       width: 100%;
+   }
+
+
+
+   
+}
+
+
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+ 
+ 
+     }
+     #top{
+        display: flex;
+         justify-content: space-evenly;
+         
+    }
+ 
+     #navlink{
+         gap:15px;
+         width: 100%;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         
+ 
+     }
+
+     .col-12{
+        display: flex;
+        flex: auto;
+     }
+
+     .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 10px;
+    }
+
+     .text{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+     }
+
+    
+
+   
+
+     footer p {
+        display: flex;
+        text-align: center;
+        text-decoration: none;
+        margin: 0;
+     
+     }
+}

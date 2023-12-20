@@ -1,0 +1,434 @@
+body{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    max-width: 100%;
+}
+
+#top{
+    margin-top: 8px;
+}
+
+.txBusca{
+    border-radius: 6px;
+    padding: 5px 11px;
+}
+
+#btnBusca{
+    border-radius: var(--bs-border-radius);;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+col{
+    color: black;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0px; 
+    
+}
+
+
+
+#nav{
+    display: flex;
+    background-color: #c1926f;
+    max-width: 99%;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+  
+
+}
+
+
+#navlink{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 60%;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: none; /* Sublinhado ao passar nos links */
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: none;
+}
+
+
+
+.fundo{
+    background-image: url(/imgs/patas.jpg);
+    background-repeat: repeat;
+    background-size: 500px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
+}
+
+#nasc.cpf{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#file-upload-button{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    background: #0D6EFD;
+    padding: 6px 12px;
+
+}
+
+#check{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+#check a {
+    color: black;
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+
+.block{
+    display: grid;
+    width: 100px;
+    height: 100px;
+    align-items: normal;
+
+    
+
+}
+
+#formulariologin{
+    margin-top: 120px;
+    border: solid black 0.5px; 
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 80%;
+    margin-bottom: 5%;
+    background-color: white;
+    margin-top: 5%;
+
+}
+
+
+
+
+.col-md-6{
+    margin-left: 1px;
+    margin-top: 30px;
+
+}
+
+
+
+.col-md-4{
+    margin-left: 40px;
+}
+.col-md-2{
+    width: 200px;
+
+}
+
+.col label{
+    display: flex;
+}
+
+
+.col-md-2{
+    width: 142%px;
+}
+
+.mb-3{
+    position: relative;
+}
+
+#gap{
+    margin-top: 15px;
+}
+
+#eye1{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+}
+
+#eye2 {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.video{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+
+.form-check{
+    color: black;
+}
+
+
+
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.redessociais {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    gap: 30px 30px;
+    justify-content: center;
+}
+
+
+
+
+/* estilos para barra de rolagem */
+ 
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color: #c1926f;
+} 
+
+
+
+
+
+@media (min-width: 768px){
+    .col-md-2 #input{
+        width: 60%;
+    
+    }
+
+}
+
+
+
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+ 
+}
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    
+}
+
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+   
+
+
+
+
+
+
+}
+
+
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    *{
+           
+        padding: 0;
+    } 
+
+    
+    
+    .col {
+       /*  flex: 1 1 100%; */
+       justify-content: space-between;
+       margin: none;
+
+
+    }
+    #nav{
+        justify-content: space-evenly;
+
+
+     }
+
+    
+     #navlink{
+        gap: 5px;   
+        row-gap: 5px;
+        column-gap: 5px;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: none;
+        
+        
+
+   }
+   #navlink col a {
+       margin: none;
+       width: 100%;
+   }
+   col a{
+       width: 100%;
+   }
+
+   .row .col{
+       width: 100%;
+   }
+
+   .row{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+
+   
+    #check{
+        margin-right: 15%;
+    }
+
+    #formulariologin{
+        width: 90%;
+        margin-top: 20px;
+        padding: 20px;
+      
+    }
+
+    .col-md-6{
+        width: 90%;
+    }
+    
+    #imgbotton{
+        width: 80%;
+    }
+
+    .col-md-4{
+        margin-left: 0;
+    }
+    .row{
+
+    align-content:space-around
+    }
+
+    #gap .row{
+        gap: 15px;
+    }
+
+
+
+        
+
+
+
+  
+}

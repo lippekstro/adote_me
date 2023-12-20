@@ -1,0 +1,477 @@
+body{
+    font-size: 12px;
+    max-width: 100%;
+}
+
+#top{
+    margin-top: 8px;
+}
+
+.txBusca{
+    border-radius: 6px;
+    padding: 5px 11px;
+}
+
+#btnBusca{
+    border-radius: var(--bs-border-radius);;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+col{
+    color: black;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0px; 
+    
+}
+
+
+
+#nav{
+    display: flex;
+    background-color: #c1926f;
+    max-width: 99%;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+  
+
+}
+
+
+#navlink{
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 60%;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    text-decoration: none; /* Sublinhado ao passar nos links */
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: none;
+}
+
+
+.container {
+    margin: 0 auto; /* Centraliza o conteúdo do container */
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+
+.video{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video video{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 20%;
+}
+
+
+#formulariologin {
+    
+   
+   display: flex;
+    border: solid black 0.5px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    margin-left: 15%;
+    margin-right: 15%;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 15px;
+    margin-bottom: 3%;
+    flex-direction: column;
+
+
+
+  
+
+
+}
+
+#bloco{
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+
+#exampleFormControlTextarea1{
+    width: 70%;
+    height: 150px;
+    resize: none;
+    overflow: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+   }
+
+p{
+    width: 70%;
+    resize: none;
+    overflow: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+ 
+#descricao{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+#file-upload-button {
+    color: white;
+    font-size: 16px;
+    background: #0D6EFD;
+    padding: 6px 12px;
+
+}
+
+#check {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px
+}
+
+#caixas {
+    margin: 50px;
+    gap: 30px;
+    justify-content: flex-start;
+    font-size: 12px;
+}
+
+#check{
+    justify-content: flex-start;
+
+}
+
+#check {
+    column-gap: 20px;
+    display: flex;
+    
+}
+
+
+.form-check a {
+    color: black;
+}
+
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+
+
+}
+
+footer p {
+    width: 100%;
+    margin: 0;
+    
+};
+
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.redessociais {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    gap: 30px 30px;
+    justify-content: center;
+}
+
+
+
+/* estilos para barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #c1926f;
+}
+
+
+
+
+
+/*guilherme*/
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+    #txtBusca {
+        width: 60%;
+    }
+}
+
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+   
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    
+    #formulariologin {
+    
+        
+     display: flex;
+     border: solid black 0.5px;
+     border-radius: 10px;
+     padding: 5px;
+     box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+     flex-direction: column;
+     width: 95%;
+     margin: none;
+     margin-top: 35px;
+     margin-bottom: 6%;
+     flex-direction: column;
+     margin-right: 5%;
+     margin-left: 5%;
+
+ 
+    }  
+
+
+    #descricao{
+        margin: none;
+    }
+
+
+ 
+
+        
+    form #caixas {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        flex-wrap: wrap;
+        text-align: center;
+                
+        
+    }
+
+    #check{
+        justify-content: flex-start;
+
+    }
+
+    #check {
+        column-gap: 20px;
+        display: flex;
+        padding: 0%;
+        gap: 0%;
+
+
+    }
+
+    #check a{
+        text-align: left;
+        font-size: 12px;
+
+
+    }
+
+    #top{
+        padding-left: none;
+        padding-right: none;
+        margin: none;
+    }
+
+   
+
+/*da barra da segunda barra*/
+    /* Estilos para (tablet) */
+    @media only screen and (max-width: 768px) {
+        .col {
+            flex: 1 1 50%;
+        }
+    }
+
+    /* Estilos para (celulares) */
+    @media only screen and (max-width: 480px) {
+        *{
+           
+            padding: 0;
+        } 
+
+       
+
+        
+        .col {
+            /*  flex: 1 1 100%; */
+            justify-content: space-between;
+            margin: none;
+
+
+        }
+
+        #nav{
+            justify-content: space-evenly;
+    
+    
+         }
+
+
+        #navlink{
+            gap: 5px;       
+            row-gap: 5px;
+            column-gap: 5px;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            margin: none;
+
+            
+    
+       }
+       #navlink col a {
+           margin: none;
+           width: 100%;
+       }
+       col a{
+           width: 100%;
+           
+       }
+    
+       .row .col{
+           width: 100%;
+           
+       }
+    
+    
+        
+        #exampleFormControlTextarea1{
+            width: 70%;
+            height: 150px;
+            resize: none;
+            overflow: auto;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        .row{
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 5px;
+            gap: 10px;
+        }
+
+        #caixas{
+            font-size: 10px;
+            gap: 10px;
+            
+        }
+
+        
+
+         
+        #formulariologin {
+        
+            
+            display: flex;
+            border: solid black 0.5px;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+            width: 90%;
+            margin: none;
+            margin-top: 35px;
+            margin-bottom: 6%;
+            flex-direction: column;
+            margin-right: 5%;
+            margin-left: 5%;
+    
+        
+        }  
+        
+
+        
+    
+
+
+
+
+    }
+}

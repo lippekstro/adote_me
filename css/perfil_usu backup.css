@@ -1,0 +1,436 @@
+body {
+    font-size: 12px;
+    max-width: 100%;
+
+}
+
+#top {
+    margin-top: 8px;
+}
+
+.txBusca {
+    border-radius: 6px;
+    padding: 5px 11px;
+}
+
+#btnBusca {
+    border-radius: var(--bs-border-radius);
+    ;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    font-size: 16px;
+}
+
+col {
+    color: black;
+    text-decoration: underline;
+    padding: 10px;
+    margin: 0px;
+
+}
+
+#nav {
+    display: flex;
+    background-color: #c1926f;
+    max-width: 99%;
+    border: none;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+
+#navlink {
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 60%;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#slide{
+    margin-top: 50px;
+}
+
+
+#perfil_usu{
+    margin-top: 40px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;    
+}
+
+ul{
+    list-style-type: none;
+}
+
+#tutor p {
+    text-align: center;   
+}
+
+#tutor{
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.card-body{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+#perfil_tutor.col-4{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#exampleFormControlTextarea1{
+    width: 100%;
+    height: 150px;
+    resize: none;
+    overflow: auto;
+   }
+
+#carouselExampleIndicators{
+    display: flex;
+    height: 60%;
+    width: 80%;
+}
+
+#imagens{
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 5px;
+    height: 720px;
+    width: 350px;
+
+}
+
+
+.faq{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    width: 100%;
+    ;
+}
+
+form{
+    justify-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+
+}
+
+.faqs p {
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+}
+
+
+
+
+#perguntas_pet p{
+    text-align: left;
+}
+
+#perguntas1{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.--bs-card-border-color{
+    border-color: white;
+}
+
+#button-addon2{
+    background-color: #0d6efd;
+}
+#button-addon2  {
+    color: white
+}
+
+
+
+
+#infopet{
+    border: none;
+}
+#tutor{
+    border: none;
+   }
+
+#pergunta1{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+.card{
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;
+
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+
+.copyright a {
+    color: white;
+    text-decoration: none;
+}
+
+.redessociais {
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    gap: 30px 30px;
+    justify-content: center;
+}
+
+
+
+/* estilos para barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #c1926f;
+}
+
+
+
+
+
+
+/* estilo para (tablet) */
+@media only screen and (max-width: 768px) {
+
+
+
+
+
+
+ 
+}
+/*estilo para (para celular)*/
+@media only screen and (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #txtBusca {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #btnBusca {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+  
+  h1{
+        padding: 0;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10%; 
+
+    }
+
+
+    .row{
+        padding: none;
+        height: 50%;
+    }
+
+    .carousel-ineer{
+        height: 50px;
+    }
+
+    #exampleFormControlTextarea1{
+        width: 100%;
+        height: 150px;
+        resize: none;
+        overflow: auto;
+        position: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .carousel{
+        
+        height: 320px;
+    }
+
+    #imagens{
+        margin-right: 10%;
+        margin-left: 10%;
+        border-radius: 5px;
+        height: 300px;
+        width: 350px;
+    
+    }
+    #carouselExampleIndicators{
+        display: flex;
+        margin-left: 4%;
+        margin-right: 4%;
+        margin-bottom: 5%;
+        width: 360px;
+    }
+    
+
+
+}
+
+
+/*da barra da segunda barra*/
+/* Estilos para (tablet) */
+@media only screen and (max-width: 768px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+    }
+    
+    
+    #nav{
+        justify-content: space-evenly;
+
+
+     }
+
+    #navlink{
+        gap:15px;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        
+
+
+    }
+
+   
+}
+
+
+
+/* Estilos para (celulares) */
+@media only screen and (max-width: 480px) {
+    .col {
+        /*  flex: 1 1 100%; */
+        justify-content: space-between;
+        margin: none;
+ 
+ 
+     }
+     #nav{
+        display: flex;
+         justify-content: space-evenly;
+         
+      }
+ 
+     #navlink{
+         gap:15px;
+         width: 100%;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+         
+ 
+     }
+
+     .col-12{
+        display: flex;
+        flex: auto;
+     }
+
+     .row{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+        gap: 10px;
+        }
+
+     form{
+        margin-left: 5%;
+        margin-right: 5%;
+     }
+
+  
+
+     #perguntas_pet p{
+        
+        width: 100px;
+        text-align: justify;
+    }
+
+}
