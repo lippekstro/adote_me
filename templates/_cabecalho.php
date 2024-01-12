@@ -24,13 +24,14 @@ session_start();
 </head>
 
 <body>
-  <header>
-    <div class="container text-center" id="top">
-      <div class="row">
-        <div class="col">
-          <a href="/adote_me/index.php"><img src="/adote_me/imgs/Imglogo.png" alt="Adote-Me" title="Adote-Me" id="AdoteMe" /></a>
-        </div>
-        <!-- <div class="col">
+  <div id="fix">
+    <header>
+      <div class="container text-center" id="top">
+        <div class="row">
+          <div class="col">
+            <a href="/adote_me/index.php"><img src="/adote_me/imgs/Imglogo.png" alt="Adote-Me" title="Adote-Me" id="AdoteMe" /></a>
+          </div>
+          <!-- <div class="col">
           <input list="browsers" name="browser" id="browser" placeholder="Buscar">
           <datalist id="browsers">
             <option value="Cachorro">
@@ -48,121 +49,131 @@ session_start();
           <button id="btnBusca">Buscar</button>
         </div> -->
 
-        <div class="col">
-          <?php if (!isset($_SESSION['usuario'])) : ?>
-            <a href="/adote_me/views/login.php"><button type="submit" class="btn btn-dark" id="Login">
-                Login
-              </button></a>
-          <?php else : ?>
-            <a href="/adote_me/views/perfil_usu.php"><button type="submit" class="btn btn-dark" id="Login">
-                Perfil
-              </button></a>
-          <?php endif; ?>
-
-          <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] > 1) : ?>
-            <a href="/adote_me/views/admin/gerenciar_faqs.php"><button type="submit" class="btn btn-dark" id="Login">
-                Gerenciar Faqs
-              </button></a>
-            <a href="/adote_me/views/admin/gerenciar_pets.php"><button type="submit" class="btn btn-dark" id="Login">
-                Gerenciar Pets
-              </button></a>
-          <?php endif; ?>
-
-          <?php if (!isset($_SESSION['usuario'])) : ?>
-            <a href="/adote_me/views/cadastro_usu.php"><button type="submit" class="btn btn-dark" id="Quero adotar">
-                Cadastrar
-              </button></a>
-          <?php else : ?>
-            <a href="/adote_me/controllers/logout_controller.php"><button type="submit" class="btn btn-dark" id="Quero adotar">
-                Logout
-              </button></a>
-          <?php endif; ?>
-
-          <?php if (!(isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] > 1)) : ?>
-            <a href="/adote_me/views/denuncie.php"><button type="button" class="btn btn-danger" id="denuncie">Denuncie</button></a>
-          <?php endif; ?>
-        </div>
-      </div>
-    </div>
-  </header>
-  <nav>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar02">
-      <div class="container-fluid" id="menu">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
-            <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/catalogo.php">Catálogo</a>
-            </li>
-            <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] < 2) : ?>
-              <li class="nav-item">
-                <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
-              </li>
+          <div class="col">
+            <?php if (!isset($_SESSION['usuario'])) : ?>
+              <a href="/adote_me/views/login.php"><button type="submit" class="btn btn-dark" id="Login">
+                  Login
+                </button></a>
+            <?php else : ?>
+              <a href="/adote_me/views/perfil_usu.php"><button type="submit" class="btn btn-dark" id="Login">
+                  Perfil
+                </button></a>
             <?php endif; ?>
-            <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/dicas.php">Dicas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/sobrenos.php">Quem Somos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/adote_me/views/faq.php">FAQ</a>
-            </li>
 
+            <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] > 1) : ?>
+              <a href="/adote_me/views/admin/gerenciar_faqs.php"><button type="submit" class="btn btn-dark" id="Login">
+                  Gerenciar Faqs
+                </button></a>
+              <a href="/adote_me/views/admin/gerenciar_pets.php"><button type="submit" class="btn btn-dark" id="Login">
+                  Gerenciar Pets
+                </button></a>
+            <?php endif; ?>
 
-          </ul>
+            <?php if (!isset($_SESSION['usuario'])) : ?>
+              <a href="/adote_me/views/cadastro_usu.php"><button type="submit" class="btn btn-dark" id="Quero adotar">
+                  Cadastrar
+                </button></a>
+            <?php else : ?>
+              <a href="/adote_me/controllers/logout_controller.php"><button type="submit" class="btn btn-dark" id="Quero adotar">
+                  Logout
+                </button></a>
+            <?php endif; ?>
+
+            <?php if (!(isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] > 1)) : ?>
+              <a href="/adote_me/views/denuncie.php"><button type="button" class="btn btn-danger" id="denuncie">Denuncie</button></a>
+            <?php endif; ?>
+          </div>
         </div>
       </div>
-    </nav>
+    </header>
+    <nav>
 
-    <style>
-      body {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navbar02">
+        <div class="container-fluid" id="menu">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+              <li class="nav-item">
+                <a class="nav-link active" href="/adote_me/views/catalogo.php">Catálogo</a>
+              </li>
+              <?php if (isset($_SESSION['usuario']) && $_SESSION['usuario']['nivel_acesso'] < 2) : ?>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/adote_me/views/cadastro_pet.php">Cadastrar Pet</a>
+                </li>
+              <?php endif; ?>
+              <li class="nav-item">
+                <a class="nav-link active" href="/adote_me/views/dicas.php">Dicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/adote_me/views/sobrenos.php">Quem Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/adote_me/views/faq.php">FAQ</a>
+              </li>
 
-      }
 
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </div>
+
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+  #fix{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+  } 
+
+    #menu {
+      background-color: #c1926f;
+      font-size: 16px;
+    }
+
+    #menu a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #navbarScroll {
+      justify-content: space-between;
+      padding: 0 15px;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    ul {
+      justify-content: space-evenly;
+      width: 100%;
+
+    }
+
+    #navbar02 {
+      padding: none;
+      margin: none;
+
+    }
+
+
+    /* Additional styles for smaller screens */
+    @media only screen and (max-width: 480px) {
       #menu {
-        background-color: #c1926f;
-        font-size: 16px;
+        font-size: 14px;
       }
-
-      #menu a {
-        color: white;
-        text-decoration: none;
-      }
-
-      #navbarScroll {
-        justify-content: space-between;
-        padding: 0 15px;
-        margin-left: 15%;
-        margin-right: 15%;
-      }
-
-      ul {
-        justify-content: space-evenly;
-        width: 100%;
-
-      }
-
-      #navbar02 {
-        padding: none;
-        margin: none;
-
-      }
-
-
-      /* Additional styles for smaller screens */
-      @media only screen and (max-width: 480px) {
-        #menu {
-          font-size: 14px;
-        }
-      }
-    </style>
-    <!--  <div class="container text-center" id="nav">
+    }
+  </style>
+  <!--  <div class="container text-center" id="nav">
             <div class="row row-cols-6" id="navlink">
 
                 <div class="col"><a href="/adote_me/views/catalogo_pet.php">Catálogo de pets</a></div>
