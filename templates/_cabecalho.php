@@ -128,7 +128,7 @@ session_start();
 
     }
 
-
+    /* DEIXAR O NAVBAR FIXA  */
   #fix{
     position: sticky;
     top: 0px;
