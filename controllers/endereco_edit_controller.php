@@ -1,5 +1,6 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/adote_me/models/endereco.php';
+.
 
 try {
     $id_endereco = $_POST['id'];

@@ -24,8 +24,11 @@ session_start();
 </head>
 
 <body>
-  <div id="fix">
-    <header>
+
+  <div id="fix" >
+  
+    <header >
+      
       <div class="container text-center" id="top">
         <div class="row">
           <div class="col">
@@ -133,7 +136,7 @@ session_start();
     position: sticky;
     top: 0px;
     background-color: white;
-    z-index: 1;
+    z-index: 1000;
   } 
 
     #menu {
